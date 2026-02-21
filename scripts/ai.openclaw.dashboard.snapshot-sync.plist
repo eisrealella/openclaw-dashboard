@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>ai.openclaw.dashboard.snapshot-sync</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/ella/Documents/Codex/openclaw-dashboard/scripts/auto-sync-snapshot.sh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/ella/Documents/Codex/openclaw-dashboard</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+
+  <key>StartInterval</key>
+  <integer>300</integer>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/openclaw-dashboard-sync.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/tmp/openclaw-dashboard-sync.err.log</string>
+</dict>
+</plist>
