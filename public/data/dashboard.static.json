@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T10:46:56.541Z",
+    "generatedAt": "2026-02-21T10:52:01.639Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T10:46:56.860Z",
+    "staticExportedAt": "2026-02-21T10:52:01.682Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 621114295,
-    "inputTokens": 619819533,
-    "outputTokens": 1795268,
+    "totalTokens": 621239221,
+    "inputTokens": 619943014,
+    "outputTokens": 1797109,
     "sessions": 87
   },
   "trend": [
@@ -68,13 +68,13 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 143435374
+      "tokens": 143560300
     }
   ],
   "modelDistribution": [
     {
       "model": "gpt-5.3-codex",
-      "tokens": 391625400
+      "tokens": 391750326
     },
     {
       "model": "MiniMax-M2.1",
@@ -147,7 +147,7 @@
           "id": "openai-codex/gpt-5.3-codex",
           "alias": "Codex 5.3",
           "role": "Fallback",
-          "lastSeenTokens": 65249
+          "lastSeenTokens": 55389
         }
       },
       {
@@ -162,7 +162,7 @@
           "id": "codex-cli/gpt-5.3-codex",
           "alias": "Codex CLI 5.3",
           "role": "Additional",
-          "lastSeenTokens": 65249
+          "lastSeenTokens": 55389
         }
       }
     ],
@@ -820,10 +820,10 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771670815063.5078,
-      "totalTokens": 1125352,
-      "inputTokens": 1118209,
-      "outputTokens": 7143,
+      "updatedAt": 1771670851338.9822,
+      "totalTokens": 1238002,
+      "inputTokens": 1229018,
+      "outputTokens": 8984,
       "inputQuery": "我现在 openclaw main agent 的配置如何，我可以调整哪些配置",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/21/rollout-2026-02-21T17-04-05-019c7f71-1bd5-7b91-878d-45c27d4e4f8b.jsonl"
     },
@@ -911,12 +911,12 @@
       "agentId": "coder",
       "label": "toolUse",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771667462214,
-      "totalTokens": 9860,
-      "inputTokens": 8645,
+      "updatedAt": 1771667462187.1118,
+      "totalTokens": 22136,
+      "inputTokens": 21317,
       "outputTokens": 819,
       "inputQuery": "检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/d869583a-40f2-4d58-bf14-d9240c8a680f.jsonl.deleted.2026-02-21T10-50-54.725Z"
     },
     {
       "source": "openclaw",
@@ -1846,9 +1846,9 @@
       "sessionId": "d869583a-40f2-4d58-bf14-d9240c8a680f",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771667462214,
-      "totalTokens": 9860,
-      "inputTokens": 8645,
+      "updatedAt": 1771667462187.1118,
+      "totalTokens": 22136,
+      "inputTokens": 21317,
       "outputTokens": 819,
       "inputQuery": "检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。"
     },
@@ -1923,10 +1923,10 @@
       "sessionId": "019c7f71-1bd5-7b91-878d-45c27d4e4f8b",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771670815063.5078,
-      "totalTokens": 1125352,
-      "inputTokens": 1118209,
-      "outputTokens": 7143,
+      "updatedAt": 1771670851338.9822,
+      "totalTokens": 1238002,
+      "inputTokens": 1229018,
+      "outputTokens": 8984,
       "inputQuery": "我现在 openclaw main agent 的配置如何，我可以调整哪些配置"
     }
   ],
