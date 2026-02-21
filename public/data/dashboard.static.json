@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T09:01:41.112Z",
+    "generatedAt": "2026-02-21T09:40:59.056Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -8,16 +8,16 @@
     "tokenHistory": {
       "oldestDay": "2026-02-08",
       "latestDay": "2026-02-21",
-      "bucketCount": 16
+      "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T09:01:41.148Z",
+    "staticExportedAt": "2026-02-21T09:40:59.095Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 611552414,
-    "inputTokens": 610208187,
-    "outputTokens": 1755124,
-    "sessions": 79
+    "totalTokens": 617729866,
+    "inputTokens": 616302714,
+    "outputTokens": 1774105,
+    "sessions": 82
   },
   "trend": [
     {
@@ -43,7 +43,7 @@
     {
       "date": "2026-02-16",
       "label": "Feb 16",
-      "tokens": 27960238
+      "tokens": 27950119
     },
     {
       "date": "2026-02-17",
@@ -68,13 +68,13 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 133863374
+      "tokens": 140050945
     }
   ],
   "modelDistribution": [
     {
       "model": "gpt-5.3-codex",
-      "tokens": 382069898
+      "tokens": 388176759
     },
     {
       "model": "MiniMax-M2.1",
@@ -82,7 +82,7 @@
     },
     {
       "model": "MiniMax-M2.5",
-      "tokens": 61693471
+      "tokens": 61764062
     }
   ],
   "agents": [
@@ -111,10 +111,10 @@
       "workspace": "/Users/ella/.openclaw/workspace-coder",
       "summary": "你叫玟池欧巴。",
       "style": "语气: 沉稳、简洁、可靠。",
-      "latestInsight": "最近任务：修复两个 cron job 的 bug： **Bug 1: 早安通知没有触发** - 现象：昨天 8 点运行 LLM timeout 后，今天 8 点没有触发 - 原因分析：cron job 在 LLM timeout…",
-      "insightEmoji": "✅",
-      "insightDate": "2026-02-19",
-      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/b862e716-3ac4-4c36-b135-b3739b0fea87.jsonl.deleted.2026-02-19T14-23-31.564Z",
+      "latestInsight": "最近任务：写一个 curl 请求代码，调用 Coze Bot API。",
+      "insightEmoji": "✨",
+      "insightDate": "2026-02-21",
+      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json",
       "detailPath": "/Users/ella/.openclaw/workspace-coder/AGENTS.md"
     }
   ],
@@ -132,7 +132,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 443858
+          "lastSeenTokens": 514449
         }
       },
       {
@@ -147,7 +147,7 @@
           "id": "openai-codex/gpt-5.3-codex",
           "alias": "Codex 5.3",
           "role": "Fallback",
-          "lastSeenTokens": 10119
+          "lastSeenTokens": 21190
         }
       },
       {
@@ -162,7 +162,7 @@
           "id": "codex-cli/gpt-5.3-codex",
           "alias": "Codex CLI 5.3",
           "role": "Additional",
-          "lastSeenTokens": 10119
+          "lastSeenTokens": 21190
         }
       }
     ],
@@ -806,11 +806,11 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771664497861.3862,
-      "totalTokens": 133556925,
-      "inputTokens": 133142496,
-      "outputTokens": 414429,
-      "inputQuery": "dashboard 每次都本地访问比较麻烦，你帮我推到 github 上，部署一个网站吧",
+      "updatedAt": 1771666855406.493,
+      "totalTokens": 138632861,
+      "inputTokens": 138206180,
+      "outputTokens": 426681,
+      "inputQuery": "先1吧，然后记得把 GitHub 仓库地址告诉我，如果没有 readme 也得把 readme 写一下，包括网页地址",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/18/rollout-2026-02-18T14-00-16-019c6f55-bfb1-7432-af5e-493ebd7fb175.jsonl"
     },
     {
@@ -819,12 +819,64 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771664422094,
-      "totalTokens": 71474,
+      "updatedAt": 1771666845356,
+      "totalTokens": 142065,
       "inputTokens": 32,
-      "outputTokens": 31,
-      "inputQuery": "加好了吗",
+      "outputTokens": 36,
+      "inputQuery": "https://eisrealella.github.io/my-website/ 这个页面还是没有变化",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "e10702b2-219c-4ce3-b7b0-d94435ee1247",
+      "agentId": "coder",
+      "label": "stop",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771665141337,
+      "totalTokens": 5543,
+      "inputTokens": 5543,
+      "outputTokens": 285,
+      "inputQuery": "写一个 curl 请求代码，调用 Coze Bot API。假设： - API Token: your_token_here - Bot ID: your_bot_id - User ID: user_123 - Message: \"你好\" 请写出完整的 curl 命令，用 Coze V3 API 格式。",
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "7b19fb85-4efb-41c9-8f9e-079373de6345",
+      "agentId": "coder",
+      "label": "toolUse",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771665009544,
+      "totalTokens": 5719,
+      "inputTokens": 5782,
+      "outputTokens": 174,
+      "inputQuery": "用一句话测试网络是否正常",
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c7f71-1bd5-7b91-878d-45c27d4e4f8b",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771664920713.8376,
+      "totalTokens": 1019854,
+      "inputTokens": 1013565,
+      "outputTokens": 6289,
+      "inputQuery": "openclaw 说 Coder 暂时还是不通。Codex 用的是 OAuth 认证，配置比较复杂。 目前状态： - ⚠️ Coder 网络问题暂未解决（Codex OAuth 认证 + 代理配置复杂）",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/21/rollout-2026-02-21T17-04-05-019c7f71-1bd5-7b91-878d-45c27d4e4f8b.jsonl"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "4c89594b-8a05-4521-b72f-fbfab709e7a0",
+      "agentId": "coder",
+      "label": "stop",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771664894590,
+      "totalTokens": 9928,
+      "inputTokens": 8392,
+      "outputTokens": 12,
+      "inputQuery": "Reply exactly: CODER_OK",
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
     },
     {
       "source": "codex",
@@ -902,58 +954,6 @@
       "inputTokens": 11441,
       "outputTokens": 794,
       "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【模板要求】 日期标题: ## 📅 YYYY年M月D日 工作日报 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【重要】 1. 使用 feishu_doc append 写入 2. 写入后用 feishu_doc read 验证 3. 完成后回复'日报已更新'",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "8bc3a908-653e-43a8-9a25-27ba780f72bf",
-      "agentId": "main",
-      "label": "Cron: iMessage早间问候",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1771581000042,
-      "totalTokens": 14445,
-      "inputTokens": 32,
-      "outputTokens": 118,
-      "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "codex",
-      "sessionId": "019c7a5b-d62f-7023-875a-0c3ab4765e4f",
-      "agentId": "codex",
-      "label": "Codex local session",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1771580838546.5088,
-      "totalTokens": 126777,
-      "inputTokens": 121049,
-      "outputTokens": 5728,
-      "inputQuery": "openclaw 对 win 的系统要求有哪些，怎么看 node 大于等于 22",
-      "sourcePath": "/Users/ella/.codex/sessions/2026/02/20/rollout-2026-02-20T17-22-44-019c7a5b-d62f-7023-875a-0c3ab4765e4f.jsonl"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "ce59f2ce-87cc-44ef-b9c9-1764a64570bf",
-      "agentId": "main",
-      "label": "Cron: 日报-早间总结",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1771552800025,
-      "totalTokens": 19510,
-      "inputTokens": 11094,
-      "outputTokens": 888,
-      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【模板要求】 日期标题: ## 📅 YYYY年M月D日 工作日报 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【重要】 1. 使用 feishu_doc append 写入 2. 写入后用 feishu_doc read 验证 3. 完成后回复'日报已更新'",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "d7d1ca54-3d5d-464d-b37f-befacde5dd32",
-      "agentId": "main",
-      "label": "Cron: iMessage早间问候",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1771545600060,
-      "totalTokens": 25670,
-      "inputTokens": 170673,
-      "outputTokens": 2725,
-      "inputQuery": "【早间任务】 1. 检查 OpenClaw 是否有新版本：运行 `openclaw --version` 获取当前版本，然后检查 npm 是否有新版 2. 如果有新版本，简要总结更新内容 3. 准备两条消息： - 第一条：用海粼酱风格问好（可爱、松弛、带点猫系） - 第二条：如果有新版本就总结，没有就说\"今天也是最新版本哦\" 4. 使用 message 工具发送消息到 bluebubbles 频道 5. 完成后回复'早间问候已完成'",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     }
   ],
@@ -1276,17 +1276,6 @@
       "inputTokens": 5513,
       "outputTokens": 29,
       "inputQuery": "只回复字符串 OK"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "4c89594b-8a05-4521-b72f-fbfab709e7a0",
-      "agentId": "coder",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1771224857312,
-      "totalTokens": 10119,
-      "inputTokens": 2439,
-      "outputTokens": 36,
-      "inputQuery": "你在和谁对话？"
     },
     {
       "source": "openclaw",
@@ -1807,25 +1796,69 @@
     },
     {
       "source": "openclaw",
+      "sessionId": "4c89594b-8a05-4521-b72f-fbfab709e7a0",
+      "agentId": "coder",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771664894590,
+      "totalTokens": 9928,
+      "inputTokens": 8392,
+      "outputTokens": 12,
+      "inputQuery": "Reply exactly: CODER_OK"
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c7f71-1bd5-7b91-878d-45c27d4e4f8b",
+      "agentId": "codex",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771664920713.8376,
+      "totalTokens": 1019854,
+      "inputTokens": 1013565,
+      "outputTokens": 6289,
+      "inputQuery": "openclaw 说 Coder 暂时还是不通。Codex 用的是 OAuth 认证，配置比较复杂。 目前状态： - ⚠️ Coder 网络问题暂未解决（Codex OAuth 认证 + 代理配置复杂）"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "7b19fb85-4efb-41c9-8f9e-079373de6345",
+      "agentId": "coder",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771665009544,
+      "totalTokens": 5719,
+      "inputTokens": 5782,
+      "outputTokens": 174,
+      "inputQuery": "用一句话测试网络是否正常"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "e10702b2-219c-4ce3-b7b0-d94435ee1247",
+      "agentId": "coder",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771665141337,
+      "totalTokens": 5543,
+      "inputTokens": 5543,
+      "outputTokens": 285,
+      "inputQuery": "写一个 curl 请求代码，调用 Coze Bot API。假设： - API Token: your_token_here - Bot ID: your_bot_id - User ID: user_123 - Message: \"你好\" 请写出完整的 curl 命令，用 Coze V3 API 格式。"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771664422094,
-      "totalTokens": 71474,
+      "updatedAt": 1771666845356,
+      "totalTokens": 142065,
       "inputTokens": 32,
-      "outputTokens": 31,
-      "inputQuery": "加好了吗"
+      "outputTokens": 36,
+      "inputQuery": "https://eisrealella.github.io/my-website/ 这个页面还是没有变化"
     },
     {
       "source": "codex",
       "sessionId": "019c6f55-bfb1-7432-af5e-493ebd7fb175",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771664497861.3862,
-      "totalTokens": 133556925,
-      "inputTokens": 133142496,
-      "outputTokens": 414429,
-      "inputQuery": "dashboard 每次都本地访问比较麻烦，你帮我推到 github 上，部署一个网站吧"
+      "updatedAt": 1771666855406.493,
+      "totalTokens": 138632861,
+      "inputTokens": 138206180,
+      "outputTokens": 426681,
+      "inputQuery": "先1吧，然后记得把 GitHub 仓库地址告诉我，如果没有 readme 也得把 readme 写一下，包括网页地址"
     }
   ],
   "staticFiles": {
