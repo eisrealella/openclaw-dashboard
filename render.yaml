@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: openclaw-dashboard
+    env: node
+    plan: free
+    rootDir: .
+    buildCommand: npm ci
+    startCommand: HOST=0.0.0.0 node server.js
+    healthCheckPath: /api/ping
+    autoDeploy: true
