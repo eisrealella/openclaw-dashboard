@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T09:56:05.640Z",
+    "generatedAt": "2026-02-21T10:01:11.948Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,14 +10,14 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T09:56:05.681Z",
+    "staticExportedAt": "2026-02-21T10:01:11.985Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 658464349,
-    "inputTokens": 657116254,
-    "outputTokens": 1836649,
-    "sessions": 83
+    "totalTokens": 620947511,
+    "inputTokens": 619467591,
+    "outputTokens": 1783660,
+    "sessions": 84
   },
   "trend": [
     {
@@ -68,13 +68,13 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 180785428
+      "tokens": 143268590
     }
   ],
   "modelDistribution": [
     {
       "model": "gpt-5.3-codex",
-      "tokens": 390604533
+      "tokens": 391344884
     },
     {
       "model": "MiniMax-M2.1",
@@ -82,7 +82,7 @@
     },
     {
       "model": "MiniMax-M2.5",
-      "tokens": 100070771
+      "tokens": 61813582
     }
   ],
   "agents": [
@@ -132,7 +132,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 357939
+          "lastSeenTokens": 549524
         }
       },
       {
@@ -197,7 +197,7 @@
         }
       },
       {
-        "id": "skill:apple-reminders:6",
+        "id": "skill:apple-reminders:22",
         "kind": "skill",
         "title": "apple-reminders",
         "subtitle": "Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
@@ -212,7 +212,7 @@
         }
       },
       {
-        "id": "skill:bluebubbles:7",
+        "id": "skill:bluebubbles:6",
         "kind": "skill",
         "title": "bluebubbles",
         "subtitle": "Use when you need to send or manage iMessages via BlueBubbles (recommended iMessage integration). Calls go through the generic message tool with channel=\"bluebubbles\".",
@@ -227,7 +227,7 @@
         }
       },
       {
-        "id": "skill:browser-automation:24",
+        "id": "skill:browser-automation:7",
         "kind": "skill",
         "title": "browser-automation",
         "subtitle": "OpenClaw 浏览器自动化 - 托管 Chrome 浏览器操作指南",
@@ -257,7 +257,7 @@
         }
       },
       {
-        "id": "skill:daily-report:25",
+        "id": "skill:daily-report:9",
         "kind": "skill",
         "title": "daily-report",
         "subtitle": "海粼酱工作日报 - 模板、定时任务、自动更新",
@@ -286,7 +286,7 @@
         }
       },
       {
-        "id": "skill:dashboard-data-hygiene:16",
+        "id": "skill:dashboard-data-hygiene:24",
         "kind": "skill",
         "title": "dashboard-data-hygiene",
         "subtitle": "Maintain OpenClaw dashboard data quality and presentation consistency. Use when updating session ingestion/display, token aggregation, query sanitization, or agent overview card rendering (style, insight, and emoji defaults).",
@@ -316,7 +316,7 @@
         }
       },
       {
-        "id": "skill:dual-agent-handshake:17",
+        "id": "skill:dual-agent-handshake:25",
         "kind": "skill",
         "title": "dual-agent-handshake",
         "subtitle": "Enforce deterministic collaboration between main and coder agents for every task. Main must classify tasks and delegate coding/automation/complex execution to coder via sessions_spawn with a task envelope; coder must execute and return structured results only.",
@@ -404,7 +404,7 @@
         }
       },
       {
-        "id": "skill:feishu-interactive-cards:18",
+        "id": "skill:feishu-interactive-cards:20",
         "kind": "skill",
         "title": "feishu-interactive-cards",
         "subtitle": "Create and send interactive cards to Feishu (Lark) with buttons, forms, polls, and rich UI elements. Use when replying to Feishu messages and there is ANY uncertainty - send an interactive card instead of plain text to let users choose via buttons. Automatically handles callbacks via long-polling connection. Use for confirmations, choices, forms, todos, polls, or any scenario requiring user interaction in Feishu.",
@@ -449,7 +449,7 @@
         }
       },
       {
-        "id": "skill:feishu-work:26",
+        "id": "skill:feishu-work:10",
         "kind": "skill",
         "title": "feishu-work",
         "subtitle": "管理飞书相关工作：机器人配置、权限管理、定时任务、日报发送",
@@ -464,7 +464,7 @@
         }
       },
       {
-        "id": "skill:find-skills:19",
+        "id": "skill:find-skills:26",
         "kind": "skill",
         "title": "find-skills",
         "subtitle": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
@@ -479,7 +479,7 @@
         }
       },
       {
-        "id": "skill:github:9",
+        "id": "skill:github:23",
         "kind": "skill",
         "title": "github",
         "subtitle": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
@@ -509,7 +509,7 @@
         }
       },
       {
-        "id": "skill:healthcheck:10",
+        "id": "skill:healthcheck:11",
         "kind": "skill",
         "title": "healthcheck",
         "subtitle": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
@@ -524,7 +524,7 @@
         }
       },
       {
-        "id": "skill:imessage-setup:27",
+        "id": "skill:imessage-setup:12",
         "kind": "skill",
         "title": "imessage-setup",
         "subtitle": "iMessage 配置指南 - BlueBubbles 和 imsg 两种方式",
@@ -539,7 +539,7 @@
         }
       },
       {
-        "id": "skill:imsg:11",
+        "id": "skill:imsg:13",
         "kind": "skill",
         "title": "imsg",
         "subtitle": "iMessage/SMS CLI for listing chats, history, watch, and sending.",
@@ -554,7 +554,7 @@
         }
       },
       {
-        "id": "skill:mac-notes-agent:20",
+        "id": "skill:mac-notes-agent:21",
         "kind": "skill",
         "title": "mac-notes-agent",
         "subtitle": "Integrate with the macOS Notes app (Apple Notes).\nSupports creating, listing, reading, updating, deleting, and searching notes\nvia a simple Node.js CLI that bridges to AppleScript.\n",
@@ -569,7 +569,7 @@
         }
       },
       {
-        "id": "skill:openclaw-ops:28",
+        "id": "skill:openclaw-ops:14",
         "kind": "skill",
         "title": "openclaw-ops",
         "subtitle": "OpenClaw 运维工具箱 - 任务恢复、配置备份与回滚",
@@ -584,7 +584,7 @@
         }
       },
       {
-        "id": "skill:peekaboo:12",
+        "id": "skill:peekaboo:15",
         "kind": "skill",
         "title": "peekaboo",
         "subtitle": "Capture and automate macOS UI with the Peekaboo CLI.",
@@ -613,7 +613,7 @@
         }
       },
       {
-        "id": "skill:proactive-agent:21",
+        "id": "skill:proactive-agent:27",
         "kind": "skill",
         "title": "proactive-agent",
         "subtitle": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞",
@@ -628,7 +628,7 @@
         }
       },
       {
-        "id": "skill:skill-creator:13",
+        "id": "skill:skill-creator:16",
         "kind": "skill",
         "title": "skill-creator",
         "subtitle": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
@@ -643,7 +643,7 @@
         }
       },
       {
-        "id": "skill:sonoscli:14",
+        "id": "skill:sonoscli:17",
         "kind": "skill",
         "title": "sonoscli",
         "subtitle": "Control Sonos speakers (discover/status/play/volume/group).",
@@ -658,7 +658,7 @@
         }
       },
       {
-        "id": "skill:task-skill-workflow:29",
+        "id": "skill:task-skill-workflow:18",
         "kind": "skill",
         "title": "task-skill-workflow",
         "subtitle": "任务执行前先搜索并创建合适的 skill，确保最佳实践和持续迭代",
@@ -673,7 +673,7 @@
         }
       },
       {
-        "id": "skill:tavily:22",
+        "id": "skill:tavily:28",
         "kind": "skill",
         "title": "tavily",
         "subtitle": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
@@ -702,7 +702,7 @@
         }
       },
       {
-        "id": "skill:walle-presence:23",
+        "id": "skill:walle-presence:29",
         "kind": "skill",
         "title": "walle-presence",
         "subtitle": "Add compact robot-like emotional expression to replies without hurting task clarity.",
@@ -717,7 +717,7 @@
         }
       },
       {
-        "id": "skill:weather:15",
+        "id": "skill:weather:19",
         "kind": "skill",
         "title": "weather",
         "subtitle": "Get current weather and forecasts (no API key required).",
@@ -801,30 +801,43 @@
   },
   "recentSessions": [
     {
-      "source": "openclaw",
-      "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
-      "agentId": "main",
-      "label": "stop",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1771667754147.3408,
-      "totalTokens": 38448774,
-      "inputTokens": 38391889,
-      "outputTokens": 56885,
-      "inputQuery": "[Queued announce messages while agent was busy] --- Queued #1 A subagent task \"检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。\" just completed successfully. Findings: 检查完成（使用 `gh`）： ### 1) GitHub Pages 构建状态 `gh api repos/eisrealella/my-website/pages` 返回： - `status: \"built\"` - 站点 URL: `https://eisrealella.github.io/my-website/` - 来源分支：`main`，路径 `/` `gh api repos/eisrealella/my-website/pages/builds/latest` 返回： - 最新构建状态：`built` - 构建 commit：`c4bc4a0d11d9b1b0d2fc4038156eed9f9a80bd9d` - 构建时间：`2026-02-21T09:44:13Z`（北京时间约 17:44） ### 2) `index.html` 是否是“海粼酱”标题版本 用 `gh api repos/eisrealella/my-website/contents/index.html` 解码后检查到： - `<title>海粼酱的思想碎片</title>` 结论： - **当前仓库里的 `index.html` 仍然是“海粼酱的思想碎片”版本，不是你期望的“海粼酱”标题版本。** - GitHub Pages 当前构建是成功的，但构建出的内容就是这个旧标题版本。 Stats: runtime 22s • tokens 9.9k (in 8.6k / out 819) • sessionKey agent:coder:subagent:66ff88b5-3bf1-4e41-8958-4f91806b4aa7 • sessionId d869583a-40f2-4d58-bf14-d9240c8a680f • transcript /Users/ella/.openclaw/agents/coder/sessions/d869583a-40f2-4d58-bf14-d9240c8a680f.jsonl Summarize this naturally for the user. Keep it brief (1-2 sentences). Flow it into the conversa…",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/eab265bd-6a4f-46dd-b2c3-b5106f74489b.jsonl"
-    },
-    {
       "source": "codex",
       "sessionId": "019c6f55-bfb1-7432-af5e-493ebd7fb175",
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771667726806.3528,
-      "totalTokens": 141050775,
-      "inputTokens": 140619218,
-      "outputTokens": 431557,
-      "inputQuery": "OK",
+      "updatedAt": 1771668000646.546,
+      "totalTokens": 141791126,
+      "inputTokens": 141356224,
+      "outputTokens": 434902,
+      "inputQuery": "那你帮我试试",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/18/rollout-2026-02-18T14-00-16-019c6f55-bfb1-7432-af5e-493ebd7fb175.jsonl"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "d6f9e8f4-d6d4-4c94-a834-4b602c23754e",
+      "agentId": "main",
+      "label": "Cron: 日报-晚间总结",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771668000013,
+      "totalTokens": 17829,
+      "inputTokens": 6188,
+      "outputTokens": 506,
+      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【模板要求】 日期标题: ## 📅 YYYY年M月D日 工作日报 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【重要】 1. 使用 feishu_doc append 写入 2. 写入后用 feishu_doc read 验证 3. 完成后回复'日报已更新'",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
+      "agentId": "main",
+      "label": "stop",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771667938090,
+      "totalTokens": 173756,
+      "inputTokens": 32,
+      "outputTokens": 45,
+      "inputQuery": "[Queued announce messages while agent was busy] --- Queued #1 A subagent task \"检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。\" just completed successfully. Findings: 检查完成（使用 `gh`）： ### 1) GitHub Pages 构建状态 `gh api repos/eisrealella/my-website/pages` 返回： - `status: \"built\"` - 站点 URL: `https://eisrealella.github.io/my-website/` - 来源分支：`main`，路径 `/` `gh api repos/eisrealella/my-website/pages/builds/latest` 返回： - 最新构建状态：`built` - 构建 commit：`c4bc4a0d11d9b1b0d2fc4038156eed9f9a80bd9d` - 构建时间：`2026-02-21T09:44:13Z`（北京时间约 17:44） ### 2) `index.html` 是否是“海粼酱”标题版本 用 `gh api repos/eisrealella/my-website/contents/index.html` 解码后检查到： - `<title>海粼酱的思想碎片</title>` 结论： - **当前仓库里的 `index.html` 仍然是“海粼酱的思想碎片”版本，不是你期望的“海粼酱”标题版本。** - GitHub Pages 当前构建是成功的，但构建出的内容就是这个旧标题版本。 Stats: runtime 22s • tokens 9.9k (in 8.6k / out 819) • sessionKey agent:coder:subagent:66ff88b5-3bf1-4e41-8958-4f91806b4aa7 • sessionId d869583a-40f2-4d58-bf14-d9240c8a680f • transcript /Users/ella/.openclaw/agents/coder/sessions/d869583a-40f2-4d58-bf14-d9240c8a680f.jsonl Summarize this naturally for the user. Keep it brief (1-2 sentences). Flow it into the conversa…",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -942,19 +955,6 @@
       "outputTokens": 72,
       "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "5e53645c-7576-453a-8312-2c04ad73e971",
-      "agentId": "main",
-      "label": "error",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1771603832858.6997,
-      "totalTokens": 35689743,
-      "inputTokens": 35646747,
-      "outputTokens": 42996,
-      "inputQuery": "你刚刚好像 fetch failed 了，moltbook 注册的咋样",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/5e53645c-7576-453a-8312-2c04ad73e971.jsonl"
     }
   ],
   "sessionPoints": [
@@ -1850,26 +1850,37 @@
       "inputQuery": "检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。"
     },
     {
-      "source": "codex",
-      "sessionId": "019c6f55-bfb1-7432-af5e-493ebd7fb175",
-      "agentId": "codex",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1771667726806.3528,
-      "totalTokens": 141050775,
-      "inputTokens": 140619218,
-      "outputTokens": 431557,
-      "inputQuery": "OK"
-    },
-    {
       "source": "openclaw",
       "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771667754147.3408,
-      "totalTokens": 38448774,
-      "inputTokens": 38391889,
-      "outputTokens": 56885,
+      "updatedAt": 1771667938090,
+      "totalTokens": 173756,
+      "inputTokens": 32,
+      "outputTokens": 45,
       "inputQuery": "[Queued announce messages while agent was busy] --- Queued #1 A subagent task \"检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。\" just completed successfully. Findings: 检查完成（使用 `gh`）： ### 1) GitHub Pages 构建状态 `gh api repos/eisrealella/my-website/pages` 返回： - `status: \"built\"` - 站点 URL: `https://eisrealella.github.io/my-website/` - 来源分支：`main`，路径 `/` `gh api repos/eisrealella/my-website/pages/builds/latest` 返回： - 最新构建状态：`built` - 构建 commit：`c4bc4a0d11d9b1b0d2fc4038156eed9f9a80bd9d` - 构建时间：`2026-02-21T09:44:13Z`（北京时间约 17:44） ### 2) `index.html` 是否是“海粼酱”标题版本 用 `gh api repos/eisrealella/my-website/contents/index.html` 解码后检查到： - `<title>海粼酱的思想碎片</title>` 结论： - **当前仓库里的 `index.html` 仍然是“海粼酱的思想碎片”版本，不是你期望的“海粼酱”标题版本。** - GitHub Pages 当前构建是成功的，但构建出的内容就是这个旧标题版本。 Stats: runtime 22s • tokens 9.9k (in 8.6k / out 819) • sessionKey agent:coder:subagent:66ff88b5-3bf1-4e41-8958-4f91806b4aa7 • sessionId d869583a-40f2-4d58-bf14-d9240c8a680f • transcript /Users/ella/.openclaw/agents/coder/sessions/d869583a-40f2-4d58-bf14-d9240c8a680f.jsonl Summarize this naturally for the user. Keep it brief (1-2 sentences). Flow it into the conversa…"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "d6f9e8f4-d6d4-4c94-a834-4b602c23754e",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771668000013,
+      "totalTokens": 17829,
+      "inputTokens": 6188,
+      "outputTokens": 506,
+      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【模板要求】 日期标题: ## 📅 YYYY年M月D日 工作日报 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【重要】 1. 使用 feishu_doc append 写入 2. 写入后用 feishu_doc read 验证 3. 完成后回复'日报已更新'"
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c6f55-bfb1-7432-af5e-493ebd7fb175",
+      "agentId": "codex",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771668000646.546,
+      "totalTokens": 141791126,
+      "inputTokens": 141356224,
+      "outputTokens": 434902,
+      "inputQuery": "那你帮我试试"
     }
   ],
   "staticFiles": {
