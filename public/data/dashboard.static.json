@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T11:07:16.107Z",
+    "generatedAt": "2026-02-21T11:12:21.273Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T11:07:16.167Z",
+    "staticExportedAt": "2026-02-21T11:12:21.308Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 622068742,
-    "inputTokens": 620718955,
-    "outputTokens": 1806009,
+    "totalTokens": 622187167,
+    "inputTokens": 620986494,
+    "outputTokens": 1806271,
     "sessions": 88
   },
   "trend": [
@@ -68,13 +68,13 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 144389821
+      "tokens": 144508246
     }
   ],
   "modelDistribution": [
     {
       "model": "gpt-5.3-codex",
-      "tokens": 392577144
+      "tokens": 392690743
     },
     {
       "model": "MiniMax-M2.1",
@@ -82,7 +82,7 @@
     },
     {
       "model": "MiniMax-M2.5",
-      "tokens": 61702553
+      "tokens": 61707379
     }
   ],
   "agents": [
@@ -132,7 +132,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 418793
+          "lastSeenTokens": 423619
         }
       },
       {
@@ -147,7 +147,7 @@
           "id": "openai-codex/gpt-5.3-codex",
           "alias": "Codex 5.3",
           "role": "Fallback",
-          "lastSeenTokens": 56347
+          "lastSeenTokens": 39879
         }
       },
       {
@@ -162,7 +162,7 @@
           "id": "codex-cli/gpt-5.3-codex",
           "alias": "Codex CLI 5.3",
           "role": "Additional",
-          "lastSeenTokens": 56347
+          "lastSeenTokens": 39879
         }
       }
     ],
@@ -820,11 +820,11 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771672020647,
-      "totalTokens": 62727,
-      "inputTokens": 32,
-      "outputTokens": 58,
-      "inputQuery": "好，你的 21 号两篇文章重复了，你可以只保留最后一篇～",
+      "updatedAt": 1771672202932,
+      "totalTokens": 67553,
+      "inputTokens": 157235,
+      "outputTokens": 320,
+      "inputQuery": "github 更新了吗",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -885,12 +885,12 @@
       "agentId": "coder",
       "label": "toolUse",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771668716939,
-      "totalTokens": 16468,
-      "inputTokens": 17380,
+      "updatedAt": 1771668716904.4155,
+      "totalTokens": 130067,
+      "inputTokens": 127716,
       "outputTokens": 2351,
       "inputQuery": "修复网站链接问题。网站部署在 https://eisrealella.github.io/my-website/，但所有页面链接缺少 /my-website/ 前缀。 需要修复的文件（本地路径）： - /Users/ella/.openclaw/workspace/my-website/index.html - /Users/ella/.openclaw/workspace/my-website/blog/index.html - /Users/ella/.openclaw/workspace/my-website/about/index.html - /Users/ella/.openclaw/workspace/my-website/blog/ 下的所有 .html 文件 修复方案： - 相对路径方案：将所有绝对路径 `/` `/blog/` `/about/` 改为相对路径 `./` `../blog/` `../about/` - 或者用 base 标签：`<base href=\"/my-website/\">` 推荐用相对路径，更简洁。 修复后： 1. 用 grep 检查确保没有遗漏 2. 提交并 force push 到 GitHub 3. 验证网站链接是否正常（curl 测试）",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/52e0a228-ee37-4099-940e-4982d74fd7f3.jsonl.deleted.2026-02-21T11-11-54.746Z"
     },
     {
       "source": "openclaw",
@@ -1879,9 +1879,9 @@
       "sessionId": "52e0a228-ee37-4099-940e-4982d74fd7f3",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771668716939,
-      "totalTokens": 16468,
-      "inputTokens": 17380,
+      "updatedAt": 1771668716904.4155,
+      "totalTokens": 130067,
+      "inputTokens": 127716,
       "outputTokens": 2351,
       "inputQuery": "修复网站链接问题。网站部署在 https://eisrealella.github.io/my-website/，但所有页面链接缺少 /my-website/ 前缀。 需要修复的文件（本地路径）： - /Users/ella/.openclaw/workspace/my-website/index.html - /Users/ella/.openclaw/workspace/my-website/blog/index.html - /Users/ella/.openclaw/workspace/my-website/about/index.html - /Users/ella/.openclaw/workspace/my-website/blog/ 下的所有 .html 文件 修复方案： - 相对路径方案：将所有绝对路径 `/` `/blog/` `/about/` 改为相对路径 `./` `../blog/` `../about/` - 或者用 base 标签：`<base href=\"/my-website/\">` 推荐用相对路径，更简洁。 修复后： 1. 用 grep 检查确保没有遗漏 2. 提交并 force push 到 GitHub 3. 验证网站链接是否正常（curl 测试）"
     },
@@ -1934,11 +1934,11 @@
       "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771672020647,
-      "totalTokens": 62727,
-      "inputTokens": 32,
-      "outputTokens": 58,
-      "inputQuery": "好，你的 21 号两篇文章重复了，你可以只保留最后一篇～"
+      "updatedAt": 1771672202932,
+      "totalTokens": 67553,
+      "inputTokens": 157235,
+      "outputTokens": 320,
+      "inputQuery": "github 更新了吗"
     }
   ],
   "staticFiles": {
