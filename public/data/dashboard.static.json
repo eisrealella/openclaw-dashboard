@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T09:51:00.632Z",
+    "generatedAt": "2026-02-21T09:56:05.640Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T09:51:00.667Z",
+    "staticExportedAt": "2026-02-21T09:56:05.681Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 619680315,
-    "inputTokens": 619939655,
-    "outputTokens": 1779519,
+    "totalTokens": 658464349,
+    "inputTokens": 657116254,
+    "outputTokens": 1836649,
     "sessions": 83
   },
   "trend": [
@@ -68,13 +68,13 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 142001394
+      "tokens": 180785428
     }
   ],
   "modelDistribution": [
     {
       "model": "gpt-5.3-codex",
-      "tokens": 390123121
+      "tokens": 390604533
     },
     {
       "model": "MiniMax-M2.1",
@@ -82,7 +82,7 @@
     },
     {
       "model": "MiniMax-M2.5",
-      "tokens": 61768149
+      "tokens": 100070771
     }
   ],
   "agents": [
@@ -114,7 +114,7 @@
       "latestInsight": "最近任务：检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。",
       "insightEmoji": "✨",
       "insightDate": "2026-02-21",
-      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/d869583a-40f2-4d58-bf14-d9240c8a680f.jsonl",
+      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json",
       "detailPath": "/Users/ella/.openclaw/workspace-coder/AGENTS.md"
     }
   ],
@@ -132,7 +132,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 518536
+          "lastSeenTokens": 357939
         }
       },
       {
@@ -147,7 +147,7 @@
           "id": "openai-codex/gpt-5.3-codex",
           "alias": "Codex 5.3",
           "role": "Fallback",
-          "lastSeenTokens": 21190
+          "lastSeenTokens": 31050
         }
       },
       {
@@ -162,7 +162,7 @@
           "id": "codex-cli/gpt-5.3-codex",
           "alias": "Codex CLI 5.3",
           "role": "Additional",
-          "lastSeenTokens": 21190
+          "lastSeenTokens": 31050
         }
       }
     ],
@@ -802,16 +802,16 @@
   "recentSessions": [
     {
       "source": "openclaw",
-      "sessionId": "d869583a-40f2-4d58-bf14-d9240c8a680f",
-      "agentId": "coder",
-      "label": "toolUse",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1771667453953.3276,
-      "totalTokens": 11819,
-      "inputTokens": 11457,
-      "outputTokens": 362,
-      "inputQuery": "检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/d869583a-40f2-4d58-bf14-d9240c8a680f.jsonl"
+      "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
+      "agentId": "main",
+      "label": "stop",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771667754147.3408,
+      "totalTokens": 38448774,
+      "inputTokens": 38391889,
+      "outputTokens": 56885,
+      "inputQuery": "[Queued announce messages while agent was busy] --- Queued #1 A subagent task \"检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。\" just completed successfully. Findings: 检查完成（使用 `gh`）： ### 1) GitHub Pages 构建状态 `gh api repos/eisrealella/my-website/pages` 返回： - `status: \"built\"` - 站点 URL: `https://eisrealella.github.io/my-website/` - 来源分支：`main`，路径 `/` `gh api repos/eisrealella/my-website/pages/builds/latest` 返回： - 最新构建状态：`built` - 构建 commit：`c4bc4a0d11d9b1b0d2fc4038156eed9f9a80bd9d` - 构建时间：`2026-02-21T09:44:13Z`（北京时间约 17:44） ### 2) `index.html` 是否是“海粼酱”标题版本 用 `gh api repos/eisrealella/my-website/contents/index.html` 解码后检查到： - `<title>海粼酱的思想碎片</title>` 结论： - **当前仓库里的 `index.html` 仍然是“海粼酱的思想碎片”版本，不是你期望的“海粼酱”标题版本。** - GitHub Pages 当前构建是成功的，但构建出的内容就是这个旧标题版本。 Stats: runtime 22s • tokens 9.9k (in 8.6k / out 819) • sessionKey agent:coder:subagent:66ff88b5-3bf1-4e41-8958-4f91806b4aa7 • sessionId d869583a-40f2-4d58-bf14-d9240c8a680f • transcript /Users/ella/.openclaw/agents/coder/sessions/d869583a-40f2-4d58-bf14-d9240c8a680f.jsonl Summarize this naturally for the user. Keep it brief (1-2 sentences). Flow it into the conversa…",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/eab265bd-6a4f-46dd-b2c3-b5106f74489b.jsonl"
     },
     {
       "source": "codex",
@@ -819,25 +819,25 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771667445267.141,
-      "totalTokens": 140567404,
-      "inputTokens": 140136728,
-      "outputTokens": 430676,
-      "inputQuery": "先1吧，然后记得把 GitHub 仓库地址告诉我，如果没有 readme 也得把 readme 写一下，包括网页地址",
+      "updatedAt": 1771667726806.3528,
+      "totalTokens": 141050775,
+      "inputTokens": 140619218,
+      "outputTokens": 431557,
+      "inputQuery": "OK",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/18/rollout-2026-02-18T14-00-16-019c6f55-bfb1-7432-af5e-493ebd7fb175.jsonl"
     },
     {
       "source": "openclaw",
-      "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
-      "agentId": "main",
-      "label": "stop",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1771667426249,
-      "totalTokens": 146152,
-      "inputTokens": 1694968,
-      "outputTokens": 1093,
-      "inputQuery": "让 coder 帮你检查一下，build 的是不是最新的 html 代码",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+      "sessionId": "d869583a-40f2-4d58-bf14-d9240c8a680f",
+      "agentId": "coder",
+      "label": "toolUse",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771667462214,
+      "totalTokens": 9860,
+      "inputTokens": 8645,
+      "outputTokens": 819,
+      "inputQuery": "检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。",
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -1840,36 +1840,36 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1771667426249,
-      "totalTokens": 146152,
-      "inputTokens": 1694968,
-      "outputTokens": 1093,
-      "inputQuery": "让 coder 帮你检查一下，build 的是不是最新的 html 代码"
+      "sessionId": "d869583a-40f2-4d58-bf14-d9240c8a680f",
+      "agentId": "coder",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771667462214,
+      "totalTokens": 9860,
+      "inputTokens": 8645,
+      "outputTokens": 819,
+      "inputQuery": "检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。"
     },
     {
       "source": "codex",
       "sessionId": "019c6f55-bfb1-7432-af5e-493ebd7fb175",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771667445267.141,
-      "totalTokens": 140567404,
-      "inputTokens": 140136728,
-      "outputTokens": 430676,
-      "inputQuery": "先1吧，然后记得把 GitHub 仓库地址告诉我，如果没有 readme 也得把 readme 写一下，包括网页地址"
+      "updatedAt": 1771667726806.3528,
+      "totalTokens": 141050775,
+      "inputTokens": 140619218,
+      "outputTokens": 431557,
+      "inputQuery": "OK"
     },
     {
       "source": "openclaw",
-      "sessionId": "d869583a-40f2-4d58-bf14-d9240c8a680f",
-      "agentId": "coder",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1771667453953.3276,
-      "totalTokens": 11819,
-      "inputTokens": 11457,
-      "outputTokens": 362,
-      "inputQuery": "检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。"
+      "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771667754147.3408,
+      "totalTokens": 38448774,
+      "inputTokens": 38391889,
+      "outputTokens": 56885,
+      "inputQuery": "[Queued announce messages while agent was busy] --- Queued #1 A subagent task \"检查 GitHub 仓库 eisrealella/my-website 的 GitHub Pages 构建状态，并验证 index.html 是否是最新的（应该是标题为\"海粼酱\"的版本，不是\"海粼酱的思想碎片\"）。用 gh 命令检查。\" just completed successfully. Findings: 检查完成（使用 `gh`）： ### 1) GitHub Pages 构建状态 `gh api repos/eisrealella/my-website/pages` 返回： - `status: \"built\"` - 站点 URL: `https://eisrealella.github.io/my-website/` - 来源分支：`main`，路径 `/` `gh api repos/eisrealella/my-website/pages/builds/latest` 返回： - 最新构建状态：`built` - 构建 commit：`c4bc4a0d11d9b1b0d2fc4038156eed9f9a80bd9d` - 构建时间：`2026-02-21T09:44:13Z`（北京时间约 17:44） ### 2) `index.html` 是否是“海粼酱”标题版本 用 `gh api repos/eisrealella/my-website/contents/index.html` 解码后检查到： - `<title>海粼酱的思想碎片</title>` 结论： - **当前仓库里的 `index.html` 仍然是“海粼酱的思想碎片”版本，不是你期望的“海粼酱”标题版本。** - GitHub Pages 当前构建是成功的，但构建出的内容就是这个旧标题版本。 Stats: runtime 22s • tokens 9.9k (in 8.6k / out 819) • sessionKey agent:coder:subagent:66ff88b5-3bf1-4e41-8958-4f91806b4aa7 • sessionId d869583a-40f2-4d58-bf14-d9240c8a680f • transcript /Users/ella/.openclaw/agents/coder/sessions/d869583a-40f2-4d58-bf14-d9240c8a680f.jsonl Summarize this naturally for the user. Keep it brief (1-2 sentences). Flow it into the conversa…"
     }
   ],
   "staticFiles": {
