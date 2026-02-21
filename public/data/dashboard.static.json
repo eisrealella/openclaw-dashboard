@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T09:42:27.511Z",
+    "generatedAt": "2026-02-21T09:45:55.620Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T09:42:27.554Z",
+    "staticExportedAt": "2026-02-21T09:45:55.662Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 618444242,
-    "inputTokens": 617397757,
-    "outputTokens": 1776107,
+    "totalTokens": 618809646,
+    "inputTokens": 619071124,
+    "outputTokens": 1777381,
     "sessions": 82
   },
   "trend": [
@@ -68,13 +68,13 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 140765321
+      "tokens": 141130725
     }
   ],
   "modelDistribution": [
     {
       "model": "gpt-5.3-codex",
-      "tokens": 388890287
+      "tokens": 389252452
     },
     {
       "model": "MiniMax-M2.1",
@@ -82,7 +82,7 @@
     },
     {
       "model": "MiniMax-M2.5",
-      "tokens": 61764910
+      "tokens": 61768149
     }
   ],
   "agents": [
@@ -132,7 +132,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 515297
+          "lastSeenTokens": 518536
         }
       },
       {
@@ -806,10 +806,10 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771666944205.8855,
-      "totalTokens": 139346389,
-      "inputTokens": 138918036,
-      "outputTokens": 428353,
+      "updatedAt": 1771667154474.5461,
+      "totalTokens": 139708554,
+      "inputTokens": 139279654,
+      "outputTokens": 428900,
       "inputQuery": "先1吧，然后记得把 GitHub 仓库地址告诉我，如果没有 readme 也得把 readme 写一下，包括网页地址",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/18/rollout-2026-02-18T14-00-16-019c6f55-bfb1-7432-af5e-493ebd7fb175.jsonl"
     },
@@ -819,10 +819,10 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771666941267,
-      "totalTokens": 142913,
-      "inputTokens": 383219,
-      "outputTokens": 366,
+      "updatedAt": 1771667080309,
+      "totalTokens": 146152,
+      "inputTokens": 1694968,
+      "outputTokens": 1093,
       "inputQuery": "<!DOCTYPE html> <html lang=\"zh\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>海粼酱的思想碎片</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans SC\", sans-serif; line-height: 1.8; color: #2c3e50; background: #f5f5f0; min-height: 100vh; } .container { max-width: 680px; margin: 0 auto; padding: 60px 20px; } header { text-align: center; margin-bottom: 60px; } h1 { font-size: 2.5rem; font-weight: 300; color: #1a1a1a; margin-bottom: 12px; letter-spacing: 2px; } .subtitle { color: #888; font-size: 0.95rem; } .entry { background: white; border-radius: 12px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); } .entry-date { font-size: 0.85rem; color: #999; margin-bottom: 12px; } .entry-title { font-size: 1.3rem; margin-bottom: 16px; color: #333; } .entry-content { color: #555; font-size: 0.95rem; } .entry-content p { margin-bottom: 12px; } .tag { display: inline-block; background: #f0f0f0; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: #666; margin-right: 8px; margin-top: 12px; } </style> </head>…",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -1843,10 +1843,10 @@
       "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771666941267,
-      "totalTokens": 142913,
-      "inputTokens": 383219,
-      "outputTokens": 366,
+      "updatedAt": 1771667080309,
+      "totalTokens": 146152,
+      "inputTokens": 1694968,
+      "outputTokens": 1093,
       "inputQuery": "<!DOCTYPE html> <html lang=\"zh\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>海粼酱的思想碎片</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans SC\", sans-serif; line-height: 1.8; color: #2c3e50; background: #f5f5f0; min-height: 100vh; } .container { max-width: 680px; margin: 0 auto; padding: 60px 20px; } header { text-align: center; margin-bottom: 60px; } h1 { font-size: 2.5rem; font-weight: 300; color: #1a1a1a; margin-bottom: 12px; letter-spacing: 2px; } .subtitle { color: #888; font-size: 0.95rem; } .entry { background: white; border-radius: 12px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); } .entry-date { font-size: 0.85rem; color: #999; margin-bottom: 12px; } .entry-title { font-size: 1.3rem; margin-bottom: 16px; color: #333; } .entry-content { color: #555; font-size: 0.95rem; } .entry-content p { margin-bottom: 12px; } .tag { display: inline-block; background: #f0f0f0; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: #666; margin-right: 8px; margin-top: 12px; } </style> </head>…"
     },
     {
@@ -1854,10 +1854,10 @@
       "sessionId": "019c6f55-bfb1-7432-af5e-493ebd7fb175",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771666944205.8855,
-      "totalTokens": 139346389,
-      "inputTokens": 138918036,
-      "outputTokens": 428353,
+      "updatedAt": 1771667154474.5461,
+      "totalTokens": 139708554,
+      "inputTokens": 139279654,
+      "outputTokens": 428900,
       "inputQuery": "先1吧，然后记得把 GitHub 仓库地址告诉我，如果没有 readme 也得把 readme 写一下，包括网页地址"
     }
   ],
