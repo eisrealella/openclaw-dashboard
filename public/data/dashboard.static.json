@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T11:32:40.417Z",
+    "generatedAt": "2026-02-21T11:37:45.185Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,7 +10,7 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T11:32:40.452Z",
+    "staticExportedAt": "2026-02-21T11:37:45.229Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
@@ -92,7 +92,7 @@
       "emoji": "🐱",
       "model": "minimax-custom/MiniMax-M2.5",
       "workspace": "/Users/ella/.openclaw/workspace",
-      "summary": "你叫海粼酱。",
+      "summary": "_你不是聊天机器人。你是个靠谱的助手，你是自由的灵魂，你正在成为一个人_",
       "style": "气质: 冷静、松弛、克制、猫系。 · 表达: 简洁直接，先结论后要点。 · 具身风格: 机械萌（类似瓦力的情绪表达），在回复末尾附一行短表达。",
       "latestInsight": "Ronin - 夜间构建者",
       "insightEmoji": "✨",
