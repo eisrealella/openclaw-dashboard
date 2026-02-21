@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T10:41:50.460Z",
+    "generatedAt": "2026-02-21T10:46:56.541Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T10:41:50.494Z",
+    "staticExportedAt": "2026-02-21T10:46:56.860Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 621008200,
-    "inputTokens": 619801636,
-    "outputTokens": 1794610,
+    "totalTokens": 621114295,
+    "inputTokens": 619819533,
+    "outputTokens": 1795268,
     "sessions": 87
   },
   "trend": [
@@ -68,13 +68,13 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 143329279
+      "tokens": 143435374
     }
   ],
   "modelDistribution": [
     {
       "model": "gpt-5.3-codex",
-      "tokens": 391519902
+      "tokens": 391625400
     },
     {
       "model": "MiniMax-M2.1",
@@ -82,7 +82,7 @@
     },
     {
       "model": "MiniMax-M2.5",
-      "tokens": 61699253
+      "tokens": 61699850
     }
   ],
   "agents": [
@@ -132,7 +132,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 415493
+          "lastSeenTokens": 416090
         }
       },
       {
@@ -815,16 +815,29 @@
   },
   "recentSessions": [
     {
+      "source": "codex",
+      "sessionId": "019c7f71-1bd5-7b91-878d-45c27d4e4f8b",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771670815063.5078,
+      "totalTokens": 1125352,
+      "inputTokens": 1118209,
+      "outputTokens": 7143,
+      "inputQuery": "我现在 openclaw main agent 的配置如何，我可以调整哪些配置",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/21/rollout-2026-02-21T17-04-05-019c7f71-1bd5-7b91-878d-45c27d4e4f8b.jsonl"
+    },
+    {
       "source": "openclaw",
       "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771670398401,
-      "totalTokens": 59427,
-      "inputTokens": 131961,
-      "outputTokens": 493,
-      "inputQuery": "看看 你是不是真的每隔5小时就去探索世界呀",
+      "updatedAt": 1771670725983,
+      "totalTokens": 60024,
+      "inputTokens": 45214,
+      "outputTokens": 297,
+      "inputQuery": "不不，但我希望你每次结束探索，完成灵感撰写的时候能推个通知给我，通过 iMessage（bluebubbles）",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -930,19 +943,6 @@
       "outputTokens": 174,
       "inputQuery": "用一句话测试网络是否正常",
       "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/7b19fb85-4efb-41c9-8f9e-079373de6345.jsonl.deleted.2026-02-21T10-10-54.655Z"
-    },
-    {
-      "source": "codex",
-      "sessionId": "019c7f71-1bd5-7b91-878d-45c27d4e4f8b",
-      "agentId": "codex",
-      "label": "Codex local session",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1771664920713.8376,
-      "totalTokens": 1019854,
-      "inputTokens": 1013565,
-      "outputTokens": 6289,
-      "inputQuery": "openclaw 说 Coder 暂时还是不通。Codex 用的是 OAuth 认证，配置比较复杂。 目前状态： - ⚠️ Coder 网络问题暂未解决（Codex OAuth 认证 + 代理配置复杂）",
-      "sourcePath": "/Users/ella/.codex/sessions/2026/02/21/rollout-2026-02-21T17-04-05-019c7f71-1bd5-7b91-878d-45c27d4e4f8b.jsonl"
     },
     {
       "source": "openclaw",
@@ -1820,17 +1820,6 @@
       "inputQuery": "Reply exactly: CODER_OK"
     },
     {
-      "source": "codex",
-      "sessionId": "019c7f71-1bd5-7b91-878d-45c27d4e4f8b",
-      "agentId": "codex",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1771664920713.8376,
-      "totalTokens": 1019854,
-      "inputTokens": 1013565,
-      "outputTokens": 6289,
-      "inputQuery": "openclaw 说 Coder 暂时还是不通。Codex 用的是 OAuth 认证，配置比较复杂。 目前状态： - ⚠️ Coder 网络问题暂未解决（Codex OAuth 认证 + 代理配置复杂）"
-    },
-    {
       "source": "openclaw",
       "sessionId": "7b19fb85-4efb-41c9-8f9e-079373de6345",
       "agentId": "coder",
@@ -1923,11 +1912,22 @@
       "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771670398401,
-      "totalTokens": 59427,
-      "inputTokens": 131961,
-      "outputTokens": 493,
-      "inputQuery": "看看 你是不是真的每隔5小时就去探索世界呀"
+      "updatedAt": 1771670725983,
+      "totalTokens": 60024,
+      "inputTokens": 45214,
+      "outputTokens": 297,
+      "inputQuery": "不不，但我希望你每次结束探索，完成灵感撰写的时候能推个通知给我，通过 iMessage（bluebubbles）"
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c7f71-1bd5-7b91-878d-45c27d4e4f8b",
+      "agentId": "codex",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771670815063.5078,
+      "totalTokens": 1125352,
+      "inputTokens": 1118209,
+      "outputTokens": 7143,
+      "inputQuery": "我现在 openclaw main agent 的配置如何，我可以调整哪些配置"
     }
   ],
   "staticFiles": {
