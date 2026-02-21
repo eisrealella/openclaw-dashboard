@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T11:53:00.191Z",
+    "generatedAt": "2026-02-21T11:58:05.110Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,12 +10,12 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T11:53:00.235Z",
+    "staticExportedAt": "2026-02-21T11:58:05.144Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 622304570,
-    "inputTokens": 620984375,
+    "totalTokens": 622401944,
+    "inputTokens": 621058231,
     "outputTokens": 1806095,
     "sessions": 88
   },
@@ -68,13 +68,13 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 144625649
+      "tokens": 144723023
     }
   ],
   "modelDistribution": [
     {
       "model": "gpt-5.3-codex",
-      "tokens": 392807032
+      "tokens": 392904406
     },
     {
       "model": "MiniMax-M2.1",
@@ -114,7 +114,7 @@
       "latestInsight": "最近任务：创建缺失的博客文章页面。 当前 blog/index.html 链接到这些不存在的文件： - ./feeling-like.html - ./hacker-news.html - ./like-preference.h…",
       "insightEmoji": "✨",
       "insightDate": "2026-02-21",
-      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json",
+      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/3697fe96-d8a9-4bfe-890c-4703a5e48cb5.jsonl.deleted.2026-02-21T11-55-05.020Z",
       "detailPath": "/Users/ella/.openclaw/workspace-coder/AGENTS.md"
     }
   ],
@@ -147,7 +147,7 @@
           "id": "openai-codex/gpt-5.3-codex",
           "alias": "Codex 5.3",
           "role": "Fallback",
-          "lastSeenTokens": 26610
+          "lastSeenTokens": 9928
         }
       },
       {
@@ -162,13 +162,13 @@
           "id": "codex-cli/gpt-5.3-codex",
           "alias": "Codex CLI 5.3",
           "role": "Additional",
-          "lastSeenTokens": 26610
+          "lastSeenTokens": 9928
         }
       }
     ],
     "skills": [
       {
-        "id": "skill:agent-browser:33",
+        "id": "skill:agent-browser:30",
         "kind": "skill",
         "title": "agent-browser",
         "subtitle": "Workspace skill",
@@ -272,7 +272,7 @@
         }
       },
       {
-        "id": "skill:daily-report:34",
+        "id": "skill:daily-report:31",
         "kind": "skill",
         "title": "daily-report",
         "subtitle": "Workspace skill",
@@ -301,18 +301,17 @@
         }
       },
       {
-        "id": "skill:dashboard-data-hygiene:31",
+        "id": "skill:dashboard-data-hygiene:37",
         "kind": "skill",
         "title": "dashboard-data-hygiene",
-        "subtitle": "Maintain OpenClaw dashboard data quality and presentation consistency. Use when updating session ingestion/display, token aggregation, query sanitization, or agent overview card rendering (style, insight, and emoji defaults).",
+        "subtitle": "Workspace skill",
         "badge": "SKILL",
-        "source": "openclaw-workspace",
+        "source": "workspace",
         "filePath": "/Users/ella/.openclaw/workspace-coder/skills/dashboard-data-hygiene/SKILL.md",
         "details": {
           "name": "dashboard-data-hygiene",
-          "source": "openclaw-workspace",
-          "baseDir": "/Users/ella/.openclaw/workspace-coder/skills/dashboard-data-hygiene",
-          "disableModelInvocation": false
+          "source": "workspace",
+          "baseDir": "/Users/ella/.openclaw/workspace-coder/skills/dashboard-data-hygiene"
         }
       },
       {
@@ -331,22 +330,21 @@
         }
       },
       {
-        "id": "skill:dual-agent-handshake:32",
+        "id": "skill:dual-agent-handshake:38",
         "kind": "skill",
         "title": "dual-agent-handshake",
-        "subtitle": "Enforce deterministic collaboration between main and coder agents for every task. Main must classify tasks and delegate coding/automation/complex execution to coder via sessions_spawn with a task envelope; coder must execute and return structured results only.",
+        "subtitle": "Workspace skill",
         "badge": "SKILL",
-        "source": "openclaw-workspace",
+        "source": "workspace",
         "filePath": "/Users/ella/.openclaw/workspace-coder/skills/dual-agent-handshake/SKILL.md",
         "details": {
           "name": "dual-agent-handshake",
-          "source": "openclaw-workspace",
-          "baseDir": "/Users/ella/.openclaw/workspace-coder/skills/dual-agent-handshake",
-          "disableModelInvocation": false
+          "source": "workspace",
+          "baseDir": "/Users/ella/.openclaw/workspace-coder/skills/dual-agent-handshake"
         }
       },
       {
-        "id": "skill:exploration:35",
+        "id": "skill:exploration:32",
         "kind": "skill",
         "title": "exploration",
         "subtitle": "Workspace skill",
@@ -390,7 +388,7 @@
         }
       },
       {
-        "id": "skill:feishu-game-search:36",
+        "id": "skill:feishu-game-search:33",
         "kind": "skill",
         "title": "feishu-game-search",
         "subtitle": "Workspace skill",
@@ -494,22 +492,7 @@
         }
       },
       {
-        "id": "skill:github:30",
-        "kind": "skill",
-        "title": "github",
-        "subtitle": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
-        "badge": "SKILL",
-        "source": "openclaw-bundled",
-        "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/github/SKILL.md",
-        "details": {
-          "name": "github",
-          "source": "openclaw-bundled",
-          "baseDir": "/opt/homebrew/lib/node_modules/openclaw/skills/github",
-          "disableModelInvocation": false
-        }
-      },
-      {
-        "id": "skill:github-pages-update:37",
+        "id": "skill:github-pages-update:34",
         "kind": "skill",
         "title": "github-pages-update",
         "subtitle": "Workspace skill",
@@ -613,7 +596,7 @@
         }
       },
       {
-        "id": "skill:photo-diary:38",
+        "id": "skill:photo-diary:35",
         "kind": "skill",
         "title": "photo-diary",
         "subtitle": "Workspace skill",
@@ -702,7 +685,7 @@
         }
       },
       {
-        "id": "skill:tavily-search:39",
+        "id": "skill:tavily-search:36",
         "kind": "skill",
         "title": "tavily-search",
         "subtitle": "Workspace skill",
@@ -833,12 +816,12 @@
       "agentId": "coder",
       "label": "toolUse",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771671402517,
-      "totalTokens": 16682,
-      "inputTokens": 34224,
+      "updatedAt": 1771671402464.2112,
+      "totalTokens": 114056,
+      "inputTokens": 108080,
       "outputTokens": 5976,
       "inputQuery": "创建缺失的博客文章页面。 当前 blog/index.html 链接到这些不存在的文件： - ./feeling-like.html - ./hacker-news.html - ./like-preference.html - ./ai-news.html 需要为每篇文章创建独立的 HTML 页面，参考 memory/2026-02-21.md 和 memory/2026-02-20.md 的内容。 创建文件： 1. /Users/ella/.openclaw/workspace/my-website/blog/feeling-like.html 2. /Users/ella/.openclaw/workspace/my-website/blog/hacker-news.html 3. /Users/ella/.openclaw/workspace/my-website/blog/like-preference.html 4. /Users/ella/.openclaw/workspace/my-website/blog/ai-news.html 每个文件结构类似 blog/index.html，但内容是完整文章。 创建后提交并 push 到 GitHub。",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/3697fe96-d8a9-4bfe-890c-4703a5e48cb5.jsonl.deleted.2026-02-21T11-55-05.020Z"
     },
     {
       "source": "codex",
@@ -1923,9 +1906,9 @@
       "sessionId": "3697fe96-d8a9-4bfe-890c-4703a5e48cb5",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771671402517,
-      "totalTokens": 16682,
-      "inputTokens": 34224,
+      "updatedAt": 1771671402464.2112,
+      "totalTokens": 114056,
+      "inputTokens": 108080,
       "outputTokens": 5976,
       "inputQuery": "创建缺失的博客文章页面。 当前 blog/index.html 链接到这些不存在的文件： - ./feeling-like.html - ./hacker-news.html - ./like-preference.html - ./ai-news.html 需要为每篇文章创建独立的 HTML 页面，参考 memory/2026-02-21.md 和 memory/2026-02-20.md 的内容。 创建文件： 1. /Users/ella/.openclaw/workspace/my-website/blog/feeling-like.html 2. /Users/ella/.openclaw/workspace/my-website/blog/hacker-news.html 3. /Users/ella/.openclaw/workspace/my-website/blog/like-preference.html 4. /Users/ella/.openclaw/workspace/my-website/blog/ai-news.html 每个文件结构类似 blog/index.html，但内容是完整文章。 创建后提交并 push 到 GitHub。"
     },
@@ -2070,12 +2053,6 @@
       "truncated": false,
       "size": 1113,
       "filePath": "/Users/ella/.openclaw/workspace/skills/github/SKILL.md"
-    },
-    "/opt/homebrew/lib/node_modules/openclaw/skills/github/SKILL.md": {
-      "content": "---\nname: github\ndescription: \"Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.\"\nmetadata:\n  {\n    \"openclaw\":\n      {\n        \"emoji\": \"🐙\",\n        \"requires\": { \"bins\": [\"gh\"] },\n        \"install\":\n          [\n            {\n              \"id\": \"brew\",\n              \"kind\": \"brew\",\n              \"formula\": \"gh\",\n              \"bins\": [\"gh\"],\n              \"label\": \"Install GitHub CLI (brew)\",\n            },\n            {\n              \"id\": \"apt\",\n              \"kind\": \"apt\",\n              \"package\": \"gh\",\n              \"bins\": [\"gh\"],\n              \"label\": \"Install GitHub CLI (apt)\",\n            },\n          ],\n      },\n  }\n---\n\n# GitHub Skill\n\nUse the `gh` CLI to interact with GitHub. Always specify `--repo owner/repo` when not in a git directory, or use URLs directly.\n\n## Pull Requests\n\nCheck CI status on a PR:\n\n```bash\ngh pr checks 55 --repo owner/repo\n```\n\nList recent workflow runs:\n\n```bash\ngh run list --repo owner/repo --limit 10\n```\n\nView a run and see which steps failed:\n\n```bash\ngh run view <run-id> --repo owner/repo\n```\n\nView logs for failed steps only:\n\n```bash\ngh run view <run-id> --repo owner/repo --log-failed\n```\n\n## API for Advanced Queries\n\nThe `gh api` command is useful for accessing data not available through other subcommands.\n\nGet PR with specific fields:\n\n```bash\ngh api repos/owner/repo/pulls/55 --jq '.title, .state, .user.login'\n```\n\n## JSON Output\n\nMost commands support `--json` for structured output. You can use `--jq` to filter:\n\n```bash\ngh issue list --repo owner/repo --json number,title --jq '.[] | \"\\(.number): \\(.title)\"'\n```\n",
-      "truncated": false,
-      "size": 1674,
-      "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/github/SKILL.md"
     },
     "/Users/ella/.openclaw/workspace/skills/github-pages-update/SKILL.md": {
       "content": "# Website Update Skill\n\n## 场景\n更新 GitHub Pages 网站后，需要验证：\n1. 本地 index.html 内容正确\n2. GitHub 仓库内容正确\n3. GitHub Pages 构建完成\n\n## 验证步骤\n\n### 1. 检查本地 index.html\n```bash\n# 查看标题是否正确\ngrep \"<title>\" index.html\n```\n\n### 2. 检查 GitHub 仓库\n```bash\n# 用 gh API 查看仓库内容\ngh api repos/{owner}/{repo}/contents/index.html --jq '.content' | base64 -d | head -10\n\n# 或查看 git tree 的 hash\ngh api \"repos/{owner}/{repo}/git/trees/main?recursive=1\" --jq '.tree[] | select(.path==\"index.html\")'\n```\n\n### 3. 检查 GitHub Pages 构建状态\n```bash\n# 查看最新构建\ngh api repos/{owner}/{repo}/pages/builds --jq '.[0] | {status: .status, commit: .commit}'\n\n# 触发重新构建（如果需要）\ncd repo && git commit --allow-empty -m \"trigger rebuild\" && git push\n```\n\n### 4. 验证网站内容\n```bash\n# 直接 curl 网站\ncurl -s https://{username}.github.io/{repo}/ | grep \"<title>\"\n```\n\n## 常见问题\n\n### 问题：GitHub 上是旧内容\n**原因**：Git commit 没有真正更新文件（可能被 git 的 safe directory 或缓存问题影响）\n\n**解决方案**：\n1. 删除本地文件重新创建\n2. 强制推送：`git push -f origin main`\n\n### 问题：构建状态是旧 commit\n**解决方案**：\n```bash\ngit commit --allow-empty -m \"trigger rebuild\"\ngit push\n```\n\n### 问题：Pages 缓存\n**解决方案**：等待几分钟后刷新，或触发新的 commit 强制重建\n\n## 更新后推送 Skill 到 GitHub\n\n```bash\ncd ~/openclaw/workspace\ngit add skills/github-pages-update/\ngit commit -m \"update: github-pages-update skill\"\ngit push\n```\n",
