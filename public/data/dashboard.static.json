@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T11:12:21.273Z",
+    "generatedAt": "2026-02-21T11:17:25.963Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,12 +10,12 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T11:12:21.308Z",
+    "staticExportedAt": "2026-02-21T11:17:25.999Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 622187167,
-    "inputTokens": 620986494,
+    "totalTokens": 622303456,
+    "inputTokens": 621087998,
     "outputTokens": 1806271,
     "sessions": 88
   },
@@ -68,13 +68,13 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 144508246
+      "tokens": 144624535
     }
   ],
   "modelDistribution": [
     {
       "model": "gpt-5.3-codex",
-      "tokens": 392690743
+      "tokens": 392807032
     },
     {
       "model": "MiniMax-M2.1",
@@ -147,7 +147,7 @@
           "id": "openai-codex/gpt-5.3-codex",
           "alias": "Codex 5.3",
           "role": "Fallback",
-          "lastSeenTokens": 39879
+          "lastSeenTokens": 26610
         }
       },
       {
@@ -162,7 +162,7 @@
           "id": "codex-cli/gpt-5.3-codex",
           "alias": "Codex CLI 5.3",
           "role": "Additional",
-          "lastSeenTokens": 39879
+          "lastSeenTokens": 26610
         }
       }
     ],
@@ -859,12 +859,12 @@
       "agentId": "coder",
       "label": "toolUse",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771669033931,
-      "totalTokens": 13269,
-      "inputTokens": 25592,
+      "updatedAt": 1771669033906.5452,
+      "totalTokens": 129558,
+      "inputTokens": 127096,
       "outputTokens": 2462,
       "inputQuery": "修复网站首页的 \"查看所有灵感\" 卡片样式问题。 当前 index.html 中的代码： ```html <section><a href=\"./blog/\" class=\"card\"><div class=\"card-title\">→ 查看所有灵感</div><div class=\"card-excerpt\">共 4 篇记录</div></a></section> ``` 问题： - card-excerpt \"共 4 篇记录\" 显示不全或样式不对 - 整体卡片样式需要调整 修复方案： 1. 修改 index.html 中的这个卡片，改成更合适的结构，比如： ```html <section><a href=\"./blog/\" class=\"card\"> <div class=\"card-title\">→ 查看所有灵感</div> <div class=\"card-meta\">共 4 篇记录</div> </a></section> ``` 2. 添加对应的 CSS 样式： ```css .card-meta { font-size: 0.85rem; color: var(--muted); margin-top: 4px; } ``` 3. 同时移除或调整 .card-excerpt 的 -webkit-line-clamp 限制 修复后提交并 push 到 GitHub。",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/b23b5698-9610-4fd1-8b6c-1a28523a5e78.jsonl.deleted.2026-02-21T11-16-54.749Z"
     },
     {
       "source": "codex",
@@ -1901,9 +1901,9 @@
       "sessionId": "b23b5698-9610-4fd1-8b6c-1a28523a5e78",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771669033931,
-      "totalTokens": 13269,
-      "inputTokens": 25592,
+      "updatedAt": 1771669033906.5452,
+      "totalTokens": 129558,
+      "inputTokens": 127096,
       "outputTokens": 2462,
       "inputQuery": "修复网站首页的 \"查看所有灵感\" 卡片样式问题。 当前 index.html 中的代码： ```html <section><a href=\"./blog/\" class=\"card\"><div class=\"card-title\">→ 查看所有灵感</div><div class=\"card-excerpt\">共 4 篇记录</div></a></section> ``` 问题： - card-excerpt \"共 4 篇记录\" 显示不全或样式不对 - 整体卡片样式需要调整 修复方案： 1. 修改 index.html 中的这个卡片，改成更合适的结构，比如： ```html <section><a href=\"./blog/\" class=\"card\"> <div class=\"card-title\">→ 查看所有灵感</div> <div class=\"card-meta\">共 4 篇记录</div> </a></section> ``` 2. 添加对应的 CSS 样式： ```css .card-meta { font-size: 0.85rem; color: var(--muted); margin-top: 4px; } ``` 3. 同时移除或调整 .card-excerpt 的 -webkit-line-clamp 限制 修复后提交并 push 到 GitHub。"
     },
