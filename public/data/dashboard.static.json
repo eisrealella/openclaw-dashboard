@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T10:06:16.970Z",
+    "generatedAt": "2026-02-21T10:11:21.752Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,14 +10,14 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T10:06:17.006Z",
+    "staticExportedAt": "2026-02-21T10:11:21.810Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 621006506,
-    "inputTokens": 619684543,
-    "outputTokens": 1784749,
-    "sessions": 85
+    "totalTokens": 620885685,
+    "inputTokens": 619578644,
+    "outputTokens": 1789794,
+    "sessions": 86
   },
   "trend": [
     {
@@ -68,13 +68,13 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 143327585
+      "tokens": 143206764
     }
   ],
   "modelDistribution": [
     {
       "model": "gpt-5.3-codex",
-      "tokens": 391402707
+      "tokens": 391402709
     },
     {
       "model": "MiniMax-M2.1",
@@ -82,7 +82,7 @@
     },
     {
       "model": "MiniMax-M2.5",
-      "tokens": 61814754
+      "tokens": 61693931
     }
   ],
   "agents": [
@@ -111,10 +111,10 @@
       "workspace": "/Users/ella/.openclaw/workspace-coder",
       "summary": "你叫玟池欧巴。",
       "style": "语气: 沉稳、简洁、可靠。",
-      "latestInsight": "最近任务：用 curl 或 gh api 获取 https://eisrealella.github.io/my-website/index.html 的完整 HTML 代码，然后检查： 1. 导航链接是否正确（首页、灵感、关于…",
-      "insightEmoji": "✨",
+      "latestInsight": "最近任务：修复网站链接问题。网站部署在 https://eisrealella.github.io/my-website/，但所有页面链接缺少 /my-website/ 前缀。 需要修复的文件（本地路径）： - /Users/e…",
+      "insightEmoji": "✅",
       "insightDate": "2026-02-21",
-      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/d60700e2-20cf-48b3-bf15-2da1b045aa4b.jsonl",
+      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/52e0a228-ee37-4099-940e-4982d74fd7f3.jsonl",
       "detailPath": "/Users/ella/.openclaw/workspace-coder/AGENTS.md"
     }
   ],
@@ -132,7 +132,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 530994
+          "lastSeenTokens": 410171
         }
       },
       {
@@ -147,7 +147,7 @@
           "id": "openai-codex/gpt-5.3-codex",
           "alias": "Codex 5.3",
           "role": "Fallback",
-          "lastSeenTokens": 31050
+          "lastSeenTokens": 41055
         }
       },
       {
@@ -162,7 +162,7 @@
           "id": "codex-cli/gpt-5.3-codex",
           "alias": "Codex CLI 5.3",
           "role": "Additional",
-          "lastSeenTokens": 31050
+          "lastSeenTokens": 41055
         }
       }
     ],
@@ -816,16 +816,16 @@
   "recentSessions": [
     {
       "source": "openclaw",
-      "sessionId": "d60700e2-20cf-48b3-bf15-2da1b045aa4b",
+      "sessionId": "52e0a228-ee37-4099-940e-4982d74fd7f3",
       "agentId": "coder",
       "label": "toolUse",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771668373653.6882,
-      "totalTokens": 57823,
-      "inputTokens": 56866,
-      "outputTokens": 957,
-      "inputQuery": "用 curl 或 gh api 获取 https://eisrealella.github.io/my-website/index.html 的完整 HTML 代码，然后检查： 1. 导航链接是否正确（首页、灵感、关于的链接格式） 2. 按钮/链接是否能正常点击（检查是否有遮挡问题） 3. 各个页面的链接是否正确 重点看： - /blog/ 链接是否能正确跳转到博客列表 - /about/ 链接是否正确 - 样式是否有问题（比如元素重叠）",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/d60700e2-20cf-48b3-bf15-2da1b045aa4b.jsonl"
+      "updatedAt": 1771668681250.2,
+      "totalTokens": 36488,
+      "inputTokens": 35536,
+      "outputTokens": 952,
+      "inputQuery": "修复网站链接问题。网站部署在 https://eisrealella.github.io/my-website/，但所有页面链接缺少 /my-website/ 前缀。 需要修复的文件（本地路径）： - /Users/ella/.openclaw/workspace/my-website/index.html - /Users/ella/.openclaw/workspace/my-website/blog/index.html - /Users/ella/.openclaw/workspace/my-website/about/index.html - /Users/ella/.openclaw/workspace/my-website/blog/ 下的所有 .html 文件 修复方案： - 相对路径方案：将所有绝对路径 `/` `/blog/` `/about/` 改为相对路径 `./` `../blog/` `../about/` - 或者用 base 标签：`<base href=\"/my-website/\">` 推荐用相对路径，更简洁。 修复后： 1. 用 grep 检查确保没有遗漏 2. 提交并 force push 到 GitHub 3. 验证网站链接是否正常（curl 测试）",
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/52e0a228-ee37-4099-940e-4982d74fd7f3.jsonl"
     },
     {
       "source": "openclaw",
@@ -833,12 +833,25 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771668323813,
-      "totalTokens": 174928,
-      "inputTokens": 160118,
-      "outputTokens": 177,
-      "inputQuery": "OK 然后现在 github 的 index.html 的代码让 coder 帮你 review 一下，我看到一些问题，比如 button 遮挡、点击灵感 404 等问题",
+      "updatedAt": 1771668665119,
+      "totalTokens": 54105,
+      "inputTokens": 39295,
+      "outputTokens": 307,
+      "inputQuery": "当然要修复呀，让 coder 给你修复",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "d60700e2-20cf-48b3-bf15-2da1b045aa4b",
+      "agentId": "coder",
+      "label": "toolUse",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771668464872,
+      "totalTokens": 15724,
+      "inputTokens": 30878,
+      "outputTokens": 4920,
+      "inputQuery": "用 curl 或 gh api 获取 https://eisrealella.github.io/my-website/index.html 的完整 HTML 代码，然后检查： 1. 导航链接是否正确（首页、灵感、关于的链接格式） 2. 按钮/链接是否能正常点击（检查是否有遮挡问题） 3. 各个页面的链接是否正确 重点看： - /blog/ 链接是否能正确跳转到博客列表 - /about/ 链接是否正确 - 样式是否有问题（比如元素重叠）",
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
     },
     {
       "source": "codex",
@@ -898,12 +911,12 @@
       "agentId": "coder",
       "label": "toolUse",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771665009544,
-      "totalTokens": 5719,
-      "inputTokens": 5782,
+      "updatedAt": 1771665009518.0322,
+      "totalTokens": 11332,
+      "inputTokens": 11158,
       "outputTokens": 174,
       "inputQuery": "用一句话测试网络是否正常",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/7b19fb85-4efb-41c9-8f9e-079373de6345.jsonl.deleted.2026-02-21T10-10-54.655Z"
     },
     {
       "source": "codex",
@@ -955,19 +968,6 @@
       "inputTokens": 28391,
       "outputTokens": 1527,
       "inputQuery": "这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里，或者更新 my-website/index.html 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "cfbac8e8-deb9-4b4a-8581-31f70aeaaf55",
-      "agentId": "main",
-      "label": "Cron: 日报-早间总结",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1771639200057,
-      "totalTokens": 19825,
-      "inputTokens": 11749,
-      "outputTokens": 681,
-      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【模板要求】 日期标题: ## 📅 YYYY年M月D日 工作日报 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【重要】 1. 使用 feishu_doc append 写入 2. 写入后用 feishu_doc read 验证 3. 完成后回复'日报已更新'",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     }
   ],
@@ -1835,9 +1835,9 @@
       "sessionId": "7b19fb85-4efb-41c9-8f9e-079373de6345",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771665009544,
-      "totalTokens": 5719,
-      "inputTokens": 5782,
+      "updatedAt": 1771665009518.0322,
+      "totalTokens": 11332,
+      "inputTokens": 11158,
       "outputTokens": 174,
       "inputQuery": "用一句话测试网络是否正常"
     },
@@ -1887,25 +1887,36 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1771668323813,
-      "totalTokens": 174928,
-      "inputTokens": 160118,
-      "outputTokens": 177,
-      "inputQuery": "OK 然后现在 github 的 index.html 的代码让 coder 帮你 review 一下，我看到一些问题，比如 button 遮挡、点击灵感 404 等问题"
-    },
-    {
-      "source": "openclaw",
       "sessionId": "d60700e2-20cf-48b3-bf15-2da1b045aa4b",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1771668373653.6882,
-      "totalTokens": 57823,
-      "inputTokens": 56866,
-      "outputTokens": 957,
+      "updatedAt": 1771668464872,
+      "totalTokens": 15724,
+      "inputTokens": 30878,
+      "outputTokens": 4920,
       "inputQuery": "用 curl 或 gh api 获取 https://eisrealella.github.io/my-website/index.html 的完整 HTML 代码，然后检查： 1. 导航链接是否正确（首页、灵感、关于的链接格式） 2. 按钮/链接是否能正常点击（检查是否有遮挡问题） 3. 各个页面的链接是否正确 重点看： - /blog/ 链接是否能正确跳转到博客列表 - /about/ 链接是否正确 - 样式是否有问题（比如元素重叠）"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771668665119,
+      "totalTokens": 54105,
+      "inputTokens": 39295,
+      "outputTokens": 307,
+      "inputQuery": "当然要修复呀，让 coder 给你修复"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "52e0a228-ee37-4099-940e-4982d74fd7f3",
+      "agentId": "coder",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1771668681250.2,
+      "totalTokens": 36488,
+      "inputTokens": 35536,
+      "outputTokens": 952,
+      "inputQuery": "修复网站链接问题。网站部署在 https://eisrealella.github.io/my-website/，但所有页面链接缺少 /my-website/ 前缀。 需要修复的文件（本地路径）： - /Users/ella/.openclaw/workspace/my-website/index.html - /Users/ella/.openclaw/workspace/my-website/blog/index.html - /Users/ella/.openclaw/workspace/my-website/about/index.html - /Users/ella/.openclaw/workspace/my-website/blog/ 下的所有 .html 文件 修复方案： - 相对路径方案：将所有绝对路径 `/` `/blog/` `/about/` 改为相对路径 `./` `../blog/` `../about/` - 或者用 base 标签：`<base href=\"/my-website/\">` 推荐用相对路径，更简洁。 修复后： 1. 用 grep 检查确保没有遗漏 2. 提交并 force push 到 GitHub 3. 验证网站链接是否正常（curl 测试）"
     }
   ],
   "staticFiles": {
