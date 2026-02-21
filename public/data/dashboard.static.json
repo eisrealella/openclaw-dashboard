@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-21T11:47:55.378Z",
+    "generatedAt": "2026-02-21T11:53:00.191Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-21",
       "bucketCount": 17
     },
-    "staticExportedAt": "2026-02-21T11:47:55.416Z",
+    "staticExportedAt": "2026-02-21T11:53:00.235Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 622303456,
-    "inputTokens": 621087998,
-    "outputTokens": 1806271,
+    "totalTokens": 622304570,
+    "inputTokens": 620984375,
+    "outputTokens": 1806095,
     "sessions": 88
   },
   "trend": [
@@ -68,7 +68,7 @@
     {
       "date": "2026-02-21",
       "label": "Feb 21",
-      "tokens": 144624535
+      "tokens": 144625649
     }
   ],
   "modelDistribution": [
@@ -82,7 +82,7 @@
     },
     {
       "model": "MiniMax-M2.5",
-      "tokens": 61707379
+      "tokens": 61708493
     }
   ],
   "agents": [
@@ -132,7 +132,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 423619
+          "lastSeenTokens": 424733
         }
       },
       {
@@ -820,11 +820,11 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771672202932,
-      "totalTokens": 67553,
-      "inputTokens": 157235,
-      "outputTokens": 320,
-      "inputQuery": "github 更新了吗",
+      "updatedAt": 1771674658843,
+      "totalTokens": 68667,
+      "inputTokens": 53612,
+      "outputTokens": 144,
+      "inputQuery": "你在看的是哪个，能打开一下么",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -1934,11 +1934,11 @@
       "sessionId": "eab265bd-6a4f-46dd-b2c3-b5106f74489b",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771672202932,
-      "totalTokens": 67553,
-      "inputTokens": 157235,
-      "outputTokens": 320,
-      "inputQuery": "github 更新了吗"
+      "updatedAt": 1771674658843,
+      "totalTokens": 68667,
+      "inputTokens": 53612,
+      "outputTokens": 144,
+      "inputQuery": "你在看的是哪个，能打开一下么"
     }
   ],
   "staticFiles": {
