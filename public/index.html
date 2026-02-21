@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenClaw Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-noise"></div>
+    <div class="app-shell detail-collapsed">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-icon">OC</span>
+          <div>
+            <h1>OpenClaw Forge</h1>
+            <p>Iterative Control Hub</p>
+          </div>
+        </div>
+        <nav>
+          <button class="nav-item active" data-view="overview">Overview</button>
+          <button class="nav-item" data-view="overview" data-scroll="agents-overview-section">Agents</button>
+          <button class="nav-item" data-view="overview" data-scroll="catalog-section">Catalog</button>
+          <button class="nav-item" data-view="sessions">Sessions</button>
+        </nav>
+        <div class="sidebar-note">
+          <p id="generated-at">Last refresh: --</p>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="search-wrap">
+            <input id="search" type="search" placeholder="Search agents, models, skills, plugins..." />
+          </div>
+          <div class="range-wrap">
+            <div class="range-switch">
+              <button class="range-btn active" data-range="day">Day</button>
+              <button class="range-btn" data-range="week">Week</button>
+              <button class="range-btn" data-range="month">Month</button>
+            </div>
+            <p class="range-context" id="range-context">Last 24 hours</p>
+            <button id="refresh-btn" class="refresh-btn" title="Refresh now" aria-label="Refresh now">
+              <span class="refresh-icon" aria-hidden="true">↻</span>
+            </button>
+          </div>
+        </header>
+
+        <div id="overview-view">
+          <section class="metric-grid" id="metrics"></section>
+
+          <section class="panel-grid">
+            <article class="panel">
+              <header>
+                <h2>Daily Token Usage</h2>
+                <p>From OpenClaw session registry</p>
+              </header>
+              <div class="chart-wrap">
+                <canvas id="trend-chart"></canvas>
+              </div>
+              <div id="trend-hours" class="trend-hours"></div>
+            </article>
+            <article class="panel donut-panel">
+              <header>
+                <h2>Model Distribution</h2>
+                <p>Token share by model</p>
+              </header>
+              <div class="donut-wrap">
+                <canvas id="donut-chart"></canvas>
+              </div>
+              <ul class="donut-legend" id="donut-legend"></ul>
+            </article>
+          </section>
+
+          <section class="panel" id="agents-overview-section">
+            <header>
+              <h2>Agents Overview</h2>
+              <p>Profile and latest daily reflection</p>
+            </header>
+            <div class="agent-grid" id="agents"></div>
+          </section>
+
+          <section class="panel" id="catalog-section">
+            <header class="catalog-header">
+              <div>
+                <h2>Inherited Catalog</h2>
+                <p>Models, skills, and plugins you are inheriting inside OpenClaw</p>
+              </div>
+              <div class="tab-switch">
+                <button class="tab-btn active" data-tab="models">Models</button>
+                <button class="tab-btn" data-tab="skills">Skills</button>
+                <button class="tab-btn" data-tab="plugins">Plugins</button>
+              </div>
+            </header>
+            <div class="card-grid" id="catalog-cards"></div>
+          </section>
+
+          <section class="panel">
+            <header>
+              <h2>Recent Sessions</h2>
+              <p>Latest session snapshots from agent registries</p>
+            </header>
+            <div class="sessions-filter" id="sessions-filter">
+              <span id="sessions-filter-summary">No active filter</span>
+              <button id="clear-sessions-filter" class="clear-filter-btn" disabled>Clear</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Agent</th>
+                    <th>Model</th>
+                    <th>Input Tokens</th>
+                    <th>Output Tokens</th>
+                    <th>Total Tokens</th>
+                    <th>Input</th>
+                  </tr>
+                </thead>
+                <tbody id="sessions-table"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <div id="sessions-view" class="view-hidden">
+          <section class="sessions-view-grid">
+            <article class="panel">
+              <header>
+                <h2>Sessions (Last 90 Days)</h2>
+                <p>Full session detail with input/output/query fields</p>
+              </header>
+              <div class="sessions-filter">
+                <span id="sessions-90d-summary">No data</span>
+              </div>
+              <div class="table-wrap sessions-90d-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Time</th>
+                      <th>Source</th>
+                      <th>Agent</th>
+                      <th>Model</th>
+                      <th>Input Tokens</th>
+                      <th>Output Tokens</th>
+                      <th>Total Tokens</th>
+                      <th>Input</th>
+                    </tr>
+                  </thead>
+                  <tbody id="sessions-90d-table"></tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="panel">
+              <header>
+                <h2>Input Word Cloud</h2>
+                <p>Top terms from user input (JSON symbols removed)</p>
+              </header>
+              <div class="word-cloud">
+                <canvas id="word-cloud-canvas"></canvas>
+                <div id="word-cloud-empty" class="word-cloud-empty"></div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+
+      <aside class="detail" id="detail">
+        <div class="detail-head">
+          <div>
+            <h3 id="detail-title">Select a card</h3>
+            <p id="detail-subtitle">Click any model / skill / plugin card to inspect details and file content.</p>
+          </div>
+          <button id="close-detail" class="close-btn">Close</button>
+        </div>
+        <div class="detail-meta" id="detail-meta"></div>
+        <pre class="detail-content" id="detail-content">No file selected.</pre>
+      </aside>
+    </div>
+
+    <script src="/vendor/chart.umd.min.js"></script>
+    <script src="/vendor/chartjs-chart-wordcloud.umd.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

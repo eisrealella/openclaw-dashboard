@@ -1,0 +1,18 @@
+{
+  "name": "openclaw-dashboard",
+  "version": "1.0.0",
+  "description": "```bash cd /Users/ella/Documents/Codex/openclaw-dashboard node server.js ```",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "export:static": "node scripts/export-static.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "chartjs-chart-wordcloud": "^4.4.5"
+  }
+}
