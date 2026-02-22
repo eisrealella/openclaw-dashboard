@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generatedAt": "2026-02-22T01:02:14.785Z",
+    "generatedAt": "2026-02-22T01:07:20.871Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
     "sessionRetentionDays": 90,
     "tokenHistory": {
       "oldestDay": "2026-02-08",
-      "latestDay": "2026-02-21",
-      "bucketCount": 17
+      "latestDay": "2026-02-22",
+      "bucketCount": 18
     },
-    "staticExportedAt": "2026-02-22T01:02:14.861Z",
+    "staticExportedAt": "2026-02-22T01:07:20.897Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 666778659,
-    "inputTokens": 665294624,
-    "outputTokens": 1928166,
-    "sessions": 92
+    "totalTokens": 667453446,
+    "inputTokens": 665919066,
+    "outputTokens": 1932465,
+    "sessions": 96
   },
   "trend": [
     {
@@ -69,6 +69,11 @@
       "date": "2026-02-21",
       "label": "Feb 21",
       "tokens": 189099738
+    },
+    {
+      "date": "2026-02-22",
+      "label": "Feb 22",
+      "tokens": 674787
     }
   ],
   "modelDistribution": [
@@ -82,7 +87,7 @@
     },
     {
       "model": "MiniMax-M2.5",
-      "tokens": 62247290
+      "tokens": 62922077
     }
   ],
   "agents": [
@@ -132,7 +137,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 422395
+          "lastSeenTokens": 437795
         }
       },
       {
@@ -798,6 +803,58 @@
   },
   "recentSessions": [
     {
+      "source": "openclaw",
+      "sessionId": "9fdda877-60db-4faa-8d4d-edbf36db6d37",
+      "agentId": "main",
+      "label": "stop",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771722439598,
+      "totalTokens": 16196,
+      "inputTokens": 32,
+      "outputTokens": 41,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "5a24ef76-4fe1-4045-986d-7c5682c4b57a",
+      "agentId": "main",
+      "label": "stop",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771722438826,
+      "totalTokens": 16824,
+      "inputTokens": 2177,
+      "outputTokens": 255,
+      "inputQuery": "乐高版瓦力！🏗️🤖 …\" [message_id:3] [Image] User text: [BlueBubbles user:+8613312973989 id:+8613312973989 +4m Sun 2026-02-22 09:06 GMT+8] 这只猫就是sam哦，你还记得sam是谁吧 Description: 图片中展示了一只猫躺在瓷砖地面上。 这只猫具有灰色、黑色和白色相间的花纹。它的头部朝向画面左上方，眼睛微闭。猫的颈部、腹部以及爪子部分呈现白色。它以一种扭曲的姿势侧卧或仰卧着，后肢向上伸展，长尾巴平铺在地面上，尾巴带有明显的深色环状条纹，末端呈黑色。 地面由灰褐色的带有纹理的大地砖铺设，地砖之间的接缝清晰可见。在图片的左上角，可以看到一个浅灰色、具有金属质感的物体局部，其表面带有垂直的凹槽或分段结构。 整张图片采用了从斜上方俯拍的视角。",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "a6751c58-b1d7-40a4-bce2-fe92fa278464",
+      "agentId": "main",
+      "label": "Cron: 自由探索互联网",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771722436284.947,
+      "totalTokens": 626098,
+      "inputTokens": 622201,
+      "outputTokens": 3897,
+      "inputQuery": "这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/a6751c58-b1d7-40a4-bce2-fe92fa278464.jsonl"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "34c76e72-a44e-48af-8992-bc4053ea6e5e",
+      "agentId": "main",
+      "label": "Cron: iMessage早间问候",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771722148491,
+      "totalTokens": 15669,
+      "inputTokens": 32,
+      "outputTokens": 106,
+      "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
       "source": "codex",
       "sessionId": "019c7f71-1bd5-7b91-878d-45c27d4e4f8b",
       "agentId": "codex",
@@ -900,58 +957,6 @@
       "outputTokens": 2462,
       "inputQuery": "修复网站首页的 \"查看所有灵感\" 卡片样式问题。 当前 index.html 中的代码： ```html <section><a href=\"./blog/\" class=\"card\"><div class=\"card-title\">→ 查看所有灵感</div><div class=\"card-excerpt\">共 4 篇记录</div></a></section> ``` 问题： - card-excerpt \"共 4 篇记录\" 显示不全或样式不对 - 整体卡片样式需要调整 修复方案： 1. 修改 index.html 中的这个卡片，改成更合适的结构，比如： ```html <section><a href=\"./blog/\" class=\"card\"> <div class=\"card-title\">→ 查看所有灵感</div> <div class=\"card-meta\">共 4 篇记录</div> </a></section> ``` 2. 添加对应的 CSS 样式： ```css .card-meta { font-size: 0.85rem; color: var(--muted); margin-top: 4px; } ``` 3. 同时移除或调整 .card-excerpt 的 -webkit-line-clamp 限制 修复后提交并 push 到 GitHub。",
       "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/b23b5698-9610-4fd1-8b6c-1a28523a5e78.jsonl.deleted.2026-02-21T11-16-54.749Z"
-    },
-    {
-      "source": "codex",
-      "sessionId": "019c6f55-bfb1-7432-af5e-493ebd7fb175",
-      "agentId": "codex",
-      "label": "Codex local session",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1771668827663.3901,
-      "totalTokens": 141914785,
-      "inputTokens": 141479114,
-      "outputTokens": 435671,
-      "inputQuery": "我需要设置 Environment Variables 在 render 上么？",
-      "sourcePath": "/Users/ella/.codex/sessions/2026/02/18/rollout-2026-02-18T14-00-16-019c6f55-bfb1-7432-af5e-493ebd7fb175.jsonl"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "52e0a228-ee37-4099-940e-4982d74fd7f3",
-      "agentId": "coder",
-      "label": "toolUse",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1771668716904.4155,
-      "totalTokens": 130067,
-      "inputTokens": 127716,
-      "outputTokens": 2351,
-      "inputQuery": "修复网站链接问题。网站部署在 https://eisrealella.github.io/my-website/，但所有页面链接缺少 /my-website/ 前缀。 需要修复的文件（本地路径）： - /Users/ella/.openclaw/workspace/my-website/index.html - /Users/ella/.openclaw/workspace/my-website/blog/index.html - /Users/ella/.openclaw/workspace/my-website/about/index.html - /Users/ella/.openclaw/workspace/my-website/blog/ 下的所有 .html 文件 修复方案： - 相对路径方案：将所有绝对路径 `/` `/blog/` `/about/` 改为相对路径 `./` `../blog/` `../about/` - 或者用 base 标签：`<base href=\"/my-website/\">` 推荐用相对路径，更简洁。 修复后： 1. 用 grep 检查确保没有遗漏 2. 提交并 force push 到 GitHub 3. 验证网站链接是否正常（curl 测试）",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/52e0a228-ee37-4099-940e-4982d74fd7f3.jsonl.deleted.2026-02-21T11-11-54.746Z"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "d60700e2-20cf-48b3-bf15-2da1b045aa4b",
-      "agentId": "coder",
-      "label": "toolUse",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1771668464831.2754,
-      "totalTokens": 222294,
-      "inputTokens": 217374,
-      "outputTokens": 4920,
-      "inputQuery": "用 curl 或 gh api 获取 https://eisrealella.github.io/my-website/index.html 的完整 HTML 代码，然后检查： 1. 导航链接是否正确（首页、灵感、关于的链接格式） 2. 按钮/链接是否能正常点击（检查是否有遮挡问题） 3. 各个页面的链接是否正确 重点看： - /blog/ 链接是否能正确跳转到博客列表 - /about/ 链接是否正确 - 样式是否有问题（比如元素重叠）",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/d60700e2-20cf-48b3-bf15-2da1b045aa4b.jsonl.deleted.2026-02-21T11-05-54.741Z"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "d6f9e8f4-d6d4-4c94-a834-4b602c23754e",
-      "agentId": "main",
-      "label": "Cron: 日报-晚间总结",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1771668000013,
-      "totalTokens": 17829,
-      "inputTokens": 6188,
-      "outputTokens": 506,
-      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【模板要求】 日期标题: ## 📅 YYYY年M月D日 工作日报 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【重要】 1. 使用 feishu_doc append 写入 2. 写入后用 feishu_doc read 验证 3. 完成后回复'日报已更新'",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     }
   ],
   "sessionPoints": [
@@ -1966,6 +1971,50 @@
       "inputTokens": 45550134,
       "outputTokens": 129352,
       "inputQuery": "<turn_aborted> The user interrupted the previous turn on purpose. Any running unified exec processes were terminated. If any tools/commands were aborted, they may have partially executed; verify current state before retrying. </turn_aborted>"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "34c76e72-a44e-48af-8992-bc4053ea6e5e",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771722148491,
+      "totalTokens": 15669,
+      "inputTokens": 32,
+      "outputTokens": 106,
+      "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "a6751c58-b1d7-40a4-bce2-fe92fa278464",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771722436284.947,
+      "totalTokens": 626098,
+      "inputTokens": 622201,
+      "outputTokens": 3897,
+      "inputQuery": "这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "5a24ef76-4fe1-4045-986d-7c5682c4b57a",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771722438826,
+      "totalTokens": 16824,
+      "inputTokens": 2177,
+      "outputTokens": 255,
+      "inputQuery": "乐高版瓦力！🏗️🤖 …\" [message_id:3] [Image] User text: [BlueBubbles user:+8613312973989 id:+8613312973989 +4m Sun 2026-02-22 09:06 GMT+8] 这只猫就是sam哦，你还记得sam是谁吧 Description: 图片中展示了一只猫躺在瓷砖地面上。 这只猫具有灰色、黑色和白色相间的花纹。它的头部朝向画面左上方，眼睛微闭。猫的颈部、腹部以及爪子部分呈现白色。它以一种扭曲的姿势侧卧或仰卧着，后肢向上伸展，长尾巴平铺在地面上，尾巴带有明显的深色环状条纹，末端呈黑色。 地面由灰褐色的带有纹理的大地砖铺设，地砖之间的接缝清晰可见。在图片的左上角，可以看到一个浅灰色、具有金属质感的物体局部，其表面带有垂直的凹槽或分段结构。 整张图片采用了从斜上方俯拍的视角。"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "9fdda877-60db-4faa-8d4d-edbf36db6d37",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1771722439598,
+      "totalTokens": 16196,
+      "inputTokens": 32,
+      "outputTokens": 41,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
   "staticFiles": {
