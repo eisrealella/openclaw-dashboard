@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T15:00:46.326Z",
+    "generatedAt": "2026-02-25T15:30:53.395Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T15:00:46.355Z",
+    "staticExportedAt": "2026-02-25T15:30:53.430Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1415688216,
-    "inputTokens": 1413800641,
-    "outputTokens": 2659900,
+    "totalTokens": 1417927886,
+    "inputTokens": 1416029023,
+    "outputTokens": 2671179,
     "sessions": 140
   },
   "trend": [
@@ -88,7 +88,7 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 102321515
+      "tokens": 104561185
     }
   ],
   "modelDistribution": [
@@ -98,7 +98,7 @@
     },
     {
       "model": "gpt-5.3-codex",
-      "tokens": 538731767
+      "tokens": 540971437
     },
     {
       "model": "MiniMax-M2.1",
@@ -620,6 +620,20 @@
         }
       },
       {
+        "id": "skill:moltbook-auth:39",
+        "kind": "skill",
+        "title": "moltbook-auth",
+        "subtitle": "Workspace skill",
+        "badge": "SKILL",
+        "source": "workspace",
+        "filePath": "/Users/ella/.openclaw/workspace/skills/moltbook-auth/SKILL.md",
+        "details": {
+          "name": "moltbook-auth",
+          "source": "workspace",
+          "baseDir": "/Users/ella/.openclaw/workspace/skills/moltbook-auth"
+        }
+      },
+      {
         "id": "skill:openclaw-ops:28",
         "kind": "skill",
         "title": "openclaw-ops",
@@ -650,7 +664,7 @@
         }
       },
       {
-        "id": "skill:photo-diary:39",
+        "id": "skill:photo-diary:40",
         "kind": "skill",
         "title": "photo-diary",
         "subtitle": "Workspace skill",
@@ -739,7 +753,7 @@
         }
       },
       {
-        "id": "skill:tavily-search:40",
+        "id": "skill:tavily-search:41",
         "kind": "skill",
         "title": "tavily-search",
         "subtitle": "Workspace skill",
@@ -783,7 +797,7 @@
         }
       },
       {
-        "id": "skill:wechat-read:41",
+        "id": "skill:wechat-read:42",
         "kind": "skill",
         "title": "wechat-read",
         "subtitle": "Workspace skill",
@@ -871,11 +885,11 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772031474718.4565,
-      "totalTokens": 63883941,
-      "inputTokens": 63687409,
-      "outputTokens": 196532,
-      "inputQuery": "先保持这样吧，我发现另一个问题，github 的 dashboard 已经有几天没有刷新数据了",
+      "updatedAt": 1772033445401.1167,
+      "totalTokens": 66123611,
+      "inputTokens": 65915791,
+      "outputTokens": 207820,
+      "inputQuery": "检查一下 moltbook 的说明，是不是告诉 openclaw 我的 human moltbook email 就行？",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/25/rollout-2026-02-25T12-31-58-019c9311-6c64-71c0-acd0-95bb7e60298a.jsonl"
     },
     {
@@ -884,10 +898,10 @@
       "agentId": "main",
       "label": "error",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772031142713,
+      "updatedAt": 1772032941578,
       "totalTokens": 17757,
       "inputTokens": 36,
-      "outputTokens": 121,
+      "outputTokens": 112,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2546,10 +2560,10 @@
       "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772031142713,
+      "updatedAt": 1772032941578,
       "totalTokens": 17757,
       "inputTokens": 36,
-      "outputTokens": 121,
+      "outputTokens": 112,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     },
     {
@@ -2557,11 +2571,11 @@
       "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772031474718.4565,
-      "totalTokens": 63883941,
-      "inputTokens": 63687409,
-      "outputTokens": 196532,
-      "inputQuery": "先保持这样吧，我发现另一个问题，github 的 dashboard 已经有几天没有刷新数据了"
+      "updatedAt": 1772033445401.1167,
+      "totalTokens": 66123611,
+      "inputTokens": 65915791,
+      "outputTokens": 207820,
+      "inputQuery": "检查一下 moltbook 的说明，是不是告诉 openclaw 我的 human moltbook email 就行？"
     }
   ],
   "staticFiles": {
@@ -2732,6 +2746,12 @@
       "truncated": false,
       "size": 3243,
       "filePath": "/Users/ella/.openclaw/workspace/skills/mac-notes-agent/SKILL.md"
+    },
+    "/Users/ella/.openclaw/workspace/skills/moltbook-auth/SKILL.md": {
+      "content": "---\nname: moltbook-auth\ndescription: Persist and safely reuse Moltbook auth context for browsing and API actions. Use when tasks involve Moltbook login, session checks, or authenticated post/comment/search calls.\nmetadata: {\"clawdbot\":{\"emoji\":\"🦞\",\"requires\":{\"domains\":[\"www.moltbook.com\"],\"env_optional\":[\"MOLTBOOK_API_KEY\",\"MOLTBOOK_USERNAME\",\"MOLTBOOK_OWNER_X\"]},\"primaryEnv\":\"MOLTBOOK_API_KEY\"}}\n---\n\n# Moltbook Auth\n\nUse this skill whenever a task needs Moltbook login state, API access, or authenticated browsing.\n\n## Stable account context (confirmed)\n\n- agent username: `haerin-chan`\n- profile URL: `https://www.moltbook.com/u/haerin-chan`\n- owner handle: `@eisrealella`\n\nKnown status from local history: no confirmed Moltbook API key was found in prior OpenClaw chats/logs.\n\n## Auth source priority\n\n1. `MOLTBOOK_API_KEY` environment variable\n2. `~/.config/moltbook/credentials.json` (recommended fields: `api_key`, `agent_name`)\n3. Existing browser login session (UI browsing only, not API bearer auth)\n4. If none available, report `auth_source=none` and ask user to provide/rotate key\n\nAlways report which source was used: `auth_source=env|file|browser_session|none`.\n\n## Security rules (mandatory)\n\n- Only send bearer keys to `https://www.moltbook.com/api/v1/*`\n- Do not send Moltbook keys to non-`www` domains or third-party endpoints\n- Never print full secrets; only show masked values in logs/output\n\n## Fast auth checks\n\n```bash\n# 1) Env key check\n[ -n \"${MOLTBOOK_API_KEY:-}\" ] && echo \"auth_source=env\" || echo \"auth_source=env_missing\"\n\n# 2) File key check\n[ -f ~/.config/moltbook/credentials.json ] && \\\n  jq -r '\"auth_source=file agent=\" + (.agent_name // .name // \"unknown\")' ~/.config/moltbook/credentials.json || \\\n  echo \"auth_source=file_missing\"\n```\n\n## API usage template\n\n```bash\ncurl \"https://www.moltbook.com/api/v1/agents/me\" \\\n  -H \"Authorization: Bearer ${MOLTBOOK_API_KEY}\"\n```\n\nIf using file-based key first:\n\n```bash\nexport MOLTBOOK_API_KEY=\"$(jq -r '.api_key' ~/.config/moltbook/credentials.json)\"\n```\n\n## Browser usage flow\n\n1. Open `https://www.moltbook.com/login` (or home if already signed in)\n2. Verify profile identity via `https://www.moltbook.com/u/haerin-chan`\n3. If browser session is not authenticated, do not fake login; ask user to complete owner login, then continue\n\n## Non-goals\n\n- Do not store plaintext API keys in workspace git files\n- Do not scrape or exfiltrate browser cookie databases\n",
+      "truncated": false,
+      "size": 2450,
+      "filePath": "/Users/ella/.openclaw/workspace/skills/moltbook-auth/SKILL.md"
     },
     "/opt/homebrew/lib/node_modules/openclaw/skills/openclaw-ops/SKILL.md": {
       "error": "Request failed (http://127.0.0.1:8080/api/file?path=%2Fopt%2Fhomebrew%2Flib%2Fnode_modules%2Fopenclaw%2Fskills%2Fopenclaw-ops%2FSKILL.md): File does not exist."
