@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T17:07:14.917Z",
+    "generatedAt": "2026-02-25T17:12:20.122Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T17:07:14.947Z",
+    "staticExportedAt": "2026-02-25T17:12:20.156Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1423519584,
-    "inputTokens": 1421586161,
-    "outputTokens": 2690194,
+    "totalTokens": 1422851072,
+    "inputTokens": 1420844364,
+    "outputTokens": 2684580,
     "sessions": 144
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 109764279
+      "tokens": 109095767
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 710313212
+      "tokens": 709644700
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 836819
+          "lastSeenTokens": 915945
         }
       },
       {
@@ -881,24 +881,11 @@
   "recentSessions": [
     {
       "source": "openclaw",
-      "sessionId": "451a6a7c-73a6-4338-a02d-7c19f0c7b46e",
-      "agentId": "main",
-      "label": "Cron: 自由探索互联网",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772039234327.2683,
-      "totalTokens": 747638,
-      "inputTokens": 741833,
-      "outputTokens": 5805,
-      "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/451a6a7c-73a6-4338-a02d-7c19f0c7b46e.jsonl"
-    },
-    {
-      "source": "openclaw",
       "sessionId": "70ce147b-ee5d-48e1-a83c-407d1f576315",
       "agentId": "coder",
       "label": "git-push-2",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772039215739,
+      "updatedAt": 1772039431018,
       "totalTokens": 10267,
       "inputTokens": 3884,
       "outputTokens": 500,
@@ -911,7 +898,7 @@
       "agentId": "coder",
       "label": "check-status",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772039214793,
+      "updatedAt": 1772039430063,
       "totalTokens": 40423,
       "inputTokens": 78299,
       "outputTokens": 947,
@@ -924,7 +911,7 @@
       "agentId": "coder",
       "label": "git-push",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772039210235,
+      "updatedAt": 1772039425515,
       "totalTokens": 100723,
       "inputTokens": 107140,
       "outputTokens": 1104,
@@ -933,15 +920,41 @@
     },
     {
       "source": "openclaw",
+      "sessionId": "451a6a7c-73a6-4338-a02d-7c19f0c7b46e",
+      "agentId": "main",
+      "label": "Cron: 自由探索互联网",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772039376317,
+      "totalTokens": 78203,
+      "inputTokens": 36,
+      "outputTokens": 53,
+      "inputQuery": "结果：已完成，`git push` 成功，远程已是最新（`Everything up-to-date`）🐻 关键步骤： 1. 已进入目录：`/Users/ella/.openclaw/workspace` 2. 执行了 `git status`（工作区无待提交更改） 3. 因无变更，未执行 `git add -A` / `git commit` 4. 执行 `git push` 并等待完成，输出为 `Everything up-to-date` Stats: runtime 13s • tokens 4.4k (in 3.9k / out 500) • prompt/cache 10.3k A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type).",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
+      "agentId": "main",
+      "label": "stop",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772039362962,
+      "totalTokens": 19034,
+      "inputTokens": 36,
+      "outputTokens": 180,
+      "inputQuery": "自由探索互联网\" just completed successfully. Result: 让我尝试通过节点执行 git 操作： Stats: runtime 5m0s • tokens 891.5k (in 884.0k / out 7.4k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
       "agentId": "main",
       "label": "error",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772039166922,
-      "totalTokens": 27323,
+      "updatedAt": 1772039285676,
+      "totalTokens": 27649,
       "inputTokens": 36,
-      "outputTokens": 34,
-      "inputQuery": "System: [2026-02-26 01:05:46 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=0d17b689-d86c-4295-97cf-5b0f114e832d, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (46ms) … System: [2026-02-26 01:05:50 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=dbcd5272-a510-4b75-8ecc-b3157eb28c35, code 0) Gateway Health OK (2709ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
+      "outputTokens": 20,
+      "inputQuery": "System: [2026-02-26 01:07:41 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=fa6bd6c3-55f3-4d57-bb22-ea3f0d1ab84b, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (43ms) … System: [2026-02-26 01:08:00 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=b91a57a2-ede2-4333-a412-25986bf35790, code 0) Gateway Health OK (1414ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -956,19 +969,6 @@
       "outputTokens": 218475,
       "inputQuery": "如何获取 moltbook api key",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/25/rollout-2026-02-25T12-31-58-019c9311-6c64-71c0-acd0-95bb7e60298a.jsonl"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
-      "agentId": "main",
-      "label": "stop",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772027014709,
-      "totalTokens": 18437,
-      "inputTokens": 36,
-      "outputTokens": 28,
-      "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): cron job 里记住，git push操作交给coder",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -2545,17 +2545,6 @@
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run git push for the my-website repo: cd /Users/ella/.openclaw/workspace/my-website git add -A git commit -m \"Add: 2026年2月的三则新鲜事\" git push Report the result."
     },
     {
-      "source": "openclaw",
-      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772027014709,
-      "totalTokens": 18437,
-      "inputTokens": 36,
-      "outputTokens": 28,
-      "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): cron job 里记住，git push操作交给coder"
-    },
-    {
       "source": "codex",
       "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
       "agentId": "codex",
@@ -2571,18 +2560,40 @@
       "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772039166922,
-      "totalTokens": 27323,
+      "updatedAt": 1772039285676,
+      "totalTokens": 27649,
       "inputTokens": 36,
-      "outputTokens": 34,
-      "inputQuery": "System: [2026-02-26 01:05:46 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=0d17b689-d86c-4295-97cf-5b0f114e832d, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (46ms) … System: [2026-02-26 01:05:50 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=dbcd5272-a510-4b75-8ecc-b3157eb28c35, code 0) Gateway Health OK (2709ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
+      "outputTokens": 20,
+      "inputQuery": "System: [2026-02-26 01:07:41 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=fa6bd6c3-55f3-4d57-bb22-ea3f0d1ab84b, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (43ms) … System: [2026-02-26 01:08:00 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=b91a57a2-ede2-4333-a412-25986bf35790, code 0) Gateway Health OK (1414ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772039362962,
+      "totalTokens": 19034,
+      "inputTokens": 36,
+      "outputTokens": 180,
+      "inputQuery": "自由探索互联网\" just completed successfully. Result: 让我尝试通过节点执行 git 操作： Stats: runtime 5m0s • tokens 891.5k (in 884.0k / out 7.4k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "451a6a7c-73a6-4338-a02d-7c19f0c7b46e",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772039376317,
+      "totalTokens": 78203,
+      "inputTokens": 36,
+      "outputTokens": 53,
+      "inputQuery": "结果：已完成，`git push` 成功，远程已是最新（`Everything up-to-date`）🐻 关键步骤： 1. 已进入目录：`/Users/ella/.openclaw/workspace` 2. 执行了 `git status`（工作区无待提交更改） 3. 因无变更，未执行 `git add -A` / `git commit` 4. 执行 `git push` 并等待完成，输出为 `Everything up-to-date` Stats: runtime 13s • tokens 4.4k (in 3.9k / out 500) • prompt/cache 10.3k A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type)."
     },
     {
       "source": "openclaw",
       "sessionId": "af0b715e-e898-441d-be2c-ab2c557851df",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772039210235,
+      "updatedAt": 1772039425515,
       "totalTokens": 100723,
       "inputTokens": 107140,
       "outputTokens": 1104,
@@ -2593,7 +2604,7 @@
       "sessionId": "88cdfd2f-538e-4a47-ab1d-c94f001ed754",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772039214793,
+      "updatedAt": 1772039430063,
       "totalTokens": 40423,
       "inputTokens": 78299,
       "outputTokens": 947,
@@ -2604,22 +2615,11 @@
       "sessionId": "70ce147b-ee5d-48e1-a83c-407d1f576315",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772039215739,
+      "updatedAt": 1772039431018,
       "totalTokens": 10267,
       "inputTokens": 3884,
       "outputTokens": 500,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我执行以下操作： 1. 进入 /Users/ella/.openclaw/workspace 目录 2. 运行 git status 查看状态 3. 如果有需要提交的更改，运行 git add -A 和 git commit 4. 运行 git push 推送到 GitHub 5. 等待 push 完成 完成后告诉我结果。"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "451a6a7c-73a6-4338-a02d-7c19f0c7b46e",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772039234327.2683,
-      "totalTokens": 747638,
-      "inputTokens": 741833,
-      "outputTokens": 5805,
-      "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
     }
   ],
   "staticFiles": {
