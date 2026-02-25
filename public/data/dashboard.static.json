@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T14:55:41.083Z",
+    "generatedAt": "2026-02-25T15:00:46.326Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T14:55:41.107Z",
+    "staticExportedAt": "2026-02-25T15:00:46.355Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1414228466,
-    "inputTokens": 1412343610,
-    "outputTokens": 2657181,
+    "totalTokens": 1415688216,
+    "inputTokens": 1413800641,
+    "outputTokens": 2659900,
     "sessions": 140
   },
   "trend": [
@@ -88,7 +88,7 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 100861765
+      "tokens": 102321515
     }
   ],
   "modelDistribution": [
@@ -98,7 +98,7 @@
     },
     {
       "model": "gpt-5.3-codex",
-      "tokens": 537272017
+      "tokens": 538731767
     },
     {
       "model": "MiniMax-M2.1",
@@ -871,10 +871,10 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772031340204.037,
-      "totalTokens": 62424191,
-      "inputTokens": 62230378,
-      "outputTokens": 193813,
+      "updatedAt": 1772031474718.4565,
+      "totalTokens": 63883941,
+      "inputTokens": 63687409,
+      "outputTokens": 196532,
       "inputQuery": "先保持这样吧，我发现另一个问题，github 的 dashboard 已经有几天没有刷新数据了",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/25/rollout-2026-02-25T12-31-58-019c9311-6c64-71c0-acd0-95bb7e60298a.jsonl"
     },
@@ -2557,10 +2557,10 @@
       "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772031340204.037,
-      "totalTokens": 62424191,
-      "inputTokens": 62230378,
-      "outputTokens": 193813,
+      "updatedAt": 1772031474718.4565,
+      "totalTokens": 63883941,
+      "inputTokens": 63687409,
+      "outputTokens": 196532,
       "inputQuery": "先保持这样吧，我发现另一个问题，github 的 dashboard 已经有几天没有刷新数据了"
     }
   ],
