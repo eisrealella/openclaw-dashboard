@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T17:47:56.262Z",
+    "generatedAt": "2026-02-25T17:53:01.630Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T17:47:56.297Z",
+    "staticExportedAt": "2026-02-25T17:53:01.663Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1422851715,
-    "inputTokens": 1420844364,
-    "outputTokens": 2684577,
+    "totalTokens": 1422852126,
+    "inputTokens": 1420857300,
+    "outputTokens": 2684695,
     "sessions": 144
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 109096410
+      "tokens": 109096821
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 709645343
+      "tokens": 709645754
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 916588
+          "lastSeenTokens": 916999
         }
       },
       {
@@ -885,10 +885,10 @@
       "agentId": "main",
       "label": "error",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772041131536,
-      "totalTokens": 28292,
-      "inputTokens": 36,
-      "outputTokens": 17,
+      "updatedAt": 1772041736781,
+      "totalTokens": 28703,
+      "inputTokens": 12972,
+      "outputTokens": 135,
       "inputQuery": "System: [2026-02-26 01:38:42 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=14263ea3-95c9-4eff-9d97-70a672c61aca, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (33ms) … System: [2026-02-26 01:38:46 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=7c2f31bd-ad99-4b0c-9bf4-2834f4414708, code 0) Gateway Health OK (2646ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2615,10 +2615,10 @@
       "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772041131536,
-      "totalTokens": 28292,
-      "inputTokens": 36,
-      "outputTokens": 17,
+      "updatedAt": 1772041736781,
+      "totalTokens": 28703,
+      "inputTokens": 12972,
+      "outputTokens": 135,
       "inputQuery": "System: [2026-02-26 01:38:42 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=14263ea3-95c9-4eff-9d97-70a672c61aca, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (33ms) … System: [2026-02-26 01:38:46 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=7c2f31bd-ad99-4b0c-9bf4-2834f4414708, code 0) Gateway Health OK (2646ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
     }
   ],
