@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T21:01:09.346Z",
+    "generatedAt": "2026-02-25T21:06:14.498Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T21:01:09.374Z",
+    "staticExportedAt": "2026-02-25T21:06:14.525Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1423462899,
-    "inputTokens": 1421395696,
-    "outputTokens": 2684654,
+    "totalTokens": 1424161742,
+    "inputTokens": 1421857889,
+    "outputTokens": 2684647,
     "sessions": 145
   },
   "trend": [
@@ -83,7 +83,7 @@
     {
       "date": "2026-02-24",
       "label": "Feb 24",
-      "tokens": 609278
+      "tokens": 1308121
     },
     {
       "date": "2026-02-25",
@@ -94,7 +94,7 @@
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 709664770
+      "tokens": 710363613
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 904482
+          "lastSeenTokens": 864650
         }
       },
       {
@@ -886,10 +886,10 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772052783876,
+      "updatedAt": 1772053371547,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 78,
+      "outputTokens": 71,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2297,9 +2297,9 @@
       "sessionId": "3cf44cb8-4bf2-4fc7-bd58-40b08c97e941",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771967038712,
-      "totalTokens": 39832,
-      "inputTokens": 271125,
+      "updatedAt": 1771967286294.1553,
+      "totalTokens": 738675,
+      "inputTokens": 733318,
       "outputTokens": 5357,
       "inputQuery": "A subagent task \"git-push\" just failed: fetch failed. Findings: (no output) Stats: runtime 7s • tokens n/a • sessionKey agent:coder:subagent:22c76221-9333-41ab-b91f-c6bacdae0048 • sessionId ff569a4f-f5a5-4a46-b6df-57d18c5a5b4f • transcript /Users/ella/.openclaw/agents/coder/sessions/ff569a4f-f5a5-4a46-b6df-57d18c5a5b4f.jsonl Summarize this naturally for the user. Keep it brief (1-2 sentences). Flow it into the conversation naturally. Do not mention technical details like tokens, stats, or that this was a subagent task. You can respond with NO_REPLY if no announcement is needed (e.g., internal task with no user-facing result)."
     },
@@ -2627,10 +2627,10 @@
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772052783876,
+      "updatedAt": 1772053371547,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 78,
+      "outputTokens": 71,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
