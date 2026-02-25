@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T17:17:25.377Z",
+    "generatedAt": "2026-02-25T17:22:30.562Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T17:17:25.411Z",
+    "staticExportedAt": "2026-02-25T17:22:30.589Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1422851072,
+    "totalTokens": 1422851389,
     "inputTokens": 1420844364,
-    "outputTokens": 2684580,
+    "outputTokens": 2684586,
     "sessions": 144
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 109095767
+      "tokens": 109096084
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 709644700
+      "tokens": 709645017
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 915945
+          "lastSeenTokens": 916262
         }
       },
       {
@@ -881,6 +881,19 @@
   "recentSessions": [
     {
       "source": "openclaw",
+      "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
+      "agentId": "main",
+      "label": "error",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772039912098,
+      "totalTokens": 27966,
+      "inputTokens": 36,
+      "outputTokens": 26,
+      "inputQuery": "System: [2026-02-26 01:18:13 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=4616f106-34da-41f8-ad86-593add21da27, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (40ms) … System: [2026-02-26 01:18:18 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=d1fe9abc-a146-4d80-ac31-b97cc7946abe, code 0) Gateway Health OK (1318ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "70ce147b-ee5d-48e1-a83c-407d1f576315",
       "agentId": "coder",
       "label": "git-push-2",
@@ -942,19 +955,6 @@
       "inputTokens": 36,
       "outputTokens": 180,
       "inputQuery": "自由探索互联网\" just completed successfully. Result: 让我尝试通过节点执行 git 操作： Stats: runtime 5m0s • tokens 891.5k (in 884.0k / out 7.4k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn.",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
-      "agentId": "main",
-      "label": "error",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772039285676,
-      "totalTokens": 27649,
-      "inputTokens": 36,
-      "outputTokens": 20,
-      "inputQuery": "System: [2026-02-26 01:07:41 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=fa6bd6c3-55f3-4d57-bb22-ea3f0d1ab84b, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (43ms) … System: [2026-02-26 01:08:00 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=b91a57a2-ede2-4333-a412-25986bf35790, code 0) Gateway Health OK (1414ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -2557,17 +2557,6 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772039285676,
-      "totalTokens": 27649,
-      "inputTokens": 36,
-      "outputTokens": 20,
-      "inputQuery": "System: [2026-02-26 01:07:41 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=fa6bd6c3-55f3-4d57-bb22-ea3f0d1ab84b, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (43ms) … System: [2026-02-26 01:08:00 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=b91a57a2-ede2-4333-a412-25986bf35790, code 0) Gateway Health OK (1414ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
-    },
-    {
-      "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "model": "MiniMax-M2.5",
@@ -2620,6 +2609,17 @@
       "inputTokens": 3884,
       "outputTokens": 500,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我执行以下操作： 1. 进入 /Users/ella/.openclaw/workspace 目录 2. 运行 git status 查看状态 3. 如果有需要提交的更改，运行 git add -A 和 git commit 4. 运行 git push 推送到 GitHub 5. 等待 push 完成 完成后告诉我结果。"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772039912098,
+      "totalTokens": 27966,
+      "inputTokens": 36,
+      "outputTokens": 26,
+      "inputQuery": "System: [2026-02-26 01:18:13 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=4616f106-34da-41f8-ad86-593add21da27, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (40ms) … System: [2026-02-26 01:18:18 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=d1fe9abc-a146-4d80-ac31-b97cc7946abe, code 0) Gateway Health OK (1318ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
     }
   ],
   "staticFiles": {
