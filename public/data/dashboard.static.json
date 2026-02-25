@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T15:41:04.582Z",
+    "generatedAt": "2026-02-25T15:46:09.881Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T15:41:04.613Z",
+    "staticExportedAt": "2026-02-25T15:46:09.914Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1421657605,
-    "inputTokens": 1419768297,
-    "outputTokens": 2679262,
+    "totalTokens": 1421938102,
+    "inputTokens": 1420022202,
+    "outputTokens": 2680397,
     "sessions": 140
   },
   "trend": [
@@ -88,17 +88,17 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 108290904
+      "tokens": 108571401
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 709184570
+      "tokens": 709175265
     },
     {
       "model": "gpt-5.3-codex",
-      "tokens": 544683990
+      "tokens": 544973792
     },
     {
       "model": "MiniMax-M2.1",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 867907
+          "lastSeenTokens": 858602
         }
       },
       {
@@ -885,11 +885,11 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772033982262.511,
-      "totalTokens": 69836164,
-      "inputTokens": 69620417,
-      "outputTokens": 215747,
-      "inputQuery": "我们测试一下？",
+      "updatedAt": 1772034353990.5947,
+      "totalTokens": 70125966,
+      "inputTokens": 69908970,
+      "outputTokens": 216996,
+      "inputQuery": "2吧，curl 请求失败的话，可以换成 clashx指定地址",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/25/rollout-2026-02-25T12-31-58-019c9311-6c64-71c0-acd0-95bb7e60298a.jsonl"
     },
     {
@@ -898,11 +898,11 @@
       "agentId": "main",
       "label": "error",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772033963213,
-      "totalTokens": 34923,
-      "inputTokens": 34684,
-      "outputTokens": 268,
-      "inputQuery": "请仅使用browser工具打开 https://www.moltbook.com/login ，返回页面里与 owner 登录绑定相关的关键文案（尤其是是否还要求验证 X 账号）。",
+      "updatedAt": 1772034174932,
+      "totalTokens": 25618,
+      "inputTokens": 36,
+      "outputTokens": 154,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -2560,22 +2560,22 @@
       "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772033963213,
-      "totalTokens": 34923,
-      "inputTokens": 34684,
-      "outputTokens": 268,
-      "inputQuery": "请仅使用browser工具打开 https://www.moltbook.com/login ，返回页面里与 owner 登录绑定相关的关键文案（尤其是是否还要求验证 X 账号）。"
+      "updatedAt": 1772034174932,
+      "totalTokens": 25618,
+      "inputTokens": 36,
+      "outputTokens": 154,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     },
     {
       "source": "codex",
       "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772033982262.511,
-      "totalTokens": 69836164,
-      "inputTokens": 69620417,
-      "outputTokens": 215747,
-      "inputQuery": "我们测试一下？"
+      "updatedAt": 1772034353990.5947,
+      "totalTokens": 70125966,
+      "inputTokens": 69908970,
+      "outputTokens": 216996,
+      "inputQuery": "2吧，curl 请求失败的话，可以换成 clashx指定地址"
     }
   ],
   "staticFiles": {
