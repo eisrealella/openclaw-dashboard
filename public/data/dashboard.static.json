@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T15:46:09.881Z",
+    "generatedAt": "2026-02-25T15:51:15.426Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T15:46:09.914Z",
+    "staticExportedAt": "2026-02-25T15:51:15.456Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1421938102,
-    "inputTokens": 1420022202,
-    "outputTokens": 2680397,
+    "totalTokens": 1422230224,
+    "inputTokens": 1420312845,
+    "outputTokens": 2681876,
     "sessions": 140
   },
   "trend": [
@@ -88,7 +88,7 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 108571401
+      "tokens": 108863523
     }
   ],
   "modelDistribution": [
@@ -98,7 +98,7 @@
     },
     {
       "model": "gpt-5.3-codex",
-      "tokens": 544973792
+      "tokens": 545265914
     },
     {
       "model": "MiniMax-M2.1",
@@ -885,11 +885,11 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772034353990.5947,
-      "totalTokens": 70125966,
-      "inputTokens": 69908970,
-      "outputTokens": 216996,
-      "inputQuery": "2吧，curl 请求失败的话，可以换成 clashx指定地址",
+      "updatedAt": 1772034632860.1958,
+      "totalTokens": 70418088,
+      "inputTokens": 70199613,
+      "outputTokens": 218475,
+      "inputQuery": "如何获取 moltbook api key",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/25/rollout-2026-02-25T12-31-58-019c9311-6c64-71c0-acd0-95bb7e60298a.jsonl"
     },
     {
@@ -2571,11 +2571,11 @@
       "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772034353990.5947,
-      "totalTokens": 70125966,
-      "inputTokens": 69908970,
-      "outputTokens": 216996,
-      "inputQuery": "2吧，curl 请求失败的话，可以换成 clashx指定地址"
+      "updatedAt": 1772034632860.1958,
+      "totalTokens": 70418088,
+      "inputTokens": 70199613,
+      "outputTokens": 218475,
+      "inputQuery": "如何获取 moltbook api key"
     }
   ],
   "staticFiles": {
