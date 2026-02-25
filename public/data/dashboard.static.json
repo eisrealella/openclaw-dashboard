@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T16:06:32.542Z",
+    "generatedAt": "2026-02-25T16:11:37.861Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T16:06:32.568Z",
+    "staticExportedAt": "2026-02-25T16:11:37.892Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1422230173,
-    "inputTokens": 1420322645,
-    "outputTokens": 2681857,
+    "totalTokens": 1422618777,
+    "inputTokens": 1420664805,
+    "outputTokens": 2681939,
     "sessions": 140
   },
   "trend": [
@@ -83,7 +83,7 @@
     {
       "date": "2026-02-24",
       "label": "Feb 24",
-      "tokens": 220674
+      "tokens": 609278
     },
     {
       "date": "2026-02-25",
@@ -94,7 +94,7 @@
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 709175214
+      "tokens": 709563818
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 858551
+          "lastSeenTokens": 835063
         }
       },
       {
@@ -2285,10 +2285,10 @@
       "sessionId": "e13bc8c5-d2a8-4d31-bbf4-d1f66eb67ee3",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771949038714,
-      "totalTokens": 23488,
-      "inputTokens": 66208,
-      "outputTokens": 3642,
+      "updatedAt": 1771949334459.816,
+      "totalTokens": 412092,
+      "inputTokens": 408368,
+      "outputTokens": 3724,
       "inputQuery": "A subagent task \"git-push\" just failed: fetch failed. Findings: (no output) Stats: runtime 8s • tokens n/a • sessionKey agent:coder:subagent:219b0e77-03bc-4a56-b2c3-8cf2c4ef0ef4 • sessionId a45a51f8-9bd2-4c2e-91bf-0ef949801774 • transcript /Users/ella/.openclaw/agents/coder/sessions/a45a51f8-9bd2-4c2e-91bf-0ef949801774.jsonl Summarize this naturally for the user. Keep it brief (1-2 sentences). Flow it into the conversation naturally. Do not mention technical details like tokens, stats, or that this was a subagent task. You can respond with NO_REPLY if no announcement is needed (e.g., internal task with no user-facing result)."
     },
     {
