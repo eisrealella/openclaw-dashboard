@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T23:49:01.032Z",
+    "generatedAt": "2026-02-25T23:54:06.198Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T23:49:01.058Z",
+    "staticExportedAt": "2026-02-25T23:54:06.226Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
     "totalTokens": 1424220378,
     "inputTokens": 1422769134,
-    "outputTokens": 2692394,
+    "outputTokens": 2692369,
     "sessions": 147
   },
   "trend": [
@@ -886,10 +886,10 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772062968875,
+      "updatedAt": 1772063568693,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 100,
+      "outputTokens": 75,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2649,10 +2649,10 @@
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772062968875,
+      "updatedAt": 1772063568693,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 100,
+      "outputTokens": 75,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
