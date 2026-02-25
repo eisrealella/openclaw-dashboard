@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T15:51:15.426Z",
+    "generatedAt": "2026-02-25T15:56:20.673Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T15:51:15.456Z",
+    "staticExportedAt": "2026-02-25T15:56:20.701Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1422230224,
+    "totalTokens": 1422230077,
     "inputTokens": 1420312845,
-    "outputTokens": 2681876,
+    "outputTokens": 2681850,
     "sessions": 140
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 108863523
+      "tokens": 108863376
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 709175265
+      "tokens": 709175118
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 858602
+          "lastSeenTokens": 858455
         }
       },
       {
@@ -880,6 +880,19 @@
   },
   "recentSessions": [
     {
+      "source": "openclaw",
+      "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
+      "agentId": "main",
+      "label": "error",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772034812701,
+      "totalTokens": 25471,
+      "inputTokens": 36,
+      "outputTokens": 128,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
       "source": "codex",
       "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
       "agentId": "codex",
@@ -891,19 +904,6 @@
       "outputTokens": 218475,
       "inputQuery": "如何获取 moltbook api key",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/25/rollout-2026-02-25T12-31-58-019c9311-6c64-71c0-acd0-95bb7e60298a.jsonl"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
-      "agentId": "main",
-      "label": "error",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772034174932,
-      "totalTokens": 25618,
-      "inputTokens": 36,
-      "outputTokens": 154,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -2556,17 +2556,6 @@
       "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): cron job 里记住，git push操作交给coder"
     },
     {
-      "source": "openclaw",
-      "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772034174932,
-      "totalTokens": 25618,
-      "inputTokens": 36,
-      "outputTokens": 154,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
-    },
-    {
       "source": "codex",
       "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
       "agentId": "codex",
@@ -2576,6 +2565,17 @@
       "inputTokens": 70199613,
       "outputTokens": 218475,
       "inputQuery": "如何获取 moltbook api key"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "a212a262-a2c3-4983-b4fa-b7d809c7ea25",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772034812701,
+      "totalTokens": 25471,
+      "inputTokens": 36,
+      "outputTokens": 128,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
   "staticFiles": {
