@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T22:58:06.501Z",
+    "generatedAt": "2026-02-25T23:28:40.636Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T22:58:06.526Z",
+    "staticExportedAt": "2026-02-25T23:28:40.664Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1424202165,
-    "inputTokens": 1422749934,
-    "outputTokens": 2692392,
+    "totalTokens": 1424220378,
+    "inputTokens": 1422769134,
+    "outputTokens": 2692369,
     "sessions": 147
   },
   "trend": [
@@ -88,7 +88,7 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 109748017
+      "tokens": 109766230
     }
   ],
   "modelDistribution": [
@@ -98,7 +98,7 @@
     },
     {
       "model": "gpt-5.3-codex",
-      "tokens": 546018417
+      "tokens": 546036630
     },
     {
       "model": "MiniMax-M2.1",
@@ -136,7 +136,7 @@
       "latestInsight": "最近任务：You are running as a subagent (depth 1/1). Results auto-announce to your requester;",
       "insightEmoji": "✨",
       "insightDate": "2026-02-26",
-      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json",
+      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/f141137f-df61-4f68-8e99-da9725229d93.jsonl.deleted.2026-02-25T23-06-46.171Z",
       "detailPath": "/Users/ella/.openclaw/workspace-coder/AGENTS.md"
     }
   ],
@@ -169,7 +169,7 @@
           "id": "openai-codex/gpt-5.3-codex",
           "alias": "Codex 5.3",
           "role": "Additional",
-          "lastSeenTokens": 32877
+          "lastSeenTokens": 23544
         }
       },
       {
@@ -184,7 +184,7 @@
           "id": "codex-cli/gpt-5.3-codex",
           "alias": "Codex CLI 5.3",
           "role": "Additional",
-          "lastSeenTokens": 32877
+          "lastSeenTokens": 23544
         }
       }
     ],
@@ -886,10 +886,10 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772059968027,
+      "updatedAt": 1772061767498,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 98,
+      "outputTokens": 75,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -925,12 +925,12 @@
       "agentId": "coder",
       "label": "toolUse",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772057225064,
-      "totalTokens": 9333,
-      "inputTokens": 8014,
+      "updatedAt": 1772057225017.6501,
+      "totalTokens": 27546,
+      "inputTokens": 27214,
       "outputTokens": 332,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: I need you to: 1. Go to /Users/ella/.openclaw/workspace/my-website 2. Run: git add -A && git commit -m \"Add new blog post: 清晨六点的哲学\" 3. Run: git push This is for adding a new blog post from my free exploration time. The post is about AI news, philosophy of creativity, and thriller novels.",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/f141137f-df61-4f68-8e99-da9725229d93.jsonl.deleted.2026-02-25T23-06-46.171Z"
     },
     {
       "source": "openclaw",
@@ -2616,9 +2616,9 @@
       "sessionId": "f141137f-df61-4f68-8e99-da9725229d93",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772057225064,
-      "totalTokens": 9333,
-      "inputTokens": 8014,
+      "updatedAt": 1772057225017.6501,
+      "totalTokens": 27546,
+      "inputTokens": 27214,
       "outputTokens": 332,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: I need you to: 1. Go to /Users/ella/.openclaw/workspace/my-website 2. Run: git add -A && git commit -m \"Add new blog post: 清晨六点的哲学\" 3. Run: git push This is for adding a new blog post from my free exploration time. The post is about AI news, philosophy of creativity, and thriller novels."
     },
@@ -2649,10 +2649,10 @@
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772059968027,
+      "updatedAt": 1772061767498,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 98,
+      "outputTokens": 75,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
