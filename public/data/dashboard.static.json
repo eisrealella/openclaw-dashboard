@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T14:54:46.564Z",
+    "generatedAt": "2026-02-25T14:55:41.083Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,7 +10,7 @@
       "latestDay": "2026-02-25",
       "bucketCount": 24
     },
-    "staticExportedAt": "2026-02-25T14:54:46.590Z",
+    "staticExportedAt": "2026-02-25T14:55:41.107Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
@@ -871,7 +871,7 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772031193239.4724,
+      "updatedAt": 1772031340204.037,
       "totalTokens": 62424191,
       "inputTokens": 62230378,
       "outputTokens": 193813,
@@ -2557,7 +2557,7 @@
       "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772031193239.4724,
+      "updatedAt": 1772031340204.037,
       "totalTokens": 62424191,
       "inputTokens": 62230378,
       "outputTokens": 193813,
