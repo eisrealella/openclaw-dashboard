@@ -3,6 +3,7 @@ set -euo pipefail
 
 REPO_DIR="/Users/ella/Documents/Codex/openclaw-dashboard"
 LOCK_DIR="/tmp/openclaw-dashboard-sync.lock"
+LOCK_STALE_SECONDS="${LOCK_STALE_SECONDS:-1800}"
 BRANCH="main"
 TARGET_FILE="public/data/dashboard.static.json"
 
@@ -14,11 +15,40 @@ if [[ ! -d "$REPO_DIR/.git" ]]; then
   exit 0
 fi
 
-if ! mkdir "$LOCK_DIR" 2>/dev/null; then
+acquire_lock() {
+  if mkdir "$LOCK_DIR" 2>/dev/null; then
+    echo "$$" > "$LOCK_DIR/pid"
+    return 0
+  fi
+
+  local now mtime age old_pid
+  now="$(date '+%s')"
+  mtime="$(stat -f '%m' "$LOCK_DIR" 2>/dev/null || echo 0)"
+  age="$((now - mtime))"
+  old_pid="$(cat "$LOCK_DIR/pid" 2>/dev/null || true)"
+
+  if [[ -n "$old_pid" ]] && kill -0 "$old_pid" 2>/dev/null; then
+    echo "skip: previous sync still running (pid=${old_pid})"
+    return 1
+  fi
+
+  if (( age >= LOCK_STALE_SECONDS )); then
+    echo "stale lock detected (age=${age}s), removing..."
+    rm -rf "$LOCK_DIR"
+    if mkdir "$LOCK_DIR" 2>/dev/null; then
+      echo "$$" > "$LOCK_DIR/pid"
+      return 0
+    fi
+  fi
+
   echo "skip: previous sync still running"
+  return 1
+}
+
+if ! acquire_lock; then
   exit 0
 fi
-trap 'rmdir "$LOCK_DIR" >/dev/null 2>&1 || true' EXIT
+trap 'rm -rf "$LOCK_DIR" >/dev/null 2>&1 || true' EXIT
 
 cd "$REPO_DIR"
 
