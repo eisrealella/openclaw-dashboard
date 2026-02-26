@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T07:52:55.062Z",
+    "generatedAt": "2026-02-26T08:24:59.072Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,14 +10,14 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T07:52:55.084Z",
+    "staticExportedAt": "2026-02-26T08:24:59.106Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1425698571,
-    "inputTokens": 1424571853,
-    "outputTokens": 2703269,
-    "sessions": 152
+    "totalTokens": 1425724843,
+    "inputTokens": 1424683325,
+    "outputTokens": 2706773,
+    "sessions": 153
   },
   "trend": [
     {
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70570435
+      "tokens": 70596707
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 711856320
+      "tokens": 711882592
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 581190
+          "lastSeenTokens": 607462
         }
       },
       {
@@ -886,11 +886,37 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772091993571,
+      "updatedAt": 1772093841131,
       "totalTokens": 16570,
       "inputTokens": 36,
-      "outputTokens": 41,
+      "outputTokens": 59,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
+      "agentId": "main",
+      "label": "stop",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772093105796,
+      "totalTokens": 18936,
+      "inputTokens": 1810,
+      "outputTokens": 139,
+      "inputQuery": "自由探索互联网\" just completed successfully. Result: LLM request timed out. Stats: runtime 33s • tokens 121.2k (in 117.6k / out 3.6k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "82ebf09b-39d5-494e-9d27-76f53cccf18c",
+      "agentId": "main",
+      "label": "Cron: 自由探索互联网",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772093038795,
+      "totalTokens": 25336,
+      "inputTokens": 117608,
+      "outputTokens": 3573,
+      "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -905,19 +931,6 @@
       "outputTokens": 72,
       "inputQuery": "？",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
-      "agentId": "main",
-      "label": "stop",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772089069759,
-      "totalTokens": 18000,
-      "inputTokens": 7946,
-      "outputTokens": 226,
-      "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"还是不行么\" }, { \"sender\": \"Unknown\", \"body\": \"还是不行。exec 权限依然被拒。\\n\\n你确认在终端运行过 openclaw config set exec.security allowlist 了吗？需要重启 gateway 生效吗？\\n\\n[◉_◉]\" }, { \"sender\": \"Unknown\", \"body\": \"再试试呢\" } ] ``` 还是不行么",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -1022,19 +1035,6 @@
       "outputTokens": 332,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: I need you to: 1. Go to /Users/ella/.openclaw/workspace/my-website 2. Run: git add -A && git commit -m \"Add new blog post: 清晨六点的哲学\" 3. Run: git push This is for adding a new blog post from my free exploration time. The post is about AI news, philosophy of creativity, and thriller novels.",
       "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/f141137f-df61-4f68-8e99-da9725229d93.jsonl.deleted.2026-02-25T23-06-46.171Z"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "751c9aa5-efb7-4763-8a65-a644a1c15460",
-      "agentId": "main",
-      "label": "Cron: 自由探索互联网",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772057038760,
-      "totalTokens": 32510,
-      "inputTokens": 277065,
-      "outputTokens": 6094,
-      "inputQuery": "清晨六点的哲学\" 3. Run: git push This is for adding a new blog post from my free exploration time. The post is about AI news, philosophy of creativity, and thriller novels.\" just completed successfully. Result: 已完成 🐻 - 在 `/Users/ella/.openclaw/workspace/my-website` 执行了提交： `git add -A && git commit -m \"Add new blog post: 清晨六点的哲学\"` - 首次 `git push` 被远端拒绝（远端有新提交）。 - 我已处理并成功推送：执行 `git pull --rebase origin main && git push` 后推送成功。 关键信息： - 新提交已上到 `origin/main` - 最终远端更新到提交：`972eba7` Stats: runtime 19s • tokens 8.3k (in 8.0k / out 332) • prompt/cache 9.3k A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type).",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     }
   ],
   "sessionPoints": [
@@ -2678,17 +2678,6 @@
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
     },
     {
-      "source": "openclaw",
-      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772089069759,
-      "totalTokens": 18000,
-      "inputTokens": 7946,
-      "outputTokens": 226,
-      "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"还是不行么\" }, { \"sender\": \"Unknown\", \"body\": \"还是不行。exec 权限依然被拒。\\n\\n你确认在终端运行过 openclaw config set exec.security allowlist 了吗？需要重启 gateway 生效吗？\\n\\n[◉_◉]\" }, { \"sender\": \"Unknown\", \"body\": \"再试试呢\" } ] ``` 还是不行么"
-    },
-    {
       "source": "codex",
       "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
       "agentId": "codex",
@@ -2701,13 +2690,35 @@
     },
     {
       "source": "openclaw",
+      "sessionId": "82ebf09b-39d5-494e-9d27-76f53cccf18c",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772093038795,
+      "totalTokens": 25336,
+      "inputTokens": 117608,
+      "outputTokens": 3573,
+      "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772093105796,
+      "totalTokens": 18936,
+      "inputTokens": 1810,
+      "outputTokens": 139,
+      "inputQuery": "自由探索互联网\" just completed successfully. Result: LLM request timed out. Stats: runtime 33s • tokens 121.2k (in 117.6k / out 3.6k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
+    },
+    {
+      "source": "openclaw",
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772091993571,
+      "updatedAt": 1772093841131,
       "totalTokens": 16570,
       "inputTokens": 36,
-      "outputTokens": 41,
+      "outputTokens": 59,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
