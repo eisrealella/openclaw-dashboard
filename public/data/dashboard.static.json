@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T04:40:25.780Z",
+    "generatedAt": "2026-02-26T04:45:31.173Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T04:40:25.817Z",
+    "staticExportedAt": "2026-02-26T04:45:31.212Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
     "totalTokens": 1424365771,
     "inputTokens": 1423436429,
-    "outputTokens": 2703366,
+    "outputTokens": 2703403,
     "sessions": 152
   },
   "trend": [
@@ -886,7 +886,7 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772080763495.062,
+      "updatedAt": 1772081066566.027,
       "totalTokens": 15969,
       "inputTokens": 15897,
       "outputTokens": 72,
@@ -899,10 +899,10 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772080370817,
+      "updatedAt": 1772080970190,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 89,
+      "outputTokens": 126,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2693,10 +2693,10 @@
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772080370817,
+      "updatedAt": 1772080970190,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 89,
+      "outputTokens": 126,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     },
     {
@@ -2704,7 +2704,7 @@
       "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772080763495.062,
+      "updatedAt": 1772081066566.027,
       "totalTokens": 15969,
       "inputTokens": 15897,
       "outputTokens": 72,
