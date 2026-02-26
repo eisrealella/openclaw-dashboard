@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T02:02:44.604Z",
+    "generatedAt": "2026-02-26T02:07:49.554Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T02:02:44.630Z",
+    "staticExportedAt": "2026-02-26T02:07:49.590Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1424291734,
-    "inputTokens": 1422840283,
-    "outputTokens": 2694602,
+    "totalTokens": 1424340689,
+    "inputTokens": 1423047315,
+    "outputTokens": 2693854,
     "sessions": 151
   },
   "trend": [
@@ -83,18 +83,18 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 39301512
+      "tokens": 39340887
     },
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70536074
+      "tokens": 70545654
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 710449483
+      "tokens": 710498438
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 934406
+          "lastSeenTokens": 731092
         }
       },
       {
@@ -222,7 +222,7 @@
         "id": "skill:apple-reminders:6",
         "kind": "skill",
         "title": "apple-reminders",
-        "subtitle": "Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
+        "subtitle": "Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-reminders/SKILL.md",
@@ -308,7 +308,7 @@
         }
       },
       {
-        "id": "skill:dashboard-data-hygiene:17",
+        "id": "skill:dashboard-data-hygiene:16",
         "kind": "skill",
         "title": "dashboard-data-hygiene",
         "subtitle": "Maintain OpenClaw dashboard data quality and presentation consistency. Use when updating session ingestion/display, token aggregation, query sanitization, or agent overview card rendering (style, insight, and emoji defaults).",
@@ -338,7 +338,7 @@
         }
       },
       {
-        "id": "skill:dual-agent-handshake:18",
+        "id": "skill:dual-agent-handshake:17",
         "kind": "skill",
         "title": "dual-agent-handshake",
         "subtitle": "Enforce deterministic collaboration between main and coder agents for every task. Main must classify tasks and delegate coding/automation/complex execution to coder via sessions_spawn with a task envelope; coder must execute and return structured results only.",
@@ -426,7 +426,7 @@
         }
       },
       {
-        "id": "skill:feishu-interactive-cards:19",
+        "id": "skill:feishu-interactive-cards:18",
         "kind": "skill",
         "title": "feishu-interactive-cards",
         "subtitle": "Create and send interactive cards to Feishu (Lark) with buttons, forms, polls, and rich UI elements. Use when replying to Feishu messages and there is ANY uncertainty - send an interactive card instead of plain text to let users choose via buttons. Automatically handles callbacks via long-polling connection. Use for confirmations, choices, forms, todos, polls, or any scenario requiring user interaction in Feishu.",
@@ -486,7 +486,7 @@
         }
       },
       {
-        "id": "skill:find-skills:20",
+        "id": "skill:find-skills:19",
         "kind": "skill",
         "title": "find-skills",
         "subtitle": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
@@ -501,7 +501,7 @@
         }
       },
       {
-        "id": "skill:gh-issues:9",
+        "id": "skill:gh-issues:24",
         "kind": "skill",
         "title": "gh-issues",
         "subtitle": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
@@ -516,7 +516,7 @@
         }
       },
       {
-        "id": "skill:github:10",
+        "id": "skill:github:9",
         "kind": "skill",
         "title": "github",
         "subtitle": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
@@ -560,7 +560,7 @@
         }
       },
       {
-        "id": "skill:healthcheck:11",
+        "id": "skill:healthcheck:10",
         "kind": "skill",
         "title": "healthcheck",
         "subtitle": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
@@ -590,10 +590,10 @@
         }
       },
       {
-        "id": "skill:imsg:12",
+        "id": "skill:imsg:11",
         "kind": "skill",
         "title": "imsg",
-        "subtitle": "iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.",
+        "subtitle": "iMessage/SMS CLI for listing chats, history, watch, and sending.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/imsg/SKILL.md",
@@ -605,7 +605,7 @@
         }
       },
       {
-        "id": "skill:mac-notes-agent:21",
+        "id": "skill:mac-notes-agent:20",
         "kind": "skill",
         "title": "mac-notes-agent",
         "subtitle": "Integrate with the macOS Notes app (Apple Notes).\nSupports creating, listing, reading, updating, deleting, and searching notes\nvia a simple Node.js CLI that bridges to AppleScript.\n",
@@ -620,7 +620,7 @@
         }
       },
       {
-        "id": "skill:moltbook-auth:22",
+        "id": "skill:moltbook-auth:25",
         "kind": "skill",
         "title": "moltbook-auth",
         "subtitle": "Persist and safely reuse Moltbook auth context for browsing and API actions. Use when tasks involve Moltbook login, session checks, or authenticated post/comment/search calls.",
@@ -650,7 +650,7 @@
         }
       },
       {
-        "id": "skill:peekaboo:13",
+        "id": "skill:peekaboo:12",
         "kind": "skill",
         "title": "peekaboo",
         "subtitle": "Capture and automate macOS UI with the Peekaboo CLI.",
@@ -679,7 +679,7 @@
         }
       },
       {
-        "id": "skill:proactive-agent:23",
+        "id": "skill:proactive-agent:21",
         "kind": "skill",
         "title": "proactive-agent",
         "subtitle": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞",
@@ -694,7 +694,7 @@
         }
       },
       {
-        "id": "skill:skill-creator:14",
+        "id": "skill:skill-creator:13",
         "kind": "skill",
         "title": "skill-creator",
         "subtitle": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
@@ -709,7 +709,7 @@
         }
       },
       {
-        "id": "skill:sonoscli:15",
+        "id": "skill:sonoscli:14",
         "kind": "skill",
         "title": "sonoscli",
         "subtitle": "Control Sonos speakers (discover/status/play/volume/group).",
@@ -739,7 +739,7 @@
         }
       },
       {
-        "id": "skill:tavily:24",
+        "id": "skill:tavily:22",
         "kind": "skill",
         "title": "tavily",
         "subtitle": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
@@ -768,7 +768,7 @@
         }
       },
       {
-        "id": "skill:walle-presence:25",
+        "id": "skill:walle-presence:23",
         "kind": "skill",
         "title": "walle-presence",
         "subtitle": "Add compact robot-like emotional expression to replies without hurting task clarity.",
@@ -783,10 +783,10 @@
         }
       },
       {
-        "id": "skill:weather:16",
+        "id": "skill:weather:15",
         "kind": "skill",
         "title": "weather",
-        "subtitle": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
+        "subtitle": "Get current weather and forecasts (no API key required).",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/weather/SKILL.md",
@@ -882,14 +882,27 @@
   "recentSessions": [
     {
       "source": "openclaw",
+      "sessionId": "b84ae66e-8c87-43c8-916d-87881de86d72",
+      "agentId": "main",
+      "label": "stop",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772071511946,
+      "totalTokens": 17746,
+      "inputTokens": 36,
+      "outputTokens": 52,
+      "inputQuery": "日报-早间总结\" just completed successfully. Result: Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config. Stats: runtime 5m0s • tokens 139 (in 36 / out 103) • prompt/cache 15.0k A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772071363927,
+      "updatedAt": 1772071375610,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 82,
+      "outputTokens": 95,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -900,9 +913,9 @@
       "label": "Cron: 日报-早间总结",
       "model": "MiniMax-M2.5",
       "updatedAt": 1772071200038,
-      "totalTokens": 23166,
-      "inputTokens": 15379,
-      "outputTokens": 868,
+      "totalTokens": 15000,
+      "inputTokens": 36,
+      "outputTokens": 103,
       "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -1022,19 +1035,6 @@
       "outputTokens": 16,
       "inputQuery": "System: [2026-02-26 03:52:37 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=84068c29-5c5f-4356-a4e1-8d55307b05be, code 0) Gateway Status Reachable: yes Probe budget: 3000ms Discovery (this machine) Found 1 gateway(s) via Bonjour (local.) Targets Local loopback ws://127.0.0.1:18789 Connect: ok (49ms) … System: [2026-02-26 03:52:41 GMT+8] Exec finished (node=4245e15ac039ad75f704a764eda0160dce36922bbe7ba46c8dc3b444b0fa7b89 id=814af07f-777c-45e3-b6b9-ad9b5176cbd1, code 0) Gateway Health OK (359ms) Feishu: ok BlueBubbles: ok An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "70ce147b-ee5d-48e1-a83c-407d1f576315",
-      "agentId": "coder",
-      "label": "toolUse",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772039215690.8757,
-      "totalTokens": 29472,
-      "inputTokens": 28972,
-      "outputTokens": 500,
-      "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我执行以下操作： 1. 进入 /Users/ella/.openclaw/workspace 目录 2. 运行 git status 查看状态 3. 如果有需要提交的更改，运行 git add -A 和 git commit 4. 运行 git push 推送到 GitHub 5. 等待 push 完成 完成后告诉我结果。",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/70ce147b-ee5d-48e1-a83c-407d1f576315.jsonl.deleted.2026-02-25T18-07-02.794Z"
     }
   ],
   "sessionPoints": [
@@ -2319,9 +2319,9 @@
       "sessionId": "3e7e6af5-caa4-4bae-8b3e-c3655814aaaf",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771984800027,
-      "totalTokens": 23166,
-      "inputTokens": 15379,
+      "updatedAt": 1771984866603.1145,
+      "totalTokens": 79080,
+      "inputTokens": 78212,
       "outputTokens": 868,
       "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【模板要求】 日期标题: ## 📅 YYYY年M月D日 工作日报 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【重要】 1. 使用 feishu_doc append 写入 2. 写入后用 feishu_doc read 验证 3. 完成后回复'日报已更新'"
     },
@@ -2330,9 +2330,9 @@
       "sessionId": "114bf5c6-4d44-432f-a538-896acff04d29",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771985038709,
-      "totalTokens": 172190,
-      "inputTokens": 12648,
+      "updatedAt": 1771985171168.4932,
+      "totalTokens": 173189,
+      "inputTokens": 172190,
       "outputTokens": 999,
       "inputQuery": "这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
     },
@@ -2500,17 +2500,6 @@
       "inputTokens": 3786,
       "outputTokens": 644,
       "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "b84ae66e-8c87-43c8-916d-87881de86d72",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772013650364,
-      "totalTokens": 17538,
-      "inputTokens": 36,
-      "outputTokens": 48,
-      "inputQuery": "日报-晚间总结\" just completed successfully. Result: 日报已更新 Stats: runtime 43s • tokens 4.4k (in 3.8k / out 644) • prompt/cache 18.3k A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
     },
     {
       "source": "openclaw",
@@ -2683,9 +2672,9 @@
       "agentId": "main",
       "model": "MiniMax-M2.5",
       "updatedAt": 1772071200038,
-      "totalTokens": 23166,
-      "inputTokens": 15379,
-      "outputTokens": 868,
+      "totalTokens": 15000,
+      "inputTokens": 36,
+      "outputTokens": 103,
       "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新"
     },
     {
@@ -2693,11 +2682,22 @@
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772071363927,
+      "updatedAt": 1772071375610,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 82,
+      "outputTokens": 95,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "b84ae66e-8c87-43c8-916d-87881de86d72",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772071511946,
+      "totalTokens": 17746,
+      "inputTokens": 36,
+      "outputTokens": 52,
+      "inputQuery": "日报-早间总结\" just completed successfully. Result: Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config. Stats: runtime 5m0s • tokens 139 (in 36 / out 103) • prompt/cache 15.0k A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
     }
   ],
   "staticFiles": {
