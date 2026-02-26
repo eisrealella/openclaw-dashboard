@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T16:12:51.201Z",
+    "generatedAt": "2026-02-26T16:42:58.178Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T16:12:51.225Z",
+    "staticExportedAt": "2026-02-26T16:42:58.205Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1426572814,
-    "inputTokens": 1425665904,
-    "outputTokens": 2714316,
+    "totalTokens": 1426572965,
+    "inputTokens": 1425666055,
+    "outputTokens": 2714767,
     "sessions": 157
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70949910
+      "tokens": 70950061
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 712523454
+      "tokens": 712523605
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 705494
+          "lastSeenTokens": 705645
         }
       },
       {
@@ -886,11 +886,11 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772121992425,
-      "totalTokens": 16668,
-      "inputTokens": 549,
-      "outputTokens": 79,
-      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "updatedAt": 1772123808022,
+      "totalTokens": 16819,
+      "inputTokens": 700,
+      "outputTokens": 530,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -2759,11 +2759,11 @@
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772121992425,
-      "totalTokens": 16668,
-      "inputTokens": 549,
-      "outputTokens": 79,
-      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+      "updatedAt": 1772123808022,
+      "totalTokens": 16819,
+      "inputTokens": 700,
+      "outputTokens": 530,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
   "staticFiles": {
