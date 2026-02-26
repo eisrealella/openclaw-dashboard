@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T07:12:14.213Z",
+    "generatedAt": "2026-02-26T07:17:19.171Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T07:12:14.240Z",
+    "staticExportedAt": "2026-02-26T07:17:19.195Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1425698461,
-    "inputTokens": 1424572226,
-    "outputTokens": 2703736,
+    "totalTokens": 1425698571,
+    "inputTokens": 1424571853,
+    "outputTokens": 2703364,
     "sessions": 152
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70570325
+      "tokens": 70570435
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 711856210
+      "tokens": 711856320
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 581080
+          "lastSeenTokens": 581190
         }
       },
       {
@@ -881,6 +881,19 @@
   },
   "recentSessions": [
     {
+      "source": "openclaw",
+      "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
+      "agentId": "main",
+      "label": "stop",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772090192814,
+      "totalTokens": 16570,
+      "inputTokens": 36,
+      "outputTokens": 136,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
       "source": "codex",
       "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
       "agentId": "codex",
@@ -892,19 +905,6 @@
       "outputTokens": 72,
       "inputQuery": "？",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
-      "agentId": "main",
-      "label": "stop",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772089614056,
-      "totalTokens": 16460,
-      "inputTokens": 409,
-      "outputTokens": 508,
-      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -2689,17 +2689,6 @@
       "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"还是不行么\" }, { \"sender\": \"Unknown\", \"body\": \"还是不行。exec 权限依然被拒。\\n\\n你确认在终端运行过 openclaw config set exec.security allowlist 了吗？需要重启 gateway 生效吗？\\n\\n[◉_◉]\" }, { \"sender\": \"Unknown\", \"body\": \"再试试呢\" } ] ``` 还是不行么"
     },
     {
-      "source": "openclaw",
-      "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772089614056,
-      "totalTokens": 16460,
-      "inputTokens": 409,
-      "outputTokens": 508,
-      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
-    },
-    {
       "source": "codex",
       "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
       "agentId": "codex",
@@ -2709,6 +2698,17 @@
       "inputTokens": 15897,
       "outputTokens": 72,
       "inputQuery": "？"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772090192814,
+      "totalTokens": 16570,
+      "inputTokens": 36,
+      "outputTokens": 136,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
   "staticFiles": {
