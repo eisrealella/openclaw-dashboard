@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T06:41:44.612Z",
+    "generatedAt": "2026-02-26T06:46:49.638Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,12 +10,12 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T06:41:44.639Z",
+    "staticExportedAt": "2026-02-26T06:46:49.662Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1424613149,
-    "inputTokens": 1423718210,
+    "totalTokens": 1424701378,
+    "inputTokens": 1423828216,
     "outputTokens": 2703307,
     "sessions": 152
   },
@@ -83,7 +83,7 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 39588345
+      "tokens": 39676574
     },
     {
       "date": "2026-02-26",
@@ -94,7 +94,7 @@
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 710770898
+      "tokens": 710859127
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 685686
+          "lastSeenTokens": 649619
         }
       },
       {
@@ -881,6 +881,19 @@
   },
   "recentSessions": [
     {
+      "source": "codex",
+      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772088357477.212,
+      "totalTokens": 15969,
+      "inputTokens": 15897,
+      "outputTokens": 72,
+      "inputQuery": "？",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
+    },
+    {
       "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
@@ -892,19 +905,6 @@
       "outputTokens": 199,
       "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"再试试呢\" }, { \"sender\": \"Unknown\", \"body\": \"还是 denied。看起来 exec 权限完全没放开。\\n\\n你可以在宿主机终端运行：\\n``bash\\nopenclaw config set exec.security allowlist\\n`\\n\\n或者查看当前配置：\\n`bash\\nopenclaw config list | grep -i exec\\n``\\n\\n[◉_◉]\" }, { \"sender\": \"Unknown\", \"body\": \"你再试试exec权限\" } ] ``` 再试试呢",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "codex",
-      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
-      "agentId": "codex",
-      "label": "Codex local session",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772087722984.0547,
-      "totalTokens": 15969,
-      "inputTokens": 15897,
-      "outputTokens": 72,
-      "inputQuery": "？",
-      "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
     },
     {
       "source": "openclaw",
@@ -2407,9 +2407,9 @@
       "sessionId": "0cef191b-468f-49f1-a7fa-2f71f18b850a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772001795888,
-      "totalTokens": 15902,
-      "inputTokens": 32,
+      "updatedAt": 1772001802925.3516,
+      "totalTokens": 16016,
+      "inputTokens": 15902,
       "outputTokens": 114,
       "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。"
     },
@@ -2418,9 +2418,9 @@
       "sessionId": "33beb0e8-c812-4437-b62e-1bbda3af832b",
       "agentId": "coder",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772001816194,
-      "totalTokens": 20165,
-      "inputTokens": 13454,
+      "updatedAt": 1772001910038.6667,
+      "totalTokens": 108280,
+      "inputTokens": 107590,
       "outputTokens": 690,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 联网检索优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"OpenClaw release notes\\\" --topic news -n 5 - Tavily 失败或证据不足时，使用 browser 兜底 【早间OpenClaw升级简报任务】 你将发送今天的第二条 iMessage（第一条早安问候由其他 cron 发送）。 你需要尽力获取： - 当前版本（优先本机查询） - 可升级版本（优先本机查询） - 官方 release 关键修复（2-3条） - 官方社群讨论（issues/discussions）中的升级反馈（1-2条） - 与本机已见问题的关联：Connection error、API rate limit、cron 投递稳定性 社群讨论兜底（若实时搜索失败，必须至少引用这些官方线程）： - https://github.com/openclaw/openclaw/issues/10812 - https://github.com/openclaw/openclaw/issues/10849 输出要求（严格，必须完全遵守）： - 只输出 7 行中文，不能多也不能少 - 不能有额外前言、解释、致歉 - 不要表情、不要代码块、不要“状态”字样 7 行模板（逐行输出）： 1) OpenClaw 早间升级简报 2) 当前版本：<x>；可升级版本：<y> 3) 关键修复1：<一句话> 4) 关键修复2：<一句话> 5) 社群讨论：<一句话，必须出现 issue/discussion 或 #10812/#10849> 6) 结论：<建议升级 或 暂缓升级>（<一句理由>） 7) 动作：<若第6行是建议升级则写“执行：openclaw update”；若第6行是暂缓升级则写“暂缓，明日复查”> 信息不足时处理： - 不得中断任务；用“信息不足”填充对应字段 - 但第6行和第7行仍必须给出明确结论与一致动作"
     },
@@ -2689,17 +2689,6 @@
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     },
     {
-      "source": "codex",
-      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
-      "agentId": "codex",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772087722984.0547,
-      "totalTokens": 15969,
-      "inputTokens": 15897,
-      "outputTokens": 72,
-      "inputQuery": "？"
-    },
-    {
       "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
@@ -2709,6 +2698,17 @@
       "inputTokens": 7914,
       "outputTokens": 199,
       "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"再试试呢\" }, { \"sender\": \"Unknown\", \"body\": \"还是 denied。看起来 exec 权限完全没放开。\\n\\n你可以在宿主机终端运行：\\n``bash\\nopenclaw config set exec.security allowlist\\n`\\n\\n或者查看当前配置：\\n`bash\\nopenclaw config list | grep -i exec\\n``\\n\\n[◉_◉]\" }, { \"sender\": \"Unknown\", \"body\": \"你再试试exec权限\" } ] ``` 再试试呢"
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
+      "agentId": "codex",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772088357477.212,
+      "totalTokens": 15969,
+      "inputTokens": 15897,
+      "outputTokens": 72,
+      "inputQuery": "？"
     }
   ],
   "staticFiles": {
