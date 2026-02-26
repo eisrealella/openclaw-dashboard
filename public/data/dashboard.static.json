@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T01:16:58.583Z",
+    "generatedAt": "2026-02-26T01:22:03.812Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -8,15 +8,15 @@
     "tokenHistory": {
       "oldestDay": "2026-02-08",
       "latestDay": "2026-02-26",
-      "bucketCount": 26
+      "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T01:16:58.616Z",
+    "staticExportedAt": "2026-02-26T01:22:03.846Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1424251824,
-    "inputTokens": 1422800697,
-    "outputTokens": 2693450,
+    "totalTokens": 1424252283,
+    "inputTokens": 1422826303,
+    "outputTokens": 2694358,
     "sessions": 149
   },
   "trend": [
@@ -83,18 +83,18 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 109719600
+      "tokens": 39301512
     },
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 78076
+      "tokens": 70496623
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 710425542
+      "tokens": 710426001
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 910465
+          "lastSeenTokens": 910924
         }
       },
       {
@@ -881,15 +881,28 @@
   },
   "recentSessions": [
     {
+      "source": "codex",
+      "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772068745404.7166,
+      "totalTokens": 70418088,
+      "inputTokens": 70199613,
+      "outputTokens": 218475,
+      "inputQuery": "帮我放开 main 的一些权限吧，它现在连 cron job 都改不了？",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/25/rollout-2026-02-25T12-31-58-019c9311-6c64-71c0-acd0-95bb7e60298a.jsonl"
+    },
+    {
       "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772068597251,
-      "totalTokens": 18164,
-      "inputTokens": 36,
-      "outputTokens": 60,
+      "updatedAt": 1772068632998,
+      "totalTokens": 18623,
+      "inputTokens": 25642,
+      "outputTokens": 968,
       "inputQuery": "已经记住了 ✓ 🤖\" [message_id:27] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 改一下这个cron job，如果openclaw最新版本和我当前的版本是一样的，则不需要返回这么多信息，只需要告诉我我现在是最新版本了",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -1022,19 +1035,6 @@
       "outputTokens": 1104,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我执行以下 git 操作： 1. 进入 /Users/ella/.openclaw/workspace 目录 2. git add -A 3. git commit -m \"自由探索：凌晨一点的思考 - AI动态、哲学、推理小说\" 4. git push 然后等待 push 完成。",
       "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/af0b715e-e898-441d-be2c-ab2c557851df.jsonl.deleted.2026-02-25T18-06-02.784Z"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "451a6a7c-73a6-4338-a02d-7c19f0c7b46e",
-      "agentId": "main",
-      "label": "Cron: 自由探索互联网",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772039038740,
-      "totalTokens": 76002,
-      "inputTokens": 884031,
-      "outputTokens": 7423,
-      "inputQuery": "结果：已完成，`git push` 成功，远程已是最新（`Everything up-to-date`）🐻 关键步骤： 1. 已进入目录：`/Users/ella/.openclaw/workspace` 2. 执行了 `git status`（工作区无待提交更改） 3. 因无变更，未执行 `git add -A` / `git commit` 4. 执行 `git push` 并等待完成，输出为 `Everything up-to-date` Stats: runtime 13s • tokens 4.4k (in 3.9k / out 500) • prompt/cache 10.3k A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type).",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     }
   ],
   "sessionPoints": [
@@ -2535,17 +2535,6 @@
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run git push for the my-website repo: cd /Users/ella/.openclaw/workspace/my-website git add -A git commit -m \"Add: 2026年2月的三则新鲜事\" git push Report the result."
     },
     {
-      "source": "codex",
-      "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
-      "agentId": "codex",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772034632860.1958,
-      "totalTokens": 70418088,
-      "inputTokens": 70199613,
-      "outputTokens": 218475,
-      "inputQuery": "如何获取 moltbook api key"
-    },
-    {
       "source": "openclaw",
       "sessionId": "451a6a7c-73a6-4338-a02d-7c19f0c7b46e",
       "agentId": "main",
@@ -2671,11 +2660,22 @@
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772068597251,
-      "totalTokens": 18164,
-      "inputTokens": 36,
-      "outputTokens": 60,
+      "updatedAt": 1772068632998,
+      "totalTokens": 18623,
+      "inputTokens": 25642,
+      "outputTokens": 968,
       "inputQuery": "已经记住了 ✓ 🤖\" [message_id:27] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 改一下这个cron job，如果openclaw最新版本和我当前的版本是一样的，则不需要返回这么多信息，只需要告诉我我现在是最新版本了"
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
+      "agentId": "codex",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772068745404.7166,
+      "totalTokens": 70418088,
+      "inputTokens": 70199613,
+      "outputTokens": 218475,
+      "inputQuery": "帮我放开 main 的一些权限吧，它现在连 cron job 都改不了？"
     }
   ],
   "staticFiles": {
