@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T01:22:03.812Z",
+    "generatedAt": "2026-02-26T01:27:08.851Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T01:22:03.846Z",
+    "staticExportedAt": "2026-02-26T01:27:08.880Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1424252283,
-    "inputTokens": 1422826303,
-    "outputTokens": 2694358,
+    "totalTokens": 1424253213,
+    "inputTokens": 1422821540,
+    "outputTokens": 2693860,
     "sessions": 149
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70496623
+      "tokens": 70497553
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 710426001
+      "tokens": 710426931
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 910924
+          "lastSeenTokens": 911854
         }
       },
       {
@@ -881,30 +881,30 @@
   },
   "recentSessions": [
     {
-      "source": "codex",
-      "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
-      "agentId": "codex",
-      "label": "Codex local session",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772068745404.7166,
-      "totalTokens": 70418088,
-      "inputTokens": 70199613,
-      "outputTokens": 218475,
-      "inputQuery": "帮我放开 main 的一些权限吧，它现在连 cron job 都改不了？",
-      "sourcePath": "/Users/ella/.codex/sessions/2026/02/25/rollout-2026-02-25T12-31-58-019c9311-6c64-71c0-acd0-95bb7e60298a.jsonl"
-    },
-    {
       "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772068632998,
-      "totalTokens": 18623,
-      "inputTokens": 25642,
-      "outputTokens": 968,
-      "inputQuery": "已经记住了 ✓ 🤖\" [message_id:27] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 改一下这个cron job，如果openclaw最新版本和我当前的版本是一样的，则不需要返回这么多信息，只需要告诉我我现在是最新版本了",
+      "updatedAt": 1772069164025,
+      "totalTokens": 19553,
+      "inputTokens": 20879,
+      "outputTokens": 486,
+      "inputQuery": "没看到 coder 的 …\" [message_id:34] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 你检查一下coder今早的日志，追溯一下它是通过什么发起了今早的job",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772069090816.0715,
+      "totalTokens": 70418088,
+      "inputTokens": 70199613,
+      "outputTokens": 218475,
+      "inputQuery": "？",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/25/rollout-2026-02-25T12-31-58-019c9311-6c64-71c0-acd0-95bb7e60298a.jsonl"
     },
     {
       "source": "openclaw",
@@ -912,10 +912,10 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772068373759,
+      "updatedAt": 1772068968428,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 122,
+      "outputTokens": 106,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2649,33 +2649,33 @@
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772068373759,
+      "updatedAt": 1772068968428,
       "totalTokens": 16186,
       "inputTokens": 36,
-      "outputTokens": 122,
+      "outputTokens": 106,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772068632998,
-      "totalTokens": 18623,
-      "inputTokens": 25642,
-      "outputTokens": 968,
-      "inputQuery": "已经记住了 ✓ 🤖\" [message_id:27] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 改一下这个cron job，如果openclaw最新版本和我当前的版本是一样的，则不需要返回这么多信息，只需要告诉我我现在是最新版本了"
     },
     {
       "source": "codex",
       "sessionId": "019c9311-6c64-71c0-acd0-95bb7e60298a",
       "agentId": "codex",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772068745404.7166,
+      "updatedAt": 1772069090816.0715,
       "totalTokens": 70418088,
       "inputTokens": 70199613,
       "outputTokens": 218475,
-      "inputQuery": "帮我放开 main 的一些权限吧，它现在连 cron job 都改不了？"
+      "inputQuery": "？"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772069164025,
+      "totalTokens": 19553,
+      "inputTokens": 20879,
+      "outputTokens": 486,
+      "inputQuery": "没看到 coder 的 …\" [message_id:34] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 你检查一下coder今早的日志，追溯一下它是通过什么发起了今早的job"
     }
   ],
   "staticFiles": {
