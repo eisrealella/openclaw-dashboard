@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T06:06:08.164Z",
+    "generatedAt": "2026-02-26T06:11:13.930Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,12 +10,12 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T06:06:08.205Z",
+    "staticExportedAt": "2026-02-26T06:11:13.964Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1424365902,
-    "inputTokens": 1423452559,
+    "totalTokens": 1424523573,
+    "inputTokens": 1423617135,
     "outputTokens": 2703371,
     "sessions": 152
   },
@@ -83,7 +83,7 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 39339907
+      "tokens": 39497578
     },
     {
       "date": "2026-02-26",
@@ -94,7 +94,7 @@
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 710523651
+      "tokens": 710681322
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 740012
+          "lastSeenTokens": 704091
         }
       },
       {
@@ -2374,9 +2374,9 @@
       "sessionId": "d393a3f0-573c-43a5-809f-e1dac7ae82ee",
       "agentId": "coder",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771999322841,
-      "totalTokens": 19115,
-      "inputTokens": 16737,
+      "updatedAt": 1771999383056.0186,
+      "totalTokens": 99909,
+      "inputTokens": 99022,
       "outputTokens": 887,
       "inputQuery": "【早间OpenClaw升级简报任务】 你将发送今天的第二条 iMessage（第一条早安问候由其他 cron 发送）。 请按顺序执行： 1) 读取本机当前版本：`openclaw --version` 2) 读取可升级状态：`openclaw update status` 3) 查官方发布说明：`https://github.com/openclaw/openclaw/releases` 4) 查官方社群讨论（issues/discussions）里与升级风险、已知问题、修复进度相关的近期信息 5) 对比后给出是否建议升级 判定重点（必须覆盖）： - 当前版本 vs 可升级版本 - 你看到的关键修复点（2-3条） - 社群反馈（1-2条） - 与本机已出现问题的关系：Connection error、API rate limit、cron 投递稳定性 输出格式（严格）： - 仅输出一条中文 iMessage，6-9行 - 第1行固定：OpenClaw 早间升级简报 - 必须包含：当前版本、可升级版本、关键修复、社群观察、结论 - 结论必须是二选一：建议升级 / 暂缓升级，并给1句理由 - 最后一行固定二选一： - 执行：openclaw update - 暂缓，明日复查 限制： - 不要表情 - 不要代码块 - 不要输出“状态”字样 - 网络信息不足时，明确写“信息不足，暂缓升级”，并输出“暂缓，明日复查”"
     },
@@ -2385,9 +2385,9 @@
       "sessionId": "54865c79-036d-4c8a-ad8f-fbc8aef24ac5",
       "agentId": "coder",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1771999423568,
-      "totalTokens": 16806,
-      "inputTokens": 10605,
+      "updatedAt": 1771999530498.4321,
+      "totalTokens": 93683,
+      "inputTokens": 92896,
       "outputTokens": 787,
       "inputQuery": "【早间OpenClaw升级简报任务】 你将发送今天的第二条 iMessage（第一条早安问候由其他 cron 发送）。 你需要尽力获取： - 当前版本（优先本机查询） - 可升级版本（优先本机查询） - 官方 release 关键修复（2-3条） - 官方社群讨论（issues/discussions）中的升级反馈（1-2条） - 与本机已见问题的关联：Connection error、API rate limit、cron 投递稳定性 输出要求（严格，必须完全遵守）： - 只输出 7 行中文，不能多也不能少 - 不能有额外前言、解释、致歉 - 不要表情、不要代码块、不要“状态”字样 7 行模板（逐行输出）： 1) OpenClaw 早间升级简报 2) 当前版本：<x>；可升级版本：<y> 3) 关键修复1：<一句话> 4) 关键修复2：<一句话> 5) 社群讨论：<一句话，写明来源类型如 issue/discussion> 6) 结论：<建议升级 或 暂缓升级>（<一句理由>） 7) 动作：<若第6行是建议升级则写“执行：openclaw update”；若第6行是暂缓升级则写“暂缓，明日复查”> 信息不足时处理： - 不得中断任务；用“信息不足”填充对应字段 - 但第6行和第7行仍必须给出明确结论与一致动作"
     },
