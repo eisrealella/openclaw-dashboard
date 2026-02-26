@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T12:03:40.494Z",
+    "generatedAt": "2026-02-26T12:33:49.321Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T12:03:40.520Z",
+    "staticExportedAt": "2026-02-26T12:33:49.347Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1425820035,
-    "inputTokens": 1425018250,
-    "outputTokens": 2710949,
+    "totalTokens": 1426299160,
+    "inputTokens": 1425361731,
+    "outputTokens": 2710944,
     "sessions": 154
   },
   "trend": [
@@ -83,18 +83,18 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 40689634
+      "tokens": 41168756
     },
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70676253
+      "tokens": 70676256
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 711977784
+      "tokens": 712456909
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 668674
+          "lastSeenTokens": 638949
         }
       },
       {
@@ -886,10 +886,10 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772106992165,
-      "totalTokens": 16759,
-      "inputTokens": 640,
-      "outputTokens": 189,
+      "updatedAt": 1772108803989,
+      "totalTokens": 16762,
+      "inputTokens": 643,
+      "outputTokens": 184,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2506,9 +2506,9 @@
       "sessionId": "3c5edac8-7640-4a2d-97ee-0278b8d5e773",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772021038727,
-      "totalTokens": 29728,
-      "inputTokens": 159936,
+      "updatedAt": 1772021243340.964,
+      "totalTokens": 508850,
+      "inputTokens": 503414,
       "outputTokens": 5436,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
     },
@@ -2726,10 +2726,10 @@
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772106992165,
-      "totalTokens": 16759,
-      "inputTokens": 640,
-      "outputTokens": 189,
+      "updatedAt": 1772108803989,
+      "totalTokens": 16762,
+      "inputTokens": 643,
+      "outputTokens": 184,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
