@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T23:27:15.008Z",
+    "generatedAt": "2026-02-26T23:32:22.164Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T23:27:15.037Z",
+    "staticExportedAt": "2026-02-26T23:32:22.190Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1436839677,
-    "inputTokens": 1436483915,
-    "outputTokens": 2749825,
+    "totalTokens": 1436856407,
+    "inputTokens": 1436484581,
+    "outputTokens": 2750075,
     "sessions": 160
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 78686823
+      "tokens": 78703553
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 722790317
+      "tokens": 722807047
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 752848
+          "lastSeenTokens": 769669
         }
       },
       {
@@ -886,10 +886,10 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772148187662,
-      "totalTokens": 91,
-      "inputTokens": 36,
-      "outputTokens": 55,
+      "updatedAt": 1772148719998,
+      "totalTokens": 16821,
+      "inputTokens": 702,
+      "outputTokens": 305,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2792,10 +2792,10 @@
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772148187662,
-      "totalTokens": 91,
-      "inputTokens": 36,
-      "outputTokens": 55,
+      "updatedAt": 1772148719998,
+      "totalTokens": 16821,
+      "inputTokens": 702,
+      "outputTokens": 305,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
