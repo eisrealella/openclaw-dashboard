@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T01:57:39.540Z",
+    "generatedAt": "2026-02-26T02:02:44.604Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,14 +10,14 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T01:57:39.575Z",
+    "staticExportedAt": "2026-02-26T02:02:44.630Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1424252599,
-    "inputTokens": 1422809007,
-    "outputTokens": 2693662,
-    "sessions": 149
+    "totalTokens": 1424291734,
+    "inputTokens": 1422840283,
+    "outputTokens": 2694602,
+    "sessions": 151
   },
   "trend": [
     {
@@ -88,17 +88,17 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70496939
+      "tokens": 70536074
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 710426317
+      "tokens": 710449483
     },
     {
       "model": "gpt-5.3-codex",
-      "tokens": 546037237
+      "tokens": 546053206
     },
     {
       "model": "MiniMax-M2.1",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 911240
+          "lastSeenTokens": 934406
         }
       },
       {
@@ -886,12 +886,38 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772070768658,
+      "updatedAt": 1772071363927,
       "totalTokens": 16186,
       "inputTokens": 36,
       "outputTokens": 82,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "792bff47-29dd-4778-b745-8ba24930970e",
+      "agentId": "main",
+      "label": "Cron: 日报-早间总结",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772071200038,
+      "totalTokens": 23166,
+      "inputTokens": 15379,
+      "outputTokens": 868,
+      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772071114401.1775,
+      "totalTokens": 15969,
+      "inputTokens": 15897,
+      "outputTokens": 72,
+      "inputQuery": "？",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
     },
     {
       "source": "openclaw",
@@ -1009,32 +1035,6 @@
       "outputTokens": 500,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我执行以下操作： 1. 进入 /Users/ella/.openclaw/workspace 目录 2. 运行 git status 查看状态 3. 如果有需要提交的更改，运行 git add -A 和 git commit 4. 运行 git push 推送到 GitHub 5. 等待 push 完成 完成后告诉我结果。",
       "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/70ce147b-ee5d-48e1-a83c-407d1f576315.jsonl.deleted.2026-02-25T18-07-02.794Z"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "88cdfd2f-538e-4a47-ab1d-c94f001ed754",
-      "agentId": "coder",
-      "label": "toolUse",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772039214740.4573,
-      "totalTokens": 228238,
-      "inputTokens": 227291,
-      "outputTokens": 947,
-      "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 检查 git push 是否完成。如果完成了，告诉我结果。如果还没完成，等它完成。",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/88cdfd2f-538e-4a47-ab1d-c94f001ed754.jsonl.deleted.2026-02-25T18-07-02.785Z"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "af0b715e-e898-441d-be2c-ab2c557851df",
-      "agentId": "coder",
-      "label": "toolUse",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772039210183.8762,
-      "totalTokens": 485460,
-      "inputTokens": 484356,
-      "outputTokens": 1104,
-      "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我执行以下 git 操作： 1. 进入 /Users/ella/.openclaw/workspace 目录 2. git add -A 3. git commit -m \"自由探索：凌晨一点的思考 - AI动态、哲学、推理小说\" 4. git push 然后等待 push 完成。",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/af0b715e-e898-441d-be2c-ab2c557851df.jsonl.deleted.2026-02-25T18-06-02.784Z"
     }
   ],
   "sessionPoints": [
@@ -2667,11 +2667,33 @@
       "inputQuery": "已经让 coder 去查…\" [message_id:40] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 为啥failed了"
     },
     {
+      "source": "codex",
+      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
+      "agentId": "codex",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772071114401.1775,
+      "totalTokens": 15969,
+      "inputTokens": 15897,
+      "outputTokens": 72,
+      "inputQuery": "？"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "792bff47-29dd-4778-b745-8ba24930970e",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772071200038,
+      "totalTokens": 23166,
+      "inputTokens": 15379,
+      "outputTokens": 868,
+      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新"
+    },
+    {
       "source": "openclaw",
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772070768658,
+      "updatedAt": 1772071363927,
       "totalTokens": 16186,
       "inputTokens": 36,
       "outputTokens": 82,
