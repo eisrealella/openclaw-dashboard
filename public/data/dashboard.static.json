@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T06:46:49.638Z",
+    "generatedAt": "2026-02-26T06:51:54.459Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T06:46:49.662Z",
+    "staticExportedAt": "2026-02-26T06:51:54.484Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1424701378,
-    "inputTokens": 1423828216,
-    "outputTokens": 2703307,
+    "totalTokens": 1424701900,
+    "inputTokens": 1423828837,
+    "outputTokens": 2703877,
     "sessions": 152
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70570656
+      "tokens": 70571178
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 710859127
+      "tokens": 710859649
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 649619
+          "lastSeenTokens": 650141
         }
       },
       {
@@ -222,7 +222,7 @@
         "id": "skill:apple-reminders:6",
         "kind": "skill",
         "title": "apple-reminders",
-        "subtitle": "Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
+        "subtitle": "Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-reminders/SKILL.md",
@@ -308,7 +308,7 @@
         }
       },
       {
-        "id": "skill:dashboard-data-hygiene:16",
+        "id": "skill:dashboard-data-hygiene:17",
         "kind": "skill",
         "title": "dashboard-data-hygiene",
         "subtitle": "Maintain OpenClaw dashboard data quality and presentation consistency. Use when updating session ingestion/display, token aggregation, query sanitization, or agent overview card rendering (style, insight, and emoji defaults).",
@@ -338,7 +338,7 @@
         }
       },
       {
-        "id": "skill:dual-agent-handshake:17",
+        "id": "skill:dual-agent-handshake:18",
         "kind": "skill",
         "title": "dual-agent-handshake",
         "subtitle": "Enforce deterministic collaboration between main and coder agents for every task. Main must classify tasks and delegate coding/automation/complex execution to coder via sessions_spawn with a task envelope; coder must execute and return structured results only.",
@@ -426,7 +426,7 @@
         }
       },
       {
-        "id": "skill:feishu-interactive-cards:18",
+        "id": "skill:feishu-interactive-cards:19",
         "kind": "skill",
         "title": "feishu-interactive-cards",
         "subtitle": "Create and send interactive cards to Feishu (Lark) with buttons, forms, polls, and rich UI elements. Use when replying to Feishu messages and there is ANY uncertainty - send an interactive card instead of plain text to let users choose via buttons. Automatically handles callbacks via long-polling connection. Use for confirmations, choices, forms, todos, polls, or any scenario requiring user interaction in Feishu.",
@@ -486,7 +486,7 @@
         }
       },
       {
-        "id": "skill:find-skills:19",
+        "id": "skill:find-skills:20",
         "kind": "skill",
         "title": "find-skills",
         "subtitle": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
@@ -501,7 +501,7 @@
         }
       },
       {
-        "id": "skill:gh-issues:24",
+        "id": "skill:gh-issues:9",
         "kind": "skill",
         "title": "gh-issues",
         "subtitle": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
@@ -516,7 +516,7 @@
         }
       },
       {
-        "id": "skill:github:9",
+        "id": "skill:github:10",
         "kind": "skill",
         "title": "github",
         "subtitle": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
@@ -560,7 +560,7 @@
         }
       },
       {
-        "id": "skill:healthcheck:10",
+        "id": "skill:healthcheck:11",
         "kind": "skill",
         "title": "healthcheck",
         "subtitle": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
@@ -590,10 +590,10 @@
         }
       },
       {
-        "id": "skill:imsg:11",
+        "id": "skill:imsg:12",
         "kind": "skill",
         "title": "imsg",
-        "subtitle": "iMessage/SMS CLI for listing chats, history, watch, and sending.",
+        "subtitle": "iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/imsg/SKILL.md",
@@ -605,7 +605,7 @@
         }
       },
       {
-        "id": "skill:mac-notes-agent:20",
+        "id": "skill:mac-notes-agent:21",
         "kind": "skill",
         "title": "mac-notes-agent",
         "subtitle": "Integrate with the macOS Notes app (Apple Notes).\nSupports creating, listing, reading, updating, deleting, and searching notes\nvia a simple Node.js CLI that bridges to AppleScript.\n",
@@ -620,7 +620,7 @@
         }
       },
       {
-        "id": "skill:moltbook-auth:25",
+        "id": "skill:moltbook-auth:22",
         "kind": "skill",
         "title": "moltbook-auth",
         "subtitle": "Persist and safely reuse Moltbook auth context for browsing and API actions. Use when tasks involve Moltbook login, session checks, or authenticated post/comment/search calls.",
@@ -650,7 +650,7 @@
         }
       },
       {
-        "id": "skill:peekaboo:12",
+        "id": "skill:peekaboo:13",
         "kind": "skill",
         "title": "peekaboo",
         "subtitle": "Capture and automate macOS UI with the Peekaboo CLI.",
@@ -679,7 +679,7 @@
         }
       },
       {
-        "id": "skill:proactive-agent:21",
+        "id": "skill:proactive-agent:23",
         "kind": "skill",
         "title": "proactive-agent",
         "subtitle": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞",
@@ -694,7 +694,7 @@
         }
       },
       {
-        "id": "skill:skill-creator:13",
+        "id": "skill:skill-creator:14",
         "kind": "skill",
         "title": "skill-creator",
         "subtitle": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
@@ -709,7 +709,7 @@
         }
       },
       {
-        "id": "skill:sonoscli:14",
+        "id": "skill:sonoscli:15",
         "kind": "skill",
         "title": "sonoscli",
         "subtitle": "Control Sonos speakers (discover/status/play/volume/group).",
@@ -739,7 +739,7 @@
         }
       },
       {
-        "id": "skill:tavily:22",
+        "id": "skill:tavily:24",
         "kind": "skill",
         "title": "tavily",
         "subtitle": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
@@ -768,7 +768,7 @@
         }
       },
       {
-        "id": "skill:walle-presence:23",
+        "id": "skill:walle-presence:25",
         "kind": "skill",
         "title": "walle-presence",
         "subtitle": "Add compact robot-like emotional expression to replies without hurting task clarity.",
@@ -783,10 +783,10 @@
         }
       },
       {
-        "id": "skill:weather:15",
+        "id": "skill:weather:16",
         "kind": "skill",
         "title": "weather",
-        "subtitle": "Get current weather and forecasts (no API key required).",
+        "subtitle": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/weather/SKILL.md",
@@ -881,6 +881,19 @@
   },
   "recentSessions": [
     {
+      "source": "openclaw",
+      "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
+      "agentId": "main",
+      "label": "stop",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772088613975,
+      "totalTokens": 16708,
+      "inputTokens": 657,
+      "outputTokens": 676,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
       "source": "codex",
       "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
       "agentId": "codex",
@@ -904,19 +917,6 @@
       "inputTokens": 7914,
       "outputTokens": 199,
       "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"再试试呢\" }, { \"sender\": \"Unknown\", \"body\": \"还是 denied。看起来 exec 权限完全没放开。\\n\\n你可以在宿主机终端运行：\\n``bash\\nopenclaw config set exec.security allowlist\\n`\\n\\n或者查看当前配置：\\n`bash\\nopenclaw config list | grep -i exec\\n``\\n\\n[◉_◉]\" }, { \"sender\": \"Unknown\", \"body\": \"你再试试exec权限\" } ] ``` 再试试呢",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
-      "agentId": "main",
-      "label": "stop",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772087569161,
-      "totalTokens": 16186,
-      "inputTokens": 36,
-      "outputTokens": 106,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -2679,17 +2679,6 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772087569161,
-      "totalTokens": 16186,
-      "inputTokens": 36,
-      "outputTokens": 106,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
-    },
-    {
-      "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "model": "MiniMax-M2.5",
@@ -2709,6 +2698,17 @@
       "inputTokens": 15897,
       "outputTokens": 72,
       "inputQuery": "？"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772088613975,
+      "totalTokens": 16708,
+      "inputTokens": 657,
+      "outputTokens": 676,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
   "staticFiles": {
