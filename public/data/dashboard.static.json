@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T07:07:09.272Z",
+    "generatedAt": "2026-02-26T07:12:14.213Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,12 +10,12 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T07:07:09.294Z",
+    "staticExportedAt": "2026-02-26T07:12:14.240Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1425025337,
-    "inputTokens": 1424094468,
+    "totalTokens": 1425698461,
+    "inputTokens": 1424572226,
     "outputTokens": 2703736,
     "sessions": 152
   },
@@ -83,7 +83,7 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 40000864
+      "tokens": 40673988
     },
     {
       "date": "2026-02-26",
@@ -94,7 +94,7 @@
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 711183086
+      "tokens": 711856210
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 611590
+          "lastSeenTokens": 581080
         }
       },
       {
@@ -881,6 +881,19 @@
   },
   "recentSessions": [
     {
+      "source": "codex",
+      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772089663727.1912,
+      "totalTokens": 15969,
+      "inputTokens": 15897,
+      "outputTokens": 72,
+      "inputQuery": "？",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
+    },
+    {
       "source": "openclaw",
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
@@ -905,19 +918,6 @@
       "outputTokens": 226,
       "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"还是不行么\" }, { \"sender\": \"Unknown\", \"body\": \"还是不行。exec 权限依然被拒。\\n\\n你确认在终端运行过 openclaw config set exec.security allowlist 了吗？需要重启 gateway 生效吗？\\n\\n[◉_◉]\" }, { \"sender\": \"Unknown\", \"body\": \"再试试呢\" } ] ``` 还是不行么",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "codex",
-      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
-      "agentId": "codex",
-      "label": "Codex local session",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772089001161.4482,
-      "totalTokens": 15969,
-      "inputTokens": 15897,
-      "outputTokens": 72,
-      "inputQuery": "？",
-      "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
     },
     {
       "source": "openclaw",
@@ -2462,9 +2462,9 @@
       "sessionId": "d2192a98-73d8-4ff5-b973-d0df74016f25",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772003038719,
-      "totalTokens": 30510,
-      "inputTokens": 219639,
+      "updatedAt": 1772003312606.3022,
+      "totalTokens": 703634,
+      "inputTokens": 697397,
       "outputTokens": 6237,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
     },
@@ -2678,17 +2678,6 @@
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
     },
     {
-      "source": "codex",
-      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
-      "agentId": "codex",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772089001161.4482,
-      "totalTokens": 15969,
-      "inputTokens": 15897,
-      "outputTokens": 72,
-      "inputQuery": "？"
-    },
-    {
       "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
@@ -2709,6 +2698,17 @@
       "inputTokens": 409,
       "outputTokens": 508,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
+      "agentId": "codex",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772089663727.1912,
+      "totalTokens": 15969,
+      "inputTokens": 15897,
+      "outputTokens": 72,
+      "inputQuery": "？"
     }
   ],
   "staticFiles": {
