@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T14:05:23.819Z",
+    "generatedAt": "2026-02-26T14:10:29.008Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T14:05:23.853Z",
+    "staticExportedAt": "2026-02-26T14:10:29.041Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1426390891,
-    "inputTokens": 1425506927,
-    "outputTokens": 2714307,
+    "totalTokens": 1426572835,
+    "inputTokens": 1425665925,
+    "outputTokens": 2714372,
     "sessions": 157
   },
   "trend": [
@@ -88,17 +88,17 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70767987
+      "tokens": 70949931
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 712523356
+      "tokens": 712523475
     },
     {
       "model": "gpt-5.3-codex",
-      "tokens": 546078490
+      "tokens": 546260315
     },
     {
       "model": "MiniMax-M2.1",
@@ -136,7 +136,7 @@
       "latestInsight": "最近任务：You are running as a subagent (depth 1/1). Results auto-announce to your requester;",
       "insightEmoji": "✨",
       "insightDate": "2026-02-26",
-      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json",
+      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/0a5139f0-b435-4bac-9203-490b7f3b7042.jsonl.deleted.2026-02-26T14-08-43.251Z",
       "detailPath": "/Users/ella/.openclaw/workspace-coder/AGENTS.md"
     }
   ],
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 705396
+          "lastSeenTokens": 705515
         }
       },
       {
@@ -169,7 +169,7 @@
           "id": "openai-codex/gpt-5.3-codex",
           "alias": "Codex 5.3",
           "role": "Additional",
-          "lastSeenTokens": 49435
+          "lastSeenTokens": 24151
         }
       },
       {
@@ -184,7 +184,7 @@
           "id": "codex-cli/gpt-5.3-codex",
           "alias": "Codex CLI 5.3",
           "role": "Additional",
-          "lastSeenTokens": 49435
+          "lastSeenTokens": 24151
         }
       }
     ],
@@ -886,25 +886,12 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772114191260,
-      "totalTokens": 16570,
-      "inputTokens": 36,
-      "outputTokens": 70,
+      "updatedAt": 1772114801612,
+      "totalTokens": 16689,
+      "inputTokens": 570,
+      "outputTokens": 135,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "0a5139f0-b435-4bac-9203-490b7f3b7042",
-      "agentId": "coder",
-      "label": "check-gh-status",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772111437729,
-      "totalTokens": 12414,
-      "inputTokens": 21739,
-      "outputTokens": 1556,
-      "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我检查 GitHub 状态： 1. 进入 /Users/ella/.openclaw/workspace/my-website 目录 2. 运行 git status 查看当前状态 3. 如果有未提交的更改，添加并提交，提交信息: \"Add new blog post: 夜晚的探索碎片 + memory\" 4. 推送到 GitHub 5. 检查 GitHub Pages 构建状态 (可能需要等待1-2分钟) 完成后汇报结果。",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -934,16 +921,29 @@
     },
     {
       "source": "openclaw",
+      "sessionId": "0a5139f0-b435-4bac-9203-490b7f3b7042",
+      "agentId": "coder",
+      "label": "toolUse",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772111409126.3198,
+      "totalTokens": 54527,
+      "inputTokens": 52971,
+      "outputTokens": 1556,
+      "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我检查 GitHub 状态： 1. 进入 /Users/ella/.openclaw/workspace/my-website 目录 2. 运行 git status 查看当前状态 3. 如果有未提交的更改，添加并提交，提交信息: \"Add new blog post: 夜晚的探索碎片 + memory\" 4. 推送到 GitHub 5. 检查 GitHub Pages 构建状态 (可能需要等待1-2分钟) 完成后汇报结果。",
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/0a5139f0-b435-4bac-9203-490b7f3b7042.jsonl.deleted.2026-02-26T14-08-43.251Z"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "d4016a4d-6231-4717-8938-e3ff2252ad5f",
       "agentId": "coder",
-      "label": "git-push",
+      "label": "toolUse",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772111368760,
-      "totalTokens": 12870,
-      "inputTokens": 24010,
+      "updatedAt": 1772111315825.6934,
+      "totalTokens": 152582,
+      "inputTokens": 151242,
       "outputTokens": 1340,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我完成以下Git操作： 1. 进入 /Users/ella/.openclaw/workspace/my-website 目录 2. 添加新的博客文章: blog/feb-2026-night-exploration.html 3. 更新 blog/index.html 文件 4. 添加 memory/2026-02-26.md 文件 5. 提交更改，提交信息: \"Add new blog post: 夜晚的探索碎片 + memory\" 6. 推送到 GitHub 完成后告诉我推送结果。",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/d4016a4d-6231-4717-8938-e3ff2252ad5f.jsonl.deleted.2026-02-26T14-07-43.249Z"
     },
     {
       "source": "openclaw",
@@ -2715,11 +2715,22 @@
       "sessionId": "d4016a4d-6231-4717-8938-e3ff2252ad5f",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772111368760,
-      "totalTokens": 12870,
-      "inputTokens": 24010,
+      "updatedAt": 1772111315825.6934,
+      "totalTokens": 152582,
+      "inputTokens": 151242,
       "outputTokens": 1340,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我完成以下Git操作： 1. 进入 /Users/ella/.openclaw/workspace/my-website 目录 2. 添加新的博客文章: blog/feb-2026-night-exploration.html 3. 更新 blog/index.html 文件 4. 添加 memory/2026-02-26.md 文件 5. 提交更改，提交信息: \"Add new blog post: 夜晚的探索碎片 + memory\" 6. 推送到 GitHub 完成后告诉我推送结果。"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "0a5139f0-b435-4bac-9203-490b7f3b7042",
+      "agentId": "coder",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772111409126.3198,
+      "totalTokens": 54527,
+      "inputTokens": 52971,
+      "outputTokens": 1556,
+      "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我检查 GitHub 状态： 1. 进入 /Users/ella/.openclaw/workspace/my-website 目录 2. 运行 git status 查看当前状态 3. 如果有未提交的更改，添加并提交，提交信息: \"Add new blog post: 夜晚的探索碎片 + memory\" 4. 推送到 GitHub 5. 检查 GitHub Pages 构建状态 (可能需要等待1-2分钟) 完成后汇报结果。"
     },
     {
       "source": "openclaw",
@@ -2745,24 +2756,13 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "0a5139f0-b435-4bac-9203-490b7f3b7042",
-      "agentId": "coder",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772111437729,
-      "totalTokens": 12414,
-      "inputTokens": 21739,
-      "outputTokens": 1556,
-      "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我检查 GitHub 状态： 1. 进入 /Users/ella/.openclaw/workspace/my-website 目录 2. 运行 git status 查看当前状态 3. 如果有未提交的更改，添加并提交，提交信息: \"Add new blog post: 夜晚的探索碎片 + memory\" 4. 推送到 GitHub 5. 检查 GitHub Pages 构建状态 (可能需要等待1-2分钟) 完成后汇报结果。"
-    },
-    {
-      "source": "openclaw",
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772114191260,
-      "totalTokens": 16570,
-      "inputTokens": 36,
-      "outputTokens": 70,
+      "updatedAt": 1772114801612,
+      "totalTokens": 16689,
+      "inputTokens": 570,
+      "outputTokens": 135,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
