@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T01:27:08.851Z",
+    "generatedAt": "2026-02-26T01:32:13.808Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T01:27:08.880Z",
+    "staticExportedAt": "2026-02-26T01:32:13.834Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1424253213,
-    "inputTokens": 1422821540,
-    "outputTokens": 2693860,
+    "totalTokens": 1424252272,
+    "inputTokens": 1422803545,
+    "outputTokens": 2693485,
     "sessions": 149
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70497553
+      "tokens": 70496612
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 710426931
+      "tokens": 710425990
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 911854
+          "lastSeenTokens": 910913
         }
       },
       {
@@ -886,11 +886,11 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772069164025,
-      "totalTokens": 19553,
-      "inputTokens": 20879,
-      "outputTokens": 486,
-      "inputQuery": "没看到 coder 的 …\" [message_id:34] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 你检查一下coder今早的日志，追溯一下它是通过什么发起了今早的job",
+      "updatedAt": 1772069516215,
+      "totalTokens": 18612,
+      "inputTokens": 2884,
+      "outputTokens": 111,
+      "inputQuery": "不行，exec 和文件读…\" [message_id:38] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 你让coder给你运行",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -2671,11 +2671,11 @@
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772069164025,
-      "totalTokens": 19553,
-      "inputTokens": 20879,
-      "outputTokens": 486,
-      "inputQuery": "没看到 coder 的 …\" [message_id:34] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 你检查一下coder今早的日志，追溯一下它是通过什么发起了今早的job"
+      "updatedAt": 1772069516215,
+      "totalTokens": 18612,
+      "inputTokens": 2884,
+      "outputTokens": 111,
+      "inputQuery": "不行，exec 和文件读…\" [message_id:38] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 你让coder给你运行"
     }
   ],
   "staticFiles": {
