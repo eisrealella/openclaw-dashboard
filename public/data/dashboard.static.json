@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T09:56:33.726Z",
+    "generatedAt": "2026-02-26T10:01:38.923Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,14 +10,14 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T09:56:33.753Z",
+    "staticExportedAt": "2026-02-26T10:01:38.948Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1425724950,
-    "inputTokens": 1424683847,
-    "outputTokens": 2706808,
-    "sessions": 153
+    "totalTokens": 1425743177,
+    "inputTokens": 1424687111,
+    "outputTokens": 2707416,
+    "sessions": 154
   },
   "trend": [
     {
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70596814
+      "tokens": 70615041
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 711882699
+      "tokens": 711900926
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 607569
+          "lastSeenTokens": 625796
         }
       },
       {
@@ -219,7 +219,7 @@
         }
       },
       {
-        "id": "skill:apple-reminders:6",
+        "id": "skill:apple-reminders:22",
         "kind": "skill",
         "title": "apple-reminders",
         "subtitle": "Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
@@ -234,7 +234,7 @@
         }
       },
       {
-        "id": "skill:bluebubbles:7",
+        "id": "skill:bluebubbles:6",
         "kind": "skill",
         "title": "bluebubbles",
         "subtitle": "Use when you need to send or manage iMessages via BlueBubbles (recommended iMessage integration). Calls go through the generic message tool with channel=\"bluebubbles\".",
@@ -249,7 +249,7 @@
         }
       },
       {
-        "id": "skill:browser-automation:26",
+        "id": "skill:browser-automation:7",
         "kind": "skill",
         "title": "browser-automation",
         "subtitle": "OpenClaw 浏览器自动化 - 托管 Chrome 浏览器操作指南",
@@ -279,7 +279,7 @@
         }
       },
       {
-        "id": "skill:daily-report:27",
+        "id": "skill:daily-report:9",
         "kind": "skill",
         "title": "daily-report",
         "subtitle": "海粼酱工作日报 - 模板、定时任务、自动更新",
@@ -308,7 +308,7 @@
         }
       },
       {
-        "id": "skill:dashboard-data-hygiene:17",
+        "id": "skill:dashboard-data-hygiene:25",
         "kind": "skill",
         "title": "dashboard-data-hygiene",
         "subtitle": "Maintain OpenClaw dashboard data quality and presentation consistency. Use when updating session ingestion/display, token aggregation, query sanitization, or agent overview card rendering (style, insight, and emoji defaults).",
@@ -338,7 +338,7 @@
         }
       },
       {
-        "id": "skill:dual-agent-handshake:18",
+        "id": "skill:dual-agent-handshake:26",
         "kind": "skill",
         "title": "dual-agent-handshake",
         "subtitle": "Enforce deterministic collaboration between main and coder agents for every task. Main must classify tasks and delegate coding/automation/complex execution to coder via sessions_spawn with a task envelope; coder must execute and return structured results only.",
@@ -426,7 +426,7 @@
         }
       },
       {
-        "id": "skill:feishu-interactive-cards:19",
+        "id": "skill:feishu-interactive-cards:20",
         "kind": "skill",
         "title": "feishu-interactive-cards",
         "subtitle": "Create and send interactive cards to Feishu (Lark) with buttons, forms, polls, and rich UI elements. Use when replying to Feishu messages and there is ANY uncertainty - send an interactive card instead of plain text to let users choose via buttons. Automatically handles callbacks via long-polling connection. Use for confirmations, choices, forms, todos, polls, or any scenario requiring user interaction in Feishu.",
@@ -471,7 +471,7 @@
         }
       },
       {
-        "id": "skill:feishu-work:28",
+        "id": "skill:feishu-work:10",
         "kind": "skill",
         "title": "feishu-work",
         "subtitle": "管理飞书相关工作：机器人配置、权限管理、定时任务、日报发送",
@@ -486,7 +486,7 @@
         }
       },
       {
-        "id": "skill:find-skills:20",
+        "id": "skill:find-skills:27",
         "kind": "skill",
         "title": "find-skills",
         "subtitle": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
@@ -501,7 +501,7 @@
         }
       },
       {
-        "id": "skill:gh-issues:9",
+        "id": "skill:gh-issues:23",
         "kind": "skill",
         "title": "gh-issues",
         "subtitle": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
@@ -516,7 +516,7 @@
         }
       },
       {
-        "id": "skill:github:10",
+        "id": "skill:github:24",
         "kind": "skill",
         "title": "github",
         "subtitle": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
@@ -575,7 +575,7 @@
         }
       },
       {
-        "id": "skill:imessage-setup:29",
+        "id": "skill:imessage-setup:12",
         "kind": "skill",
         "title": "imessage-setup",
         "subtitle": "iMessage 配置指南 - BlueBubbles 和 imsg 两种方式",
@@ -590,10 +590,10 @@
         }
       },
       {
-        "id": "skill:imsg:12",
+        "id": "skill:imsg:13",
         "kind": "skill",
         "title": "imsg",
-        "subtitle": "iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.",
+        "subtitle": "iMessage/SMS CLI for listing chats, history, watch, and sending.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/imsg/SKILL.md",
@@ -620,7 +620,7 @@
         }
       },
       {
-        "id": "skill:moltbook-auth:22",
+        "id": "skill:moltbook-auth:28",
         "kind": "skill",
         "title": "moltbook-auth",
         "subtitle": "Persist and safely reuse Moltbook auth context for browsing and API actions. Use when tasks involve Moltbook login, session checks, or authenticated post/comment/search calls.",
@@ -635,7 +635,7 @@
         }
       },
       {
-        "id": "skill:openclaw-ops:30",
+        "id": "skill:openclaw-ops:14",
         "kind": "skill",
         "title": "openclaw-ops",
         "subtitle": "OpenClaw 运维工具箱 - 任务恢复、配置备份与回滚",
@@ -650,7 +650,7 @@
         }
       },
       {
-        "id": "skill:peekaboo:13",
+        "id": "skill:peekaboo:15",
         "kind": "skill",
         "title": "peekaboo",
         "subtitle": "Capture and automate macOS UI with the Peekaboo CLI.",
@@ -679,7 +679,7 @@
         }
       },
       {
-        "id": "skill:proactive-agent:23",
+        "id": "skill:proactive-agent:29",
         "kind": "skill",
         "title": "proactive-agent",
         "subtitle": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞",
@@ -694,7 +694,7 @@
         }
       },
       {
-        "id": "skill:skill-creator:14",
+        "id": "skill:skill-creator:16",
         "kind": "skill",
         "title": "skill-creator",
         "subtitle": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
@@ -709,7 +709,7 @@
         }
       },
       {
-        "id": "skill:sonoscli:15",
+        "id": "skill:sonoscli:17",
         "kind": "skill",
         "title": "sonoscli",
         "subtitle": "Control Sonos speakers (discover/status/play/volume/group).",
@@ -724,7 +724,7 @@
         }
       },
       {
-        "id": "skill:task-skill-workflow:31",
+        "id": "skill:task-skill-workflow:18",
         "kind": "skill",
         "title": "task-skill-workflow",
         "subtitle": "任务执行前先搜索并创建合适的 skill，确保最佳实践和持续迭代",
@@ -739,7 +739,7 @@
         }
       },
       {
-        "id": "skill:tavily:24",
+        "id": "skill:tavily:30",
         "kind": "skill",
         "title": "tavily",
         "subtitle": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
@@ -768,7 +768,7 @@
         }
       },
       {
-        "id": "skill:walle-presence:25",
+        "id": "skill:walle-presence:31",
         "kind": "skill",
         "title": "walle-presence",
         "subtitle": "Add compact robot-like emotional expression to replies without hurting task clarity.",
@@ -783,10 +783,10 @@
         }
       },
       {
-        "id": "skill:weather:16",
+        "id": "skill:weather:19",
         "kind": "skill",
         "title": "weather",
-        "subtitle": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
+        "subtitle": "Get current weather and forecasts (no API key required).",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/weather/SKILL.md",
@@ -882,15 +882,28 @@
   "recentSessions": [
     {
       "source": "openclaw",
+      "sessionId": "13786942-3ae7-4eb1-826e-452f42140b5d",
+      "agentId": "main",
+      "label": "Cron: 日报-晚间总结",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772100000043,
+      "totalTokens": 18334,
+      "inputTokens": 3786,
+      "outputTokens": 644,
+      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772099784917,
-      "totalTokens": 16677,
-      "inputTokens": 558,
-      "outputTokens": 94,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "updatedAt": 1772099798638,
+      "totalTokens": 16570,
+      "inputTokens": 36,
+      "outputTokens": 58,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -1022,19 +1035,6 @@
       "outputTokens": 118,
       "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "f141137f-df61-4f68-8e99-da9725229d93",
-      "agentId": "coder",
-      "label": "toolUse",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772057225017.6501,
-      "totalTokens": 27546,
-      "inputTokens": 27214,
-      "outputTokens": 332,
-      "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: I need you to: 1. Go to /Users/ella/.openclaw/workspace/my-website 2. Run: git add -A && git commit -m \"Add new blog post: 清晨六点的哲学\" 3. Run: git push This is for adding a new blog post from my free exploration time. The post is about AI news, philosophy of creativity, and thriller novels.",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/f141137f-df61-4f68-8e99-da9725229d93.jsonl.deleted.2026-02-25T23-06-46.171Z"
     }
   ],
   "sessionPoints": [
@@ -2715,11 +2715,22 @@
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772099784917,
-      "totalTokens": 16677,
-      "inputTokens": 558,
-      "outputTokens": 94,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+      "updatedAt": 1772099798638,
+      "totalTokens": 16570,
+      "inputTokens": 36,
+      "outputTokens": 58,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "13786942-3ae7-4eb1-826e-452f42140b5d",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772100000043,
+      "totalTokens": 18334,
+      "inputTokens": 3786,
+      "outputTokens": 644,
+      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新"
     }
   ],
   "staticFiles": {
