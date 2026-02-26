@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T04:35:20.477Z",
+    "generatedAt": "2026-02-26T04:40:25.780Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,7 +10,7 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T04:35:20.505Z",
+    "staticExportedAt": "2026-02-26T04:40:25.817Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
@@ -881,6 +881,19 @@
   },
   "recentSessions": [
     {
+      "source": "codex",
+      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772080763495.062,
+      "totalTokens": 15969,
+      "inputTokens": 15897,
+      "outputTokens": 72,
+      "inputQuery": "mian 说 coder 没有exec权限",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
+    },
+    {
       "source": "openclaw",
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
@@ -944,19 +957,6 @@
       "outputTokens": 103,
       "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "codex",
-      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
-      "agentId": "codex",
-      "label": "Codex local session",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772071114401.1775,
-      "totalTokens": 15969,
-      "inputTokens": 15897,
-      "outputTokens": 72,
-      "inputQuery": "？",
-      "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
     },
     {
       "source": "codex",
@@ -2645,17 +2645,6 @@
       "inputQuery": "？"
     },
     {
-      "source": "codex",
-      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
-      "agentId": "codex",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772071114401.1775,
-      "totalTokens": 15969,
-      "inputTokens": 15897,
-      "outputTokens": 72,
-      "inputQuery": "？"
-    },
-    {
       "source": "openclaw",
       "sessionId": "792bff47-29dd-4778-b745-8ba24930970e",
       "agentId": "main",
@@ -2709,6 +2698,17 @@
       "inputTokens": 36,
       "outputTokens": 89,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
+      "agentId": "codex",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772080763495.062,
+      "totalTokens": 15969,
+      "inputTokens": 15897,
+      "outputTokens": 72,
+      "inputQuery": "mian 说 coder 没有exec权限"
     }
   ],
   "staticFiles": {
