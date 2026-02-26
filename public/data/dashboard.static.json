@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T16:58:14.358Z",
+    "generatedAt": "2026-02-26T17:03:19.509Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T16:58:14.384Z",
+    "staticExportedAt": "2026-02-26T17:03:19.536Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1426571062,
-    "inputTokens": 1425663198,
-    "outputTokens": 2714111,
+    "totalTokens": 1426570752,
+    "inputTokens": 1425666778,
+    "outputTokens": 2714226,
     "sessions": 157
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 70948158
+      "tokens": 70947848
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 712521702
+      "tokens": 712521392
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 703742
+          "lastSeenTokens": 703432
         }
       },
       {
@@ -886,11 +886,11 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772125056337,
-      "totalTokens": 17525,
-      "inputTokens": 36,
-      "outputTokens": 150,
-      "inputQuery": "那个自由探索任务可能是通…\" [message_id:8] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 哦 是你push的还是你让coder push的",
+      "updatedAt": 1772125135269,
+      "totalTokens": 17215,
+      "inputTokens": 3616,
+      "outputTokens": 265,
+      "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 官方对我们现在这个版本的exec权限说明，有给解决方案吗？或者社区里",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -2759,11 +2759,11 @@
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772125056337,
-      "totalTokens": 17525,
-      "inputTokens": 36,
-      "outputTokens": 150,
-      "inputQuery": "那个自由探索任务可能是通…\" [message_id:8] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 哦 是你push的还是你让coder push的"
+      "updatedAt": 1772125135269,
+      "totalTokens": 17215,
+      "inputTokens": 3616,
+      "outputTokens": 265,
+      "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 官方对我们现在这个版本的exec权限说明，有给解决方案吗？或者社区里"
     }
   ],
   "staticFiles": {
