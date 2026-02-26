@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T21:50:16.064Z",
+    "generatedAt": "2026-02-26T22:21:50.369Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T21:50:16.098Z",
+    "staticExportedAt": "2026-02-26T22:21:50.395Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1428516938,
-    "inputTokens": 1427611083,
-    "outputTokens": 2720498,
+    "totalTokens": 1429219354,
+    "inputTokens": 1428062403,
+    "outputTokens": 2720542,
     "sessions": 159
   },
   "trend": [
@@ -83,18 +83,18 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 42996246
+      "tokens": 43698706
     },
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 71066544
+      "tokens": 71066500
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 714467578
+      "tokens": 715169994
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 729380
+          "lastSeenTokens": 696826
         }
       },
       {
@@ -886,10 +886,10 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772142115345,
-      "totalTokens": 16534,
-      "inputTokens": 415,
-      "outputTokens": 176,
+      "updatedAt": 1772144507698,
+      "totalTokens": 16490,
+      "inputTokens": 36,
+      "outputTokens": 108,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2580,17 +2580,6 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "751c9aa5-efb7-4763-8a65-a644a1c15460",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772057038760,
-      "totalTokens": 32510,
-      "inputTokens": 277065,
-      "outputTokens": 6094,
-      "inputQuery": "清晨六点的哲学\" 3. Run: git push This is for adding a new blog post from my free exploration time. The post is about AI news, philosophy of creativity, and thriller novels.\" just completed successfully. Result: 已完成 🐻 - 在 `/Users/ella/.openclaw/workspace/my-website` 执行了提交： `git add -A && git commit -m \"Add new blog post: 清晨六点的哲学\"` - 首次 `git push` 被远端拒绝（远端有新提交）。 - 我已处理并成功推送：执行 `git pull --rebase origin main && git push` 后推送成功。 关键信息： - 新提交已上到 `origin/main` - 最终远端更新到提交：`972eba7` Stats: runtime 19s • tokens 8.3k (in 8.0k / out 332) • prompt/cache 9.3k A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type)."
-    },
-    {
-      "source": "openclaw",
       "sessionId": "f141137f-df61-4f68-8e99-da9725229d93",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
@@ -2599,6 +2588,17 @@
       "inputTokens": 27214,
       "outputTokens": 332,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: I need you to: 1. Go to /Users/ella/.openclaw/workspace/my-website 2. Run: git add -A && git commit -m \"Add new blog post: 清晨六点的哲学\" 3. Run: git push This is for adding a new blog post from my free exploration time. The post is about AI news, philosophy of creativity, and thriller novels."
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "751c9aa5-efb7-4763-8a65-a644a1c15460",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772057279035.1294,
+      "totalTokens": 734970,
+      "inputTokens": 728764,
+      "outputTokens": 6206,
+      "inputQuery": "清晨六点的哲学\" 3. Run: git push This is for adding a new blog post from my free exploration time. The post is about AI news, philosophy of creativity, and thriller novels.\" just completed successfully. Result: 已完成 🐻 - 在 `/Users/ella/.openclaw/workspace/my-website` 执行了提交： `git add -A && git commit -m \"Add new blog post: 清晨六点的哲学\"` - 首次 `git push` 被远端拒绝（远端有新提交）。 - 我已处理并成功推送：执行 `git pull --rebase origin main && git push` 后推送成功。 关键信息： - 新提交已上到 `origin/main` - 最终远端更新到提交：`972eba7` Stats: runtime 19s • tokens 8.3k (in 8.0k / out 332) • prompt/cache 9.3k A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type)."
     },
     {
       "source": "openclaw",
@@ -2781,10 +2781,10 @@
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772142115345,
-      "totalTokens": 16534,
-      "inputTokens": 415,
-      "outputTokens": 176,
+      "updatedAt": 1772144507698,
+      "totalTokens": 16490,
+      "inputTokens": 36,
+      "outputTokens": 108,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
