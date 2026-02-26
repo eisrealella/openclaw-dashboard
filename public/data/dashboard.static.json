@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T06:51:54.459Z",
+    "generatedAt": "2026-02-26T06:56:59.333Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,12 +10,12 @@
       "latestDay": "2026-02-26",
       "bucketCount": 27
     },
-    "staticExportedAt": "2026-02-26T06:51:54.484Z",
+    "staticExportedAt": "2026-02-26T06:56:59.362Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1424701900,
-    "inputTokens": 1423828837,
+    "totalTokens": 1425026190,
+    "inputTokens": 1424094684,
     "outputTokens": 2703877,
     "sessions": 152
   },
@@ -83,7 +83,7 @@
     {
       "date": "2026-02-25",
       "label": "Feb 25",
-      "tokens": 39676574
+      "tokens": 40000864
     },
     {
       "date": "2026-02-26",
@@ -94,7 +94,7 @@
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 710859649
+      "tokens": 711183939
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 650141
+          "lastSeenTokens": 612443
         }
       },
       {
@@ -881,6 +881,19 @@
   },
   "recentSessions": [
     {
+      "source": "codex",
+      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772089001161.4482,
+      "totalTokens": 15969,
+      "inputTokens": 15897,
+      "outputTokens": 72,
+      "inputQuery": "？",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
+    },
+    {
       "source": "openclaw",
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
@@ -892,19 +905,6 @@
       "outputTokens": 676,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "codex",
-      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
-      "agentId": "codex",
-      "label": "Codex local session",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772088357477.212,
-      "totalTokens": 15969,
-      "inputTokens": 15897,
-      "outputTokens": 72,
-      "inputQuery": "？",
-      "sourcePath": "/Users/ella/.codex/sessions/2026/02/26/rollout-2026-02-26T09-30-15-019c9791-6a62-77b1-81aa-1f18cdd91935.jsonl"
     },
     {
       "source": "openclaw",
@@ -2440,9 +2440,9 @@
       "sessionId": "8bc6ea37-533c-4a25-9357-57b341b8dbe9",
       "agentId": "coder",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772002370529,
-      "totalTokens": 20606,
-      "inputTokens": 83418,
+      "updatedAt": 1772002466677.2942,
+      "totalTokens": 287347,
+      "inputTokens": 285680,
       "outputTokens": 1667,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 联网检索优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \"OpenClaw release notes\" --topic news -n 5 - Tavily 失败或证据不足时，使用 browser 兜底 【早间OpenClaw升级简报任务】 你将发送今天的第二条 iMessage（第一条早安问候由其他 cron 发送）。 你需要尽力获取： - 当前版本（优先本机查询） - 可升级版本（优先本机查询） - 官方 release 关键修复（2条） - 官方社群讨论（issues/discussions）中的升级反馈（1条） - 与本机已见问题的关联：Connection error、API rate limit、cron 投递稳定性 社群讨论兜底（若实时搜索失败，必须至少尝试这些官方线程）： - https://github.com/openclaw/openclaw/issues/10812 - https://github.com/openclaw/openclaw/issues/10849 输出要求（必须遵守）： - 不要写“动作：执行：openclaw update”这一行 - 允许 6-8 行，不做严格行数限制 - 每一行内容之间留一个空行（提高可读性） - 不要表情、不要代码块、不要“状态”字样 - 不要额外前言、解释、致歉 推荐模板（可微调）： 1) OpenClaw 早间升级简报 2) 当前版本：<x>；可升级版本：<y> 3) 关键修复1：<一句话> 4) 关键修复2：<一句话> 5) 社群讨论：<一句话，必须带可验证证据：URL 或 issue/discussion 编号> 6) 结论：<建议升级 或 暂缓升级>（<一句理由>） 真实性要求（重点）： - 社群讨论必须来自真实可验证来源（能给出 URL 或明确 issue/discussion 编号） - 如果没拿到可验证来源，必须写：社群讨论：信息不足（未获取到可验证 issue/discussion 页面） - 禁止猜测、禁止编造"
     },
@@ -2451,9 +2451,9 @@
       "sessionId": "15f596f6-3c4b-4fc8-9a50-88a8919d5221",
       "agentId": "coder",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772002524043,
-      "totalTokens": 17092,
-      "inputTokens": 10391,
+      "updatedAt": 1772002564125.9326,
+      "totalTokens": 74641,
+      "inputTokens": 73976,
       "outputTokens": 665,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 联网检索优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \"OpenClaw release notes\" --topic news -n 5 - Tavily 失败或证据不足时，使用 browser 兜底 【早间OpenClaw升级简报任务】 你将发送今天的第二条 iMessage（第一条早安问候由其他 cron 发送）。 你需要尽力获取： - 当前版本（优先本机查询） - 可升级版本（优先本机查询） - 官方 release 关键修复（2条） - 官方社群讨论（issues/discussions）中的升级反馈（1条） - 与本机已见问题的关联：Connection error、API rate limit、cron 投递稳定性 社群讨论兜底（若实时搜索失败，必须至少尝试这些官方线程）： - https://github.com/openclaw/openclaw/issues/10812 - https://github.com/openclaw/openclaw/issues/10849 输出要求（必须遵守）： - 不要写“动作：执行：openclaw update”这一行 - 允许 6-8 行，不做严格行数限制 - 每一行内容之间留一个空行（提高可读性） - 不要表情、不要代码块、不要“状态”字样 - 不要额外前言、解释、致歉 推荐模板（可微调）： 1) OpenClaw 早间升级简报 2) 当前版本：<x>；可升级版本：<y> 3) 关键修复1：<一句话> 4) 关键修复2：<一句话> 5) 社群讨论：<一句话，必须带可验证证据：URL 或 issue/discussion 编号> 6) 结论：<建议升级 或 暂缓升级>（<一句理由>） 真实性要求（重点）： - 社群讨论必须来自真实可验证来源（能给出 URL 或明确 issue/discussion 编号） - 如果没拿到可验证来源，必须写：社群讨论：信息不足（未获取到可验证 issue/discussion 页面） - 禁止猜测、禁止编造"
     },
@@ -2689,17 +2689,6 @@
       "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"再试试呢\" }, { \"sender\": \"Unknown\", \"body\": \"还是 denied。看起来 exec 权限完全没放开。\\n\\n你可以在宿主机终端运行：\\n``bash\\nopenclaw config set exec.security allowlist\\n`\\n\\n或者查看当前配置：\\n`bash\\nopenclaw config list | grep -i exec\\n``\\n\\n[◉_◉]\" }, { \"sender\": \"Unknown\", \"body\": \"你再试试exec权限\" } ] ``` 再试试呢"
     },
     {
-      "source": "codex",
-      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
-      "agentId": "codex",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772088357477.212,
-      "totalTokens": 15969,
-      "inputTokens": 15897,
-      "outputTokens": 72,
-      "inputQuery": "？"
-    },
-    {
       "source": "openclaw",
       "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
       "agentId": "main",
@@ -2709,6 +2698,17 @@
       "inputTokens": 657,
       "outputTokens": 676,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c9791-6a62-77b1-81aa-1f18cdd91935",
+      "agentId": "codex",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772089001161.4482,
+      "totalTokens": 15969,
+      "inputTokens": 15897,
+      "outputTokens": 72,
+      "inputQuery": "？"
     }
   ],
   "staticFiles": {
