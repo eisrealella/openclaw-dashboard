@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T15:57:42.853Z",
+    "generatedAt": "2026-02-27T16:02:47.976Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T15:57:42.877Z",
+    "staticExportedAt": "2026-02-27T16:02:48.008Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1448146508,
-    "inputTokens": 1448283892,
-    "outputTokens": 2822785,
+    "totalTokens": 1448145986,
+    "inputTokens": 1448284000,
+    "outputTokens": 2822756,
     "sessions": 169
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 16446658
+      "tokens": 16446136
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 718298393
+      "tokens": 718297871
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 953737
+          "lastSeenTokens": 953215
         }
       },
       {
@@ -885,6 +885,19 @@
   },
   "recentSessions": [
     {
+      "source": "openclaw",
+      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
+      "agentId": "main",
+      "label": "stop",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772207936578,
+      "totalTokens": 17352,
+      "inputTokens": 144,
+      "outputTokens": 0,
+      "inputQuery": "在。有什么需要？[◉_◉…\" [message_id:2] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 这个总结很好，记住以后就这样汇报",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
       "source": "codex",
       "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
       "agentId": "codex",
@@ -896,19 +909,6 @@
       "outputTokens": 75581,
       "inputQuery": "为什么 bluebubbles + minimax 总是超时呢？定位一下真实原因",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/27/rollout-2026-02-27T13-48-48-019c9da4-7af0-7e12-8fef-fa4255784c44.jsonl"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
-      "agentId": "main",
-      "label": "stop",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772207647713,
-      "totalTokens": 17874,
-      "inputTokens": 36,
-      "outputTokens": 29,
-      "inputQuery": "在。有什么需要？[◉_◉…\" [message_id:2] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 这个总结很好，记住以后就这样汇报",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -2880,17 +2880,6 @@
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
     },
     {
-      "source": "openclaw",
-      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772207647713,
-      "totalTokens": 17874,
-      "inputTokens": 36,
-      "outputTokens": 29,
-      "inputQuery": "在。有什么需要？[◉_◉…\" [message_id:2] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 这个总结很好，记住以后就这样汇报"
-    },
-    {
       "source": "codex",
       "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
       "agentId": "codex",
@@ -2900,6 +2889,17 @@
       "inputTokens": 15648866,
       "outputTokens": 75581,
       "inputQuery": "为什么 bluebubbles + minimax 总是超时呢？定位一下真实原因"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772207936578,
+      "totalTokens": 17352,
+      "inputTokens": 144,
+      "outputTokens": 0,
+      "inputQuery": "在。有什么需要？[◉_◉…\" [message_id:2] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 这个总结很好，记住以后就这样汇报"
     }
   ],
   "staticFiles": {
