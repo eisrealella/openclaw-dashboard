@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T03:02:51.617Z",
+    "generatedAt": "2026-02-27T03:34:55.550Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T03:02:51.643Z",
+    "staticExportedAt": "2026-02-27T03:34:55.575Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1429487271,
-    "inputTokens": 1429917217,
-    "outputTokens": 2733461,
+    "totalTokens": 1429847321,
+    "inputTokens": 1430171175,
+    "outputTokens": 2733359,
     "sessions": 163
   },
   "trend": [
@@ -83,18 +83,18 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 71120601
+      "tokens": 71470404
     },
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 391796
+      "tokens": 402043
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 715414116
+      "tokens": 715774166
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 865948
+          "lastSeenTokens": 850859
         }
       },
       {
@@ -890,11 +890,11 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772160762853,
-      "totalTokens": 18707,
+      "updatedAt": 1772163243660,
+      "totalTokens": 28954,
       "inputTokens": 36,
-      "outputTokens": 189,
-      "inputQuery": "检查BlueBubbles消息重复问题前先确认gateway状态 Run: openclaw doctor --non-interactive System: [2026-02-27 09:57:40 GMT+8] Node: Ella的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "outputTokens": 87,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -2631,9 +2631,9 @@
       "sessionId": "eb277461-8f15-42e9-8da9-69057e9af654",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772075038776,
-      "totalTokens": 25336,
-      "inputTokens": 117608,
+      "updatedAt": 1772075154644.7004,
+      "totalTokens": 375139,
+      "inputTokens": 371566,
       "outputTokens": 3573,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
     },
@@ -2829,11 +2829,11 @@
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772160762853,
-      "totalTokens": 18707,
+      "updatedAt": 1772163243660,
+      "totalTokens": 28954,
       "inputTokens": 36,
-      "outputTokens": 189,
-      "inputQuery": "检查BlueBubbles消息重复问题前先确认gateway状态 Run: openclaw doctor --non-interactive System: [2026-02-27 09:57:40 GMT+8] Node: Ella的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+      "outputTokens": 87,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
   "staticFiles": {
