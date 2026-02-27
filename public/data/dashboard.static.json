@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T01:57:10.622Z",
+    "generatedAt": "2026-02-27T02:02:16.314Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,14 +10,14 @@
       "latestDay": "2026-02-27",
       "bucketCount": 29
     },
-    "staticExportedAt": "2026-02-27T01:57:10.649Z",
+    "staticExportedAt": "2026-02-27T02:02:16.507Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1429626909,
-    "inputTokens": 1429289240,
-    "outputTokens": 2730855,
-    "sessions": 162
+    "totalTokens": 1429424348,
+    "inputTokens": 1429044961,
+    "outputTokens": 2729836,
+    "sessions": 163
   },
   "trend": [
     {
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 335362
+      "tokens": 132801
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 715553754
+      "tokens": 715351193
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 773057
+          "lastSeenTokens": 818128
         }
       },
       {
@@ -249,7 +249,7 @@
         }
       },
       {
-        "id": "skill:browser-automation:26",
+        "id": "skill:browser-automation:24",
         "kind": "skill",
         "title": "browser-automation",
         "subtitle": "OpenClaw 浏览器自动化 - 托管 Chrome 浏览器操作指南",
@@ -279,7 +279,7 @@
         }
       },
       {
-        "id": "skill:daily-report:27",
+        "id": "skill:daily-report:25",
         "kind": "skill",
         "title": "daily-report",
         "subtitle": "海粼酱工作日报 - 模板、定时任务、自动更新",
@@ -471,7 +471,7 @@
         }
       },
       {
-        "id": "skill:feishu-work:28",
+        "id": "skill:feishu-work:26",
         "kind": "skill",
         "title": "feishu-work",
         "subtitle": "管理飞书相关工作：机器人配置、权限管理、定时任务、日报发送",
@@ -501,7 +501,7 @@
         }
       },
       {
-        "id": "skill:gh-issues:24",
+        "id": "skill:gh-issues:30",
         "kind": "skill",
         "title": "gh-issues",
         "subtitle": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
@@ -575,7 +575,7 @@
         }
       },
       {
-        "id": "skill:imessage-setup:29",
+        "id": "skill:imessage-setup:27",
         "kind": "skill",
         "title": "imessage-setup",
         "subtitle": "iMessage 配置指南 - BlueBubbles 和 imsg 两种方式",
@@ -620,7 +620,7 @@
         }
       },
       {
-        "id": "skill:moltbook-auth:25",
+        "id": "skill:moltbook-auth:31",
         "kind": "skill",
         "title": "moltbook-auth",
         "subtitle": "Persist and safely reuse Moltbook auth context for browsing and API actions. Use when tasks involve Moltbook login, session checks, or authenticated post/comment/search calls.",
@@ -635,7 +635,7 @@
         }
       },
       {
-        "id": "skill:openclaw-ops:30",
+        "id": "skill:openclaw-ops:28",
         "kind": "skill",
         "title": "openclaw-ops",
         "subtitle": "OpenClaw 运维工具箱 - 任务恢复、配置备份与回滚",
@@ -724,7 +724,7 @@
         }
       },
       {
-        "id": "skill:task-skill-workflow:31",
+        "id": "skill:task-skill-workflow:29",
         "kind": "skill",
         "title": "task-skill-workflow",
         "subtitle": "任务执行前先搜索并创建合适的 skill，确保最佳实践和持续迭代",
@@ -882,28 +882,41 @@
   "recentSessions": [
     {
       "source": "openclaw",
-      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
-      "agentId": "main",
-      "label": "toolUse",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772157426203.8682,
-      "totalTokens": 247632,
-      "inputTokens": 246340,
-      "outputTokens": 1292,
-      "inputQuery": "用户反馈：在iMessage里发的消息都是重复的两条。请查看OpenClaw相关的日志（特别是iMessage/BlueBubbles相关的日志），定位为什么每条消息会发送两次。把找到的原因和可能的修复方案告诉我。\" just failed: fetch failed. Result: (no output) Stats: runtime 27s • tokens 0 (in 0 / out 0) A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type).",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/9e93da7c-5e52-4efc-97cb-0310a497222a.jsonl"
-    },
-    {
-      "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772157414655,
-      "totalTokens": 17634,
-      "inputTokens": 1753,
-      "outputTokens": 236,
-      "inputQuery": "让 coder 查一下，…\" [message_id:40] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 怎么failed了",
+      "updatedAt": 1772157723697,
+      "totalTokens": 17820,
+      "inputTokens": 3742,
+      "outputTokens": 342,
+      "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"at processTicksAndRejections (node:internal/process/task_queues:105:5) {\\n isAxiosError: true,\\n code: 'ERR_BAD_RESPONSE',\\n config: {\\n transitional: [Object],\\n adapter: [Array],\\n transformRequest: [Array],\\n transformResponse: [Array],\\n timeout: 0,\\n xsrfCookieName: 'XSRF-TOKEN',\\n xsrfHeaderName: 'X-XSRF-TOKEN',\\n maxContentLength: -1,\\n maxBodyLength: -1,\\n env: [Object],\\n validateStatus: [Function: validateStatus],\\n headers: [Object [AxiosHeaders]],\\n method: 'post',\\n url: 'https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal',\\n data: '{\\\"app_id\\\":\\\"cli_a9028a14f6f89bd8\\\",\\\"app_secret\\\":\\\"buWjfrHaYXWrHy8JwjA6DbJ76tmFl7o8\\\"}',\\n allowAbsoluteUrls: true\\n },\\n request: ClientRequest {\\n _events: [Object: null prototype],\\n _eventsCount: 7,\\n _maxListeners: undefined,\\n outputData: [],\\n outputSize: 0,\\n writable: true,\\n destroyed: false,\\n _last: false,\\n chunkedEncoding: false,\\n shouldKeepAlive: false,\\n maxRequestsOnConnectionReached: false,\\n _defaultKeepAlive: true,\\n useChunkedEncodingByDefault…",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "fe7d4e38-a5d4-4b4e-b0c6-3451b8b16db5",
+      "agentId": "main",
+      "label": "Cron: 日报-早间总结",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772157600047,
+      "totalTokens": 15000,
+      "inputTokens": 36,
+      "outputTokens": 103,
+      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
+      "agentId": "main",
+      "label": "toolUse",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772157440784,
+      "totalTokens": 29885,
+      "inputTokens": 36,
+      "outputTokens": 64,
+      "inputQuery": "用户反馈：在iMessage里发的消息都是重复的两条。请查看OpenClaw相关的日志（特别是iMessage/BlueBubbles相关的日志），定位为什么每条消息会发送两次。把找到的原因和可能的修复方案告诉我。\" just failed: fetch failed. Result: (no output) Stats: runtime 27s • tokens 0 (in 0 / out 0) A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type).",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -1022,19 +1035,6 @@
       "outputTokens": 1556,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我检查 GitHub 状态： 1. 进入 /Users/ella/.openclaw/workspace/my-website 目录 2. 运行 git status 查看当前状态 3. 如果有未提交的更改，添加并提交，提交信息: \"Add new blog post: 夜晚的探索碎片 + memory\" 4. 推送到 GitHub 5. 检查 GitHub Pages 构建状态 (可能需要等待1-2分钟) 完成后汇报结果。",
       "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/0a5139f0-b435-4bac-9203-490b7f3b7042.jsonl.deleted.2026-02-26T14-08-43.251Z"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "d4016a4d-6231-4717-8938-e3ff2252ad5f",
-      "agentId": "coder",
-      "label": "toolUse",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772111315825.6934,
-      "totalTokens": 152582,
-      "inputTokens": 151242,
-      "outputTokens": 1340,
-      "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我完成以下Git操作： 1. 进入 /Users/ella/.openclaw/workspace/my-website 目录 2. 添加新的博客文章: blog/feb-2026-night-exploration.html 3. 更新 blog/index.html 文件 4. 添加 memory/2026-02-26.md 文件 5. 提交更改，提交信息: \"Add new blog post: 夜晚的探索碎片 + memory\" 6. 推送到 GitHub 完成后告诉我推送结果。",
-      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/d4016a4d-6231-4717-8938-e3ff2252ad5f.jsonl.deleted.2026-02-26T14-07-43.249Z"
     }
   ],
   "sessionPoints": [
@@ -2800,25 +2800,36 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772157414655,
-      "totalTokens": 17634,
-      "inputTokens": 1753,
-      "outputTokens": 236,
-      "inputQuery": "让 coder 查一下，…\" [message_id:40] ```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 怎么failed了"
-    },
-    {
-      "source": "openclaw",
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772157426203.8682,
-      "totalTokens": 247632,
-      "inputTokens": 246340,
-      "outputTokens": 1292,
+      "updatedAt": 1772157440784,
+      "totalTokens": 29885,
+      "inputTokens": 36,
+      "outputTokens": 64,
       "inputQuery": "用户反馈：在iMessage里发的消息都是重复的两条。请查看OpenClaw相关的日志（特别是iMessage/BlueBubbles相关的日志），定位为什么每条消息会发送两次。把找到的原因和可能的修复方案告诉我。\" just failed: fetch failed. Result: (no output) Stats: runtime 27s • tokens 0 (in 0 / out 0) A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type)."
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "fe7d4e38-a5d4-4b4e-b0c6-3451b8b16db5",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772157600047,
+      "totalTokens": 15000,
+      "inputTokens": 36,
+      "outputTokens": 103,
+      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772157723697,
+      "totalTokens": 17820,
+      "inputTokens": 3742,
+      "outputTokens": 342,
+      "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"at processTicksAndRejections (node:internal/process/task_queues:105:5) {\\n isAxiosError: true,\\n code: 'ERR_BAD_RESPONSE',\\n config: {\\n transitional: [Object],\\n adapter: [Array],\\n transformRequest: [Array],\\n transformResponse: [Array],\\n timeout: 0,\\n xsrfCookieName: 'XSRF-TOKEN',\\n xsrfHeaderName: 'X-XSRF-TOKEN',\\n maxContentLength: -1,\\n maxBodyLength: -1,\\n env: [Object],\\n validateStatus: [Function: validateStatus],\\n headers: [Object [AxiosHeaders]],\\n method: 'post',\\n url: 'https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal',\\n data: '{\\\"app_id\\\":\\\"cli_a9028a14f6f89bd8\\\",\\\"app_secret\\\":\\\"buWjfrHaYXWrHy8JwjA6DbJ76tmFl7o8\\\"}',\\n allowAbsoluteUrls: true\\n },\\n request: ClientRequest {\\n _events: [Object: null prototype],\\n _eventsCount: 7,\\n _maxListeners: undefined,\\n outputData: [],\\n outputSize: 0,\\n writable: true,\\n destroyed: false,\\n _last: false,\\n chunkedEncoding: false,\\n shouldKeepAlive: false,\\n maxRequestsOnConnectionReached: false,\\n _defaultKeepAlive: true,\\n useChunkedEncodingByDefault…"
     }
   ],
   "staticFiles": {
