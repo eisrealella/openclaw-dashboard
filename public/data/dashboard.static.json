@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T00:08:41.426Z",
+    "generatedAt": "2026-02-27T00:39:42.951Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 29
     },
-    "staticExportedAt": "2026-02-27T00:08:41.459Z",
+    "staticExportedAt": "2026-02-27T00:39:42.989Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1429398412,
-    "inputTokens": 1429047749,
-    "outputTokens": 2730890,
+    "totalTokens": 1429398515,
+    "inputTokens": 1429048532,
+    "outputTokens": 2731084,
     "sessions": 162
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 106865
+      "tokens": 106968
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 715325257
+      "tokens": 715325360
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 792192
+          "lastSeenTokens": 792295
         }
       },
       {
@@ -882,6 +882,19 @@
   "recentSessions": [
     {
       "source": "openclaw",
+      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
+      "agentId": "main",
+      "label": "toolUse",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772152315354,
+      "totalTokens": 16938,
+      "inputTokens": 819,
+      "outputTokens": 225,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "91790386-d331-4f83-845c-bd9872fd4be2",
       "agentId": "coder",
       "label": "stop",
@@ -892,19 +905,6 @@
       "outputTokens": 541,
       "inputQuery": "早间升级简报\" just completed successfully. Result: OpenClaw 早间升级简报 当前版本：2026.2.24；可升级版本：2026.2.27 (Immutable) 关键修复1：Delivery queue/recovery backoff 修复retry starvation，持久化lastAttemptAt并延迟恢复重试 关键修复2：Queue/Drain/Cron reliability 修复lane draining、gateway重启期间的队列处理和cron超时问题 社群讨论：Issue #10812 报告cron jobs在2026.2.3-1升级后不执行，nextRunAtMs静默前进但任务从未运行 结论：建议升级（修复cron投递稳定性问题） Stats: runtime 2m7s • tokens 22.1k (in 21.1k / out 1.1k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn.",
       "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/91790386-d331-4f83-845c-bd9872fd4be2.jsonl"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
-      "agentId": "main",
-      "label": "toolUse",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772150513877,
-      "totalTokens": 16835,
-      "inputTokens": 36,
-      "outputTokens": 31,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -2800,17 +2800,6 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772150513877,
-      "totalTokens": 16835,
-      "inputTokens": 36,
-      "outputTokens": 31,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
-    },
-    {
-      "source": "openclaw",
       "sessionId": "91790386-d331-4f83-845c-bd9872fd4be2",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
@@ -2819,6 +2808,17 @@
       "inputTokens": 35687,
       "outputTokens": 541,
       "inputQuery": "早间升级简报\" just completed successfully. Result: OpenClaw 早间升级简报 当前版本：2026.2.24；可升级版本：2026.2.27 (Immutable) 关键修复1：Delivery queue/recovery backoff 修复retry starvation，持久化lastAttemptAt并延迟恢复重试 关键修复2：Queue/Drain/Cron reliability 修复lane draining、gateway重启期间的队列处理和cron超时问题 社群讨论：Issue #10812 报告cron jobs在2026.2.3-1升级后不执行，nextRunAtMs静默前进但任务从未运行 结论：建议升级（修复cron投递稳定性问题） Stats: runtime 2m7s • tokens 22.1k (in 21.1k / out 1.1k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772152315354,
+      "totalTokens": 16938,
+      "inputTokens": 819,
+      "outputTokens": 225,
+      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
   "staticFiles": {
