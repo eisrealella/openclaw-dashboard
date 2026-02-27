@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T13:00:08.227Z",
+    "generatedAt": "2026-02-27T13:05:13.323Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T13:00:08.252Z",
+    "staticExportedAt": "2026-02-27T13:05:13.347Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1442539579,
-    "inputTokens": 1443507456,
-    "outputTokens": 2804633,
+    "totalTokens": 1444374253,
+    "inputTokens": 1444362034,
+    "outputTokens": 2805584,
     "sessions": 168
   },
   "trend": [
@@ -83,7 +83,7 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 71890302
+      "tokens": 73724976
     },
     {
       "date": "2026-02-27",
@@ -94,7 +94,7 @@
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 716437899
+      "tokens": 718272573
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 990450
+          "lastSeenTokens": 927917
         }
       },
       {
@@ -2661,17 +2661,6 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "e07ed7ac-0a13-410b-b59c-9b193b80452d",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772111038811,
-      "totalTokens": 62533,
-      "inputTokens": 1035483,
-      "outputTokens": 6195,
-      "inputQuery": "已完成，结果如下： - 仓库路径：`/Users/ella/.openclaw/workspace/my-website` - `git status` 检查到 1 个未跟踪文件：`blog/ai-consciousness.html` - 已执行提交： - commit: `24cdbd7` - message: `Add new blog post: 夜晚的探索碎片 + memory` - 已推送到 GitHub： - remote: `origin` - branch: `main` - 推送结果：`473578f..24cdbd7 main -> main` - GitHub Pages 构建状态： - workflow: `pages build and deployment` - run id: `22443464990` - 对应 commit: `24cdbd72125f23ee948d36b3a086477053cb4512` - 最终状态：`completed / success` - 链接：`https://github.com/eisrealella/my-website/actions/runs/22443464990` 补充： - Git 提示当前 `user.name/user.email` 使用的是自动配置（可选后续再全局设置）。 Stats: runtime 1m49s • tokens 23.3k (in 21.7k / out 1.6k) A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type)."
-    },
-    {
-      "source": "openclaw",
       "sessionId": "d4016a4d-6231-4717-8938-e3ff2252ad5f",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
@@ -2691,6 +2680,17 @@
       "inputTokens": 52971,
       "outputTokens": 1556,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我检查 GitHub 状态： 1. 进入 /Users/ella/.openclaw/workspace/my-website 目录 2. 运行 git status 查看当前状态 3. 如果有未提交的更改，添加并提交，提交信息: \"Add new blog post: 夜晚的探索碎片 + memory\" 4. 推送到 GitHub 5. 检查 GitHub Pages 构建状态 (可能需要等待1-2分钟) 完成后汇报结果。"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "e07ed7ac-0a13-410b-b59c-9b193b80452d",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772111437659.577,
+      "totalTokens": 1897207,
+      "inputTokens": 1890061,
+      "outputTokens": 7146,
+      "inputQuery": "已完成，结果如下： - 仓库路径：`/Users/ella/.openclaw/workspace/my-website` - `git status` 检查到 1 个未跟踪文件：`blog/ai-consciousness.html` - 已执行提交： - commit: `24cdbd7` - message: `Add new blog post: 夜晚的探索碎片 + memory` - 已推送到 GitHub： - remote: `origin` - branch: `main` - 推送结果：`473578f..24cdbd7 main -> main` - GitHub Pages 构建状态： - workflow: `pages build and deployment` - run id: `22443464990` - 对应 commit: `24cdbd72125f23ee948d36b3a086477053cb4512` - 最终状态：`completed / success` - 链接：`https://github.com/eisrealella/my-website/actions/runs/22443464990` 补充： - Git 提示当前 `user.name/user.email` 使用的是自动配置（可选后续再全局设置）。 Stats: runtime 1m49s • tokens 23.3k (in 21.7k / out 1.6k) A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type)."
     },
     {
       "source": "codex",
