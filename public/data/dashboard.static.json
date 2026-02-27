@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T05:58:16.815Z",
+    "generatedAt": "2026-02-27T06:03:21.898Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T05:58:16.844Z",
+    "staticExportedAt": "2026-02-27T06:03:21.941Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1431193143,
-    "inputTokens": 1431427488,
-    "outputTokens": 2746456,
+    "totalTokens": 1432418306,
+    "inputTokens": 1432646525,
+    "outputTokens": 2752582,
     "sessions": 165
   },
   "trend": [
@@ -88,7 +88,7 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 1747865
+      "tokens": 2973028
     }
   ],
   "modelDistribution": [
@@ -106,7 +106,7 @@
     },
     {
       "model": "gpt-5.2-codex",
-      "tokens": 1393730
+      "tokens": 2618893
     }
   ],
   "agents": [
@@ -890,11 +890,11 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.2-codex",
-      "updatedAt": 1772171895008.1252,
-      "totalTokens": 1165237,
-      "inputTokens": 1154106,
-      "outputTokens": 11131,
-      "inputQuery": "main 说他 exec denied 你能给他都放开 exec 权限吗",
+      "updatedAt": 1772172198809.5874,
+      "totalTokens": 2390400,
+      "inputTokens": 2373143,
+      "outputTokens": 17257,
+      "inputQuery": "你帮我解决",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/27/rollout-2026-02-27T13-48-48-019c9da4-7af0-7e12-8fef-fa4255784c44.jsonl"
     },
     {
@@ -2851,11 +2851,11 @@
       "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
       "agentId": "codex",
       "model": "gpt-5.2-codex",
-      "updatedAt": 1772171895008.1252,
-      "totalTokens": 1165237,
-      "inputTokens": 1154106,
-      "outputTokens": 11131,
-      "inputQuery": "main 说他 exec denied 你能给他都放开 exec 权限吗"
+      "updatedAt": 1772172198809.5874,
+      "totalTokens": 2390400,
+      "inputTokens": 2373143,
+      "outputTokens": 17257,
+      "inputQuery": "你帮我解决"
     }
   ],
   "staticFiles": {
