@@ -1,30 +1,25 @@
 {
   "meta": {
-    "generatedAt": "2026-02-26T23:32:22.164Z",
+    "generatedAt": "2026-02-27T00:03:35.972Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
     "sessionRetentionDays": 90,
     "tokenHistory": {
       "oldestDay": "2026-02-08",
-      "latestDay": "2026-02-26",
-      "bucketCount": 27
+      "latestDay": "2026-02-27",
+      "bucketCount": 29
     },
-    "staticExportedAt": "2026-02-26T23:32:22.190Z",
+    "staticExportedAt": "2026-02-27T00:03:36.005Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1436856407,
-    "inputTokens": 1436484581,
-    "outputTokens": 2750075,
-    "sessions": 160
+    "totalTokens": 1429369808,
+    "inputTokens": 1428994187,
+    "outputTokens": 2730890,
+    "sessions": 162
   },
   "trend": [
-    {
-      "date": "2026-02-09",
-      "label": "Feb 9",
-      "tokens": 24534981
-    },
     {
       "date": "2026-02-10",
       "label": "Feb 10",
@@ -88,17 +83,22 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 78703553
+      "tokens": 71110089
+    },
+    {
+      "date": "2026-02-27",
+      "label": "Feb 27",
+      "tokens": 106865
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 722807047
+      "tokens": 715296653
     },
     {
       "model": "gpt-5.3-codex",
-      "tokens": 546260315
+      "tokens": 546284110
     },
     {
       "model": "MiniMax-M2.1",
@@ -133,10 +133,10 @@
       "workspace": "/Users/ella/.openclaw/workspace-coder",
       "summary": "你叫玟池欧巴。",
       "style": "语气: 沉稳、简洁、可靠。",
-      "latestInsight": "最近任务：You are running as a subagent (depth 1/1). Results auto-announce to your requester;",
+      "latestInsight": "最近任务：早间升级简报\" just completed successfully. Result: OpenClaw 早间升级简报 当前版本：2026.2.24；",
       "insightEmoji": "✨",
-      "insightDate": "2026-02-26",
-      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/0a5139f0-b435-4bac-9203-490b7f3b7042.jsonl.deleted.2026-02-26T14-08-43.251Z",
+      "insightDate": "2026-02-27",
+      "insightSourcePath": "/Users/ella/.openclaw/agents/coder/sessions/91790386-d331-4f83-845c-bd9872fd4be2.jsonl",
       "detailPath": "/Users/ella/.openclaw/workspace-coder/AGENTS.md"
     }
   ],
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 769669
+          "lastSeenTokens": 823485
         }
       },
       {
@@ -169,7 +169,7 @@
           "id": "openai-codex/gpt-5.3-codex",
           "alias": "Codex 5.3",
           "role": "Additional",
-          "lastSeenTokens": 24151
+          "lastSeenTokens": 11718
         }
       },
       {
@@ -184,7 +184,7 @@
           "id": "codex-cli/gpt-5.3-codex",
           "alias": "Codex CLI 5.3",
           "role": "Additional",
-          "lastSeenTokens": 24151
+          "lastSeenTokens": 11718
         }
       }
     ],
@@ -882,16 +882,42 @@
   "recentSessions": [
     {
       "source": "openclaw",
+      "sessionId": "91790386-d331-4f83-845c-bd9872fd4be2",
+      "agentId": "coder",
+      "label": "stop",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772150591790.1782,
+      "totalTokens": 36228,
+      "inputTokens": 35687,
+      "outputTokens": 541,
+      "inputQuery": "早间升级简报\" just completed successfully. Result: OpenClaw 早间升级简报 当前版本：2026.2.24；可升级版本：2026.2.27 (Immutable) 关键修复1：Delivery queue/recovery backoff 修复retry starvation，持久化lastAttemptAt并延迟恢复重试 关键修复2：Queue/Drain/Cron reliability 修复lane draining、gateway重启期间的队列处理和cron超时问题 社群讨论：Issue #10812 报告cron jobs在2026.2.3-1升级后不执行，nextRunAtMs静默前进但任务从未运行 结论：建议升级（修复cron投递稳定性问题） Stats: runtime 2m7s • tokens 22.1k (in 21.1k / out 1.1k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn.",
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/91790386-d331-4f83-845c-bd9872fd4be2.jsonl"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772148719998,
-      "totalTokens": 16821,
-      "inputTokens": 702,
-      "outputTokens": 305,
+      "updatedAt": 1772150513877,
+      "totalTokens": 16835,
+      "inputTokens": 36,
+      "outputTokens": 31,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "ac7d4421-54e8-4ec5-99ec-59311afdd291",
+      "agentId": "coder",
+      "label": "Cron: iMessage早间升级简报",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772150464323,
+      "totalTokens": 18845,
+      "inputTokens": 21078,
+      "outputTokens": 1068,
+      "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 联网检索优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \"OpenClaw release notes\" --topic news -n 5 - Tavily 失败或证据不足时，使用 browser 兜底 【早间OpenClaw升级简报任务】 你将发送今天的第二条 iMessage（第一条早安问候由其他 cron 发送）。 你需要尽力获取： - 当前版本（优先本机查询） - 可升级版本（优先本机查询） - 官方 release 关键修复（2条） - 官方社群讨论（issues/discussions）中的升级反馈（1条） - 与本机已见问题的关联：Connection error、API rate limit、cron 投递稳定性 社群讨论兜底（若实时搜索失败，必须至少尝试这些官方线程）： - https://github.com/openclaw/openclaw/issues/10812 - https://github.com/openclaw/openclaw/issues/10849 输出要求（必须遵守）： - 不要写“动作：执行：openclaw update”这一行 - 允许 6-8 行，不做严格行数限制 - 每一行内容之间留一个空行（提高可读性） - 不要表情、不要代码块、不要“状态”字样 - 不要额外前言、解释、致歉 推荐模板（可微调）： 1) OpenClaw 早间升级简报 2) 当前版本：<x>；可升级版本：<y> 3) 关键修复1：<一句话> 4) 关键修复2：<一句话> 5) 社群讨论：<一句话，必须带可验证证据：URL 或 issue/discussion 编号> 6) 结论：<建议升级 或 暂缓升级>（<一句理由>） 真实性要求（重点）： - 社群讨论必须来自真实可验证来源（能给出 URL 或明确 issue/discussion 编号） - 如果没拿到可验证来源，必须写：社群讨论：信息不足（未获取到可验证 issue/discussion 页面） - 禁止猜测、禁止编造",
+      "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -899,12 +925,25 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772147290443,
-      "totalTokens": 7564210,
-      "inputTokens": 7542198,
-      "outputTokens": 22012,
-      "inputQuery": "自由探索互联网\" just completed successfully. Result: ⚠️ 📄 Web Fetch: from https://raccoon.land/posts/technical-excellence-is-not-enough/ (max 15000 chars) failed Stats: runtime 2m52s • tokens 50.8k (in 50.2k / out 646) • prompt/cache 140.0k A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn.",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/ab49497a-8eec-4180-a9f7-36c511951cd3.jsonl"
+      "updatedAt": 1772150463504,
+      "totalTokens": 19934,
+      "inputTokens": 6566,
+      "outputTokens": 1532,
+      "inputQuery": "早间问候\" just completed successfully. Result: 早安喵～新的一天也要元气满满呀！[◕‿◕] 🤖 今天也是闪闪发光的一天，冲鸭！✨ Stats: runtime 11s • tokens 172 (in 36 / out 136) • prompt/cache 15.0k A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "2ccb3c47-93fc-4b63-a963-90515f745e65",
+      "agentId": "main",
+      "label": "Cron: iMessage早间问候",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772150400044,
+      "totalTokens": 15023,
+      "inputTokens": 36,
+      "outputTokens": 136,
+      "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -996,45 +1035,6 @@
       "outputTokens": 1340,
       "inputQuery": "[Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: 请帮我完成以下Git操作： 1. 进入 /Users/ella/.openclaw/workspace/my-website 目录 2. 添加新的博客文章: blog/feb-2026-night-exploration.html 3. 更新 blog/index.html 文件 4. 添加 memory/2026-02-26.md 文件 5. 提交更改，提交信息: \"Add new blog post: 夜晚的探索碎片 + memory\" 6. 推送到 GitHub 完成后告诉我推送结果。",
       "sourcePath": "/Users/ella/.openclaw/agents/coder/sessions/d4016a4d-6231-4717-8938-e3ff2252ad5f.jsonl.deleted.2026-02-26T14-07-43.249Z"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "e07ed7ac-0a13-410b-b59c-9b193b80452d",
-      "agentId": "main",
-      "label": "Cron: 自由探索互联网",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772111038811,
-      "totalTokens": 62533,
-      "inputTokens": 1035483,
-      "outputTokens": 6195,
-      "inputQuery": "已完成，结果如下： - 仓库路径：`/Users/ella/.openclaw/workspace/my-website` - `git status` 检查到 1 个未跟踪文件：`blog/ai-consciousness.html` - 已执行提交： - commit: `24cdbd7` - message: `Add new blog post: 夜晚的探索碎片 + memory` - 已推送到 GitHub： - remote: `origin` - branch: `main` - 推送结果：`473578f..24cdbd7 main -> main` - GitHub Pages 构建状态： - workflow: `pages build and deployment` - run id: `22443464990` - 对应 commit: `24cdbd72125f23ee948d36b3a086477053cb4512` - 最终状态：`completed / success` - 链接：`https://github.com/eisrealella/my-website/actions/runs/22443464990` 补充： - Git 提示当前 `user.name/user.email` 使用的是自动配置（可选后续再全局设置）。 Stats: runtime 1m49s • tokens 23.3k (in 21.7k / out 1.6k) A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type).",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "b84ae66e-8c87-43c8-916d-87881de86d72",
-      "agentId": "main",
-      "label": "stop",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772100199184,
-      "totalTokens": 18195,
-      "inputTokens": 36,
-      "outputTokens": 37,
-      "inputQuery": "日报-晚间总结\" just completed successfully. Result: 根据读取结果，文档内容按时间倒序排列，最新的在最后。我 append 的 2月26日日报已在文档末尾。 feishu_doc 工具没有 move_block 功能，无法将新日报移到最上方。但从内容校验： - ✅ 标题格式正确：`## 📅 2026年2月26日` - ✅ 模板结构完整：今日完成、明日计划、思考与复盘 - ✅ 内容已写入文档 日报已更新 Stats: runtime 3m16s • tokens 308.8k (in 304.8k / out 4.1k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn.",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "13786942-3ae7-4eb1-826e-452f42140b5d",
-      "agentId": "main",
-      "label": "Cron: 日报-晚间总结",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772100000043,
-      "totalTokens": 78908,
-      "inputTokens": 304771,
-      "outputTokens": 4061,
-      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     }
   ],
   "sessionPoints": [
@@ -2624,17 +2624,6 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "91790386-d331-4f83-845c-bd9872fd4be2",
-      "agentId": "coder",
-      "model": "gpt-5.3-codex",
-      "updatedAt": 1772064139600,
-      "totalTokens": 12433,
-      "inputTokens": 10897,
-      "outputTokens": 176,
-      "inputQuery": "早间升级简报\" just completed successfully. Result: OpenClaw 早间升级简报 当前版本：2026.2.24；可升级版本：无（npm 显示已是最新） 关键修复1：已修复6个安全漏洞（SSRF、缺失认证等），由 Endor Labs 发现并披露 关键修复2：已修复供应链攻击漏洞（npm 2025.12.21-2026.02.10 期间悄悄安装问题） 社群讨论：GitHub #10812 和 #10849 报告 cron 定时器在 2026.2.3-1 及之后版本失效，任务静默跳过不执行 结论：暂缓升级（当前版本已含安全修复，cron 问题可能已在 2026.2.24 修复中，建议观察 cron 任务执行情况） Stats: runtime 1m0s • tokens 6.2k (in 5.2k / out 985) • prompt/cache 16.3k A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
-    },
-    {
-      "source": "openclaw",
       "sessionId": "792bff47-29dd-4778-b745-8ba24930970e",
       "agentId": "main",
       "model": "MiniMax-M2.5",
@@ -2778,25 +2767,58 @@
     },
     {
       "source": "openclaw",
+      "sessionId": "2ccb3c47-93fc-4b63-a963-90515f745e65",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772150400044,
+      "totalTokens": 15023,
+      "inputTokens": 36,
+      "outputTokens": 136,
+      "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772147290443,
-      "totalTokens": 7564210,
-      "inputTokens": 7542198,
-      "outputTokens": 22012,
-      "inputQuery": "自由探索互联网\" just completed successfully. Result: ⚠️ 📄 Web Fetch: from https://raccoon.land/posts/technical-excellence-is-not-enough/ (max 15000 chars) failed Stats: runtime 2m52s • tokens 50.8k (in 50.2k / out 646) • prompt/cache 140.0k A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
+      "updatedAt": 1772150463504,
+      "totalTokens": 19934,
+      "inputTokens": 6566,
+      "outputTokens": 1532,
+      "inputQuery": "早间问候\" just completed successfully. Result: 早安喵～新的一天也要元气满满呀！[◕‿◕] 🤖 今天也是闪闪发光的一天，冲鸭！✨ Stats: runtime 11s • tokens 172 (in 36 / out 136) • prompt/cache 15.0k A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "ac7d4421-54e8-4ec5-99ec-59311afdd291",
+      "agentId": "coder",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772150464323,
+      "totalTokens": 18845,
+      "inputTokens": 21078,
+      "outputTokens": 1068,
+      "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 联网检索优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \"OpenClaw release notes\" --topic news -n 5 - Tavily 失败或证据不足时，使用 browser 兜底 【早间OpenClaw升级简报任务】 你将发送今天的第二条 iMessage（第一条早安问候由其他 cron 发送）。 你需要尽力获取： - 当前版本（优先本机查询） - 可升级版本（优先本机查询） - 官方 release 关键修复（2条） - 官方社群讨论（issues/discussions）中的升级反馈（1条） - 与本机已见问题的关联：Connection error、API rate limit、cron 投递稳定性 社群讨论兜底（若实时搜索失败，必须至少尝试这些官方线程）： - https://github.com/openclaw/openclaw/issues/10812 - https://github.com/openclaw/openclaw/issues/10849 输出要求（必须遵守）： - 不要写“动作：执行：openclaw update”这一行 - 允许 6-8 行，不做严格行数限制 - 每一行内容之间留一个空行（提高可读性） - 不要表情、不要代码块、不要“状态”字样 - 不要额外前言、解释、致歉 推荐模板（可微调）： 1) OpenClaw 早间升级简报 2) 当前版本：<x>；可升级版本：<y> 3) 关键修复1：<一句话> 4) 关键修复2：<一句话> 5) 社群讨论：<一句话，必须带可验证证据：URL 或 issue/discussion 编号> 6) 结论：<建议升级 或 暂缓升级>（<一句理由>） 真实性要求（重点）： - 社群讨论必须来自真实可验证来源（能给出 URL 或明确 issue/discussion 编号） - 如果没拿到可验证来源，必须写：社群讨论：信息不足（未获取到可验证 issue/discussion 页面） - 禁止猜测、禁止编造"
     },
     {
       "source": "openclaw",
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772148719998,
-      "totalTokens": 16821,
-      "inputTokens": 702,
-      "outputTokens": 305,
+      "updatedAt": 1772150513877,
+      "totalTokens": 16835,
+      "inputTokens": 36,
+      "outputTokens": 31,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "91790386-d331-4f83-845c-bd9872fd4be2",
+      "agentId": "coder",
+      "model": "gpt-5.3-codex",
+      "updatedAt": 1772150591790.1782,
+      "totalTokens": 36228,
+      "inputTokens": 35687,
+      "outputTokens": 541,
+      "inputQuery": "早间升级简报\" just completed successfully. Result: OpenClaw 早间升级简报 当前版本：2026.2.24；可升级版本：2026.2.27 (Immutable) 关键修复1：Delivery queue/recovery backoff 修复retry starvation，持久化lastAttemptAt并延迟恢复重试 关键修复2：Queue/Drain/Cron reliability 修复lane draining、gateway重启期间的队列处理和cron超时问题 社群讨论：Issue #10812 报告cron jobs在2026.2.3-1升级后不执行，nextRunAtMs静默前进但任务从未运行 结论：建议升级（修复cron投递稳定性问题） Stats: runtime 2m7s • tokens 22.1k (in 21.1k / out 1.1k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
     }
   ],
   "staticFiles": {
