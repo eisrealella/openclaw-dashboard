@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T05:48:05.943Z",
+    "generatedAt": "2026-02-27T05:53:11.767Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,14 +10,14 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T05:48:05.968Z",
+    "staticExportedAt": "2026-02-27T05:53:11.857Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1430027812,
-    "inputTokens": 1430270527,
-    "outputTokens": 2735310,
-    "sessions": 164
+    "totalTokens": 1430437469,
+    "inputTokens": 1430675297,
+    "outputTokens": 2742973,
+    "sessions": 165
   },
   "trend": [
     {
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 582534
+      "tokens": 992191
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 715904144
+      "tokens": 715904238
     },
     {
       "model": "gpt-5.3-codex",
@@ -106,7 +106,7 @@
     },
     {
       "model": "gpt-5.2-codex",
-      "tokens": 228493
+      "tokens": 638056
     }
   ],
   "agents": [
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 980837
+          "lastSeenTokens": 980931
         }
       },
       {
@@ -886,6 +886,32 @@
   "recentSessions": [
     {
       "source": "codex",
+      "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.2-codex",
+      "updatedAt": 1772171590253.7988,
+      "totalTokens": 409563,
+      "inputTokens": 401915,
+      "outputTokens": 7648,
+      "inputQuery": "OK",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/27/rollout-2026-02-27T13-48-48-019c9da4-7af0-7e12-8fef-fa4255784c44.jsonl"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
+      "agentId": "main",
+      "label": "toolUse",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772171310268,
+      "totalTokens": 19010,
+      "inputTokens": 2891,
+      "outputTokens": 68,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "codex",
       "sessionId": "019c7f2b-86ab-7142-855a-e053e013f1ee",
       "agentId": "codex",
       "label": "Codex local session",
@@ -896,19 +922,6 @@
       "outputTokens": 8369,
       "inputQuery": "你看看 openclaw 的日志帮我定位一下吧",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/21/rollout-2026-02-21T15-48-04-019c7f2b-86ab-7142-855a-e053e013f1ee.jsonl"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
-      "agentId": "main",
-      "label": "toolUse",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772170686524,
-      "totalTokens": 18916,
-      "inputTokens": 36,
-      "outputTokens": 53,
-      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
       "source": "openclaw",
@@ -1025,19 +1038,6 @@
       "inputTokens": 36,
       "outputTokens": 38,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "d781810d-7647-4572-b59d-6f219104f4bd",
-      "agentId": "main",
-      "label": "Cron: 自由探索互联网",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772129038821,
-      "totalTokens": 55560,
-      "inputTokens": 829208,
-      "outputTokens": 6798,
-      "inputQuery": "[System Message] [sessionId: 645fbe6f-0bb3-47a4-a7b9-8b6948e07f02] A subagent task \"Commit and push to GitHub: 1. Go to /Users/ella/.openclaw/workspace/ 2. Check git status 3. Add the new files: - memory/2026-02-27.md - my-website/blog/feb-2026-vibe-coding-maker-movement.html - my-website/blog/index.html 4. Commit with a meaningful message about the new blog post 5. Push to GitHub 6. Return the result (whether push was successful and any relevant output)\" just failed: fetch failed. Result: (no output) Stats: runtime 27s • tokens 0 (in 0 / out 0) A completed subagent task is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type).",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     }
   ],
@@ -2825,17 +2825,6 @@
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
     },
     {
-      "source": "openclaw",
-      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772170686524,
-      "totalTokens": 18916,
-      "inputTokens": 36,
-      "outputTokens": 53,
-      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
-    },
-    {
       "source": "codex",
       "sessionId": "019c7f2b-86ab-7142-855a-e053e013f1ee",
       "agentId": "codex",
@@ -2845,13 +2834,35 @@
       "inputTokens": 220124,
       "outputTokens": 8369,
       "inputQuery": "你看看 openclaw 的日志帮我定位一下吧"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772171310268,
+      "totalTokens": 19010,
+      "inputTokens": 2891,
+      "outputTokens": 68,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
+      "agentId": "codex",
+      "model": "gpt-5.2-codex",
+      "updatedAt": 1772171590253.7988,
+      "totalTokens": 409563,
+      "inputTokens": 401915,
+      "outputTokens": 7648,
+      "inputQuery": "OK"
     }
   ],
   "staticFiles": {
     "/Users/ella/.openclaw/openclaw.json": {
-      "content": "{\n  \"meta\": {\n    \"lastTouchedVersion\": \"2026.2.24\",\n    \"lastTouchedAt\": \"2026-02-25T13:52:16.147Z\"\n  },\n  \"env\": {\n    \"vars\": {\n      \"TAVILY_API_KEY\": \"tvl***bSx\"\n    }\n  },\n  \"wizard\": {\n    \"lastRunAt\": \"2026-02-25T07:37:18.980Z\",\n    \"lastRunVersion\": \"2026.2.24\",\n    \"lastRunCommand\": \"doctor\",\n    \"lastRunMode\": \"local\"\n  },\n  \"browser\": {\n    \"enabled\": true,\n    \"remoteCdpTimeoutMs\": 1500,\n    \"remoteCdpHandshakeTimeoutMs\": 3000,\n    \"color\": \"#FF4500\",\n    \"executablePath\": \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\",\n    \"headless\": false,\n    \"noSandbox\": false,\n    \"attachOnly\": false,\n    \"defaultProfile\": \"openclaw\",\n    \"profiles\": {\n      \"openclaw\": {\n        \"cdpPort\": 18800,\n        \"color\": \"#FF4500\"\n      },\n      \"remote\": {\n        \"cdpUrl\": \"http://10.0.0.42:9222\",\n        \"color\": \"#00AA00\"\n      },\n      \"work\": {\n        \"cdpPort\": 18801,\n        \"color\": \"#0066CC\"\n      }\n    }\n  },\n  \"auth\": \"[ob***ct]\",\n  \"models\": {\n    \"mode\": \"merge\",\n    \"providers\": {\n      \"minimax-custom\": {\n        \"baseUrl\": \"https://api.minimaxi.com/anthropic\",\n        \"apiKey\": \"sk-***06I\",\n        \"api\": \"anthropic-messages\",\n        \"authHeader\": \"[REDACTED]\",\n        \"models\": [\n          {\n            \"id\": \"MiniMax-M2.5\",\n            \"name\": \"MiniMax M2.5\",\n            \"reasoning\": false,\n            \"input\": [\n              \"text\"\n            ],\n            \"cost\": {\n              \"input\": 15,\n              \"output\": 60,\n              \"cacheRead\": 2,\n              \"cacheWrite\": 10\n            },\n            \"contextWindow\": 200000,\n            \"maxTokens\": \"[REDACTED]\"\n          }\n        ]\n      }\n    }\n  },\n  \"agents\": {\n    \"defaults\": {\n      \"model\": {\n        \"primary\": \"minimax-custom/MiniMax-M2.5\",\n        \"fallbacks\": []\n      },\n      \"models\": {\n        \"openai-codex/gpt-5.3-codex\": {\n          \"alias\": \"Codex 5.3\"\n        },\n        \"codex-cli/gpt-5.3-codex\": {\n          \"alias\": \"Codex CLI 5.3\"\n        },\n        \"minimax-custom/MiniMax-M2.5\": {\n          \"alias\": \"Minimax M2.5\"\n        }\n      },\n      \"workspace\": \"/Users/ella/.openclaw/workspace\",\n      \"bootstrapMaxChars\": 8000,\n      \"bootstrapTotalMaxChars\": 12000,\n      \"contextTokens\": \"[REDACTED]\",\n      \"cliBackends\": {\n        \"codex-cli\": {\n          \"command\": \"/Users/ella/.openclaw/scripts/codex-wrapper.sh\"\n        }\n      },\n      \"contextPruning\": {\n        \"mode\": \"cache-ttl\",\n        \"ttl\": \"20m\",\n        \"keepLastAssistants\": 1,\n        \"softTrimRatio\": 0.2,\n        \"hardClearRatio\": 0.35,\n        \"minPrunableToolChars\": 10000\n      },\n      \"compaction\": {\n        \"mode\": \"safeguard\",\n        \"reserveTokensFloor\": \"[REDACTED]\",\n        \"memoryFlush\": {\n          \"enabled\": true,\n          \"softThresholdTokens\": \"[REDACTED]\",\n          \"prompt\": \"Persist durable memory only. If none, reply NO_REPLY.\",\n          \"systemPrompt\": \"Session near compaction. Save only durable facts to memory/YYYY-MM-DD.md.\"\n        }\n      },\n      \"blockStreamingDefault\": \"on\",\n      \"timeoutSeconds\": 300,\n      \"typingMode\": \"never\",\n      \"heartbeat\": {\n        \"every\": \"10m\"\n      },\n      \"maxConcurrent\": 4,\n      \"subagents\": {\n        \"maxConcurrent\": 8\n      }\n    },\n    \"list\": [\n      {\n        \"id\": \"main\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace\",\n        \"model\": \"minimax-custom/MiniMax-M2.5\",\n        \"identity\": {\n          \"name\": \"海粼酱\",\n          \"emoji\": \"🐱\"\n        },\n        \"subagents\": {\n          \"allowAgents\": [\n            \"coder\"\n          ],\n          \"model\": {\n            \"primary\": \"minimax-custom/MiniMax-M2.5\",\n            \"fallbacks\": []\n          }\n        },\n        \"tools\": {\n          \"exec\": {\n            \"host\": \"gateway\",\n            \"security\": \"allowlist\",\n            \"ask\": \"off\",\n            \"backgroundMs\": 90000\n          }\n        }\n      },\n      {\n        \"id\": \"coder\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace-coder\",\n        \"model\": {\n          \"primary\": \"openai-codex/gpt-5.3-codex\",\n          \"fallbacks\": [\n            \"codex-cli/gpt-5.3-codex\"\n          ]\n        },\n        \"identity\": {\n          \"name\": \"玟池欧巴\",\n          \"emoji\": \"🐻\"\n        },\n        \"subagents\": {\n          \"allowAgents\": []\n        }\n      }\n    ]\n  },\n  \"tools\": {\n    \"web\": {\n      \"search\": {\n        \"enabled\": false\n      },\n      \"fetch\": {\n        \"enabled\": true\n      }\n    },\n    \"media\": {\n      \"image\": {\n        \"enabled\": true,\n        \"maxBytes\": 10485760,\n        \"maxChars\": 1200,\n        \"prompt\": \"请只描述图片中能确定看到的实体对象与场景，不要臆测，不要补充不存在的文字。\",\n        \"timeoutSeconds\": 120,\n        \"models\": [\n          {\n            \"capabilities\": [\n              \"image\"\n            ],\n            \"type\": \"cli\",\n            \"command\": \"/Users/ella/.openclaw/workspace/vision.py\",\n            \"args\": [\n              \"{{Prompt}}\",\n              \"{{MediaPath}}\"\n            ],\n            \"maxChars\": 1200,\n            \"timeoutSeconds\": 120\n          }\n        ]\n      }\n    }\n  },\n  \"messages\": {\n    \"groupChat\": {\n      \"historyLimit\": 20\n    },\n    \"ackReaction\": \"\",\n    \"ackReactionScope\": \"all\"\n  },\n  \"commands\": {\n    \"native\": \"auto\",\n    \"nativeSkills\": \"auto\",\n    \"restart\": true,\n    \"ownerDisplay\": \"raw\"\n  },\n  \"session\": {\n    \"dmScope\": \"per-channel-peer\"\n  },\n  \"channels\": {\n    \"imessage\": {\n      \"enabled\": false,\n      \"cliPath\": \"/opt/homebrew/bin/imsg\",\n      \"dbPath\": \"/Users/ella/Library/Messages/chat.db\",\n      \"dmPolicy\": \"pairing\",\n      \"groupPolicy\": \"allowlist\"\n    },\n    \"bluebubbles\": {\n      \"enabled\": true,\n      \"serverUrl\": \"http://127.0.0.1:1234\",\n      \"password\": \"Fu3***tc!\",\n      \"dmPolicy\": \"open\",\n      \"allowFrom\": [\n        \"*\"\n      ],\n      \"groupPolicy\": \"open\",\n      \"historyLimit\": 3,\n      \"dmHistoryLimit\": 3,\n      \"mediaLocalRoots\": [\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Attachments\",\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Convert\"\n      ],\n      \"sendReadReceipts\": false,\n      \"blockStreaming\": false,\n      \"responsePrefix\": \"\"\n    },\n    \"feishu\": {\n      \"appId\": \"cli_a9028a14f6f89bd8\",\n      \"appSecret\": \"buW***7o8\",\n      \"dmPolicy\": \"open\",\n      \"enabled\": true,\n      \"dms\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\",\n      \"accounts\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"blockStreaming\": true,\n      \"allowFrom\": [\n        \"*\"\n      ]\n    }\n  },\n  \"canvasHost\": {\n    \"enabled\": true,\n    \"root\": \"/Users/ella/.openclaw/canvas\",\n    \"port\": 18793,\n    \"liveReload\": true\n  },\n  \"gateway\": {\n    \"port\": 18789,\n    \"mode\": \"local\",\n    \"bind\": \"loopback\",\n    \"auth\": \"[ob***ct]\",\n    \"tailscale\": {\n      \"mode\": \"off\",\n      \"resetOnExit\": false\n    }\n  },\n  \"skills\": {\n    \"install\": {\n      \"nodeManager\": \"npm\"\n    }\n  },\n  \"plugins\": {\n    \"entries\": {\n      \"bluebubbles\": {\n        \"enabled\": true\n      },\n      \"copilot-proxy\": {\n        \"enabled\": true\n      },\n      \"feishu\": {\n        \"enabled\": true\n      },\n      \"imessage\": {\n        \"enabled\": false\n      }\n    }\n  }\n}",
+      "content": "{\n  \"meta\": {\n    \"lastTouchedVersion\": \"2026.2.24\",\n    \"lastTouchedAt\": \"2026-02-25T13:52:16.147Z\"\n  },\n  \"env\": {\n    \"vars\": {\n      \"TAVILY_API_KEY\": \"tvl***bSx\"\n    }\n  },\n  \"wizard\": {\n    \"lastRunAt\": \"2026-02-25T07:37:18.980Z\",\n    \"lastRunVersion\": \"2026.2.24\",\n    \"lastRunCommand\": \"doctor\",\n    \"lastRunMode\": \"local\"\n  },\n  \"browser\": {\n    \"enabled\": true,\n    \"remoteCdpTimeoutMs\": 1500,\n    \"remoteCdpHandshakeTimeoutMs\": 3000,\n    \"color\": \"#FF4500\",\n    \"executablePath\": \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\",\n    \"headless\": false,\n    \"noSandbox\": false,\n    \"attachOnly\": false,\n    \"defaultProfile\": \"openclaw\",\n    \"profiles\": {\n      \"openclaw\": {\n        \"cdpPort\": 18800,\n        \"color\": \"#FF4500\"\n      },\n      \"remote\": {\n        \"cdpUrl\": \"http://10.0.0.42:9222\",\n        \"color\": \"#00AA00\"\n      },\n      \"work\": {\n        \"cdpPort\": 18801,\n        \"color\": \"#0066CC\"\n      }\n    }\n  },\n  \"auth\": \"[ob***ct]\",\n  \"models\": {\n    \"mode\": \"merge\",\n    \"providers\": {\n      \"minimax-custom\": {\n        \"baseUrl\": \"https://api.minimaxi.com/anthropic\",\n        \"apiKey\": \"sk-***06I\",\n        \"api\": \"anthropic-messages\",\n        \"authHeader\": \"[REDACTED]\",\n        \"models\": [\n          {\n            \"id\": \"MiniMax-M2.5\",\n            \"name\": \"MiniMax M2.5\",\n            \"reasoning\": false,\n            \"input\": [\n              \"text\"\n            ],\n            \"cost\": {\n              \"input\": 15,\n              \"output\": 60,\n              \"cacheRead\": 2,\n              \"cacheWrite\": 10\n            },\n            \"contextWindow\": 200000,\n            \"maxTokens\": \"[REDACTED]\"\n          }\n        ]\n      }\n    }\n  },\n  \"agents\": {\n    \"defaults\": {\n      \"model\": {\n        \"primary\": \"minimax-custom/MiniMax-M2.5\",\n        \"fallbacks\": []\n      },\n      \"models\": {\n        \"openai-codex/gpt-5.3-codex\": {\n          \"alias\": \"Codex 5.3\"\n        },\n        \"codex-cli/gpt-5.3-codex\": {\n          \"alias\": \"Codex CLI 5.3\"\n        },\n        \"minimax-custom/MiniMax-M2.5\": {\n          \"alias\": \"Minimax M2.5\"\n        }\n      },\n      \"workspace\": \"/Users/ella/.openclaw/workspace\",\n      \"bootstrapMaxChars\": 8000,\n      \"bootstrapTotalMaxChars\": 12000,\n      \"contextTokens\": \"[REDACTED]\",\n      \"cliBackends\": {\n        \"codex-cli\": {\n          \"command\": \"/Users/ella/.openclaw/scripts/codex-wrapper.sh\"\n        }\n      },\n      \"contextPruning\": {\n        \"mode\": \"cache-ttl\",\n        \"ttl\": \"20m\",\n        \"keepLastAssistants\": 1,\n        \"softTrimRatio\": 0.2,\n        \"hardClearRatio\": 0.35,\n        \"minPrunableToolChars\": 10000\n      },\n      \"compaction\": {\n        \"mode\": \"safeguard\",\n        \"reserveTokensFloor\": \"[REDACTED]\",\n        \"memoryFlush\": {\n          \"enabled\": true,\n          \"softThresholdTokens\": \"[REDACTED]\",\n          \"prompt\": \"Persist durable memory only. If none, reply NO_REPLY.\",\n          \"systemPrompt\": \"Session near compaction. Save only durable facts to memory/YYYY-MM-DD.md.\"\n        }\n      },\n      \"blockStreamingDefault\": \"on\",\n      \"timeoutSeconds\": 300,\n      \"typingMode\": \"never\",\n      \"heartbeat\": {\n        \"every\": \"10m\"\n      },\n      \"maxConcurrent\": 4,\n      \"subagents\": {\n        \"maxConcurrent\": 8\n      }\n    },\n    \"list\": [\n      {\n        \"id\": \"main\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace\",\n        \"model\": \"minimax-custom/MiniMax-M2.5\",\n        \"identity\": {\n          \"name\": \"海粼酱\",\n          \"emoji\": \"🐱\"\n        },\n        \"subagents\": {\n          \"allowAgents\": [\n            \"coder\"\n          ],\n          \"model\": {\n            \"primary\": \"minimax-custom/MiniMax-M2.5\",\n            \"fallbacks\": []\n          }\n        },\n        \"tools\": {\n          \"exec\": {\n            \"host\": \"gateway\",\n            \"security\": \"allowlist\",\n            \"ask\": \"off\",\n            \"backgroundMs\": 90000\n          }\n        }\n      },\n      {\n        \"id\": \"coder\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace-coder\",\n        \"model\": {\n          \"primary\": \"openai-codex/gpt-5.3-codex\",\n          \"fallbacks\": [\n            \"codex-cli/gpt-5.3-codex\"\n          ]\n        },\n        \"identity\": {\n          \"name\": \"玟池欧巴\",\n          \"emoji\": \"🐻\"\n        },\n        \"subagents\": {\n          \"allowAgents\": []\n        }\n      }\n    ]\n  },\n  \"tools\": {\n    \"web\": {\n      \"search\": {\n        \"enabled\": false\n      },\n      \"fetch\": {\n        \"enabled\": true\n      }\n    },\n    \"media\": {\n      \"image\": {\n        \"enabled\": true,\n        \"maxBytes\": 10485760,\n        \"maxChars\": 1200,\n        \"prompt\": \"请只描述图片中能确定看到的实体对象与场景，不要臆测，不要补充不存在的文字。\",\n        \"timeoutSeconds\": 120,\n        \"models\": [\n          {\n            \"capabilities\": [\n              \"image\"\n            ],\n            \"type\": \"cli\",\n            \"command\": \"/Users/ella/.openclaw/workspace/vision.py\",\n            \"args\": [\n              \"{{Prompt}}\",\n              \"{{MediaPath}}\"\n            ],\n            \"maxChars\": 1200,\n            \"timeoutSeconds\": 120\n          }\n        ]\n      }\n    }\n  },\n  \"messages\": {\n    \"groupChat\": {\n      \"historyLimit\": 20\n    },\n    \"ackReaction\": \"\",\n    \"ackReactionScope\": \"all\"\n  },\n  \"commands\": {\n    \"native\": \"auto\",\n    \"nativeSkills\": \"auto\",\n    \"restart\": true\n  },\n  \"session\": {\n    \"dmScope\": \"per-channel-peer\"\n  },\n  \"channels\": {\n    \"imessage\": {\n      \"enabled\": false,\n      \"cliPath\": \"/opt/homebrew/bin/imsg\",\n      \"dbPath\": \"/Users/ella/Library/Messages/chat.db\",\n      \"dmPolicy\": \"pairing\",\n      \"groupPolicy\": \"allowlist\"\n    },\n    \"bluebubbles\": {\n      \"enabled\": true,\n      \"serverUrl\": \"http://127.0.0.1:1234\",\n      \"password\": \"Fu3***tc!\",\n      \"dmPolicy\": \"open\",\n      \"allowFrom\": [\n        \"*\"\n      ],\n      \"groupPolicy\": \"open\",\n      \"historyLimit\": 3,\n      \"dmHistoryLimit\": 3,\n      \"mediaLocalRoots\": [\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Attachments\",\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Convert\"\n      ],\n      \"sendReadReceipts\": false,\n      \"blockStreaming\": false,\n      \"responsePrefix\": \"\"\n    },\n    \"feishu\": {\n      \"appId\": \"cli_a9028a14f6f89bd8\",\n      \"appSecret\": \"buW***7o8\",\n      \"dmPolicy\": \"open\",\n      \"enabled\": true,\n      \"dms\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\",\n      \"accounts\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"blockStreaming\": true,\n      \"allowFrom\": [\n        \"*\"\n      ]\n    }\n  },\n  \"canvasHost\": {\n    \"enabled\": true,\n    \"root\": \"/Users/ella/.openclaw/canvas\",\n    \"port\": 18793,\n    \"liveReload\": true\n  },\n  \"gateway\": {\n    \"port\": 18789,\n    \"mode\": \"local\",\n    \"bind\": \"loopback\",\n    \"auth\": \"[ob***ct]\",\n    \"tailscale\": {\n      \"mode\": \"off\",\n      \"resetOnExit\": false\n    }\n  },\n  \"skills\": {\n    \"install\": {\n      \"nodeManager\": \"npm\"\n    }\n  },\n  \"plugins\": {\n    \"entries\": {\n      \"bluebubbles\": {\n        \"enabled\": true\n      },\n      \"copilot-proxy\": {\n        \"enabled\": true\n      },\n      \"feishu\": {\n        \"enabled\": true\n      },\n      \"imessage\": {\n        \"enabled\": false\n      }\n    }\n  }\n}",
       "truncated": false,
-      "size": 8472,
+      "size": 8445,
       "filePath": "/Users/ella/.openclaw/openclaw.json"
     },
     "/Users/ella/.openclaw/workspace/skills/agent-browser/SKILL.md": {
