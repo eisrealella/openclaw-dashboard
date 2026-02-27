@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T23:04:38.828Z",
+    "generatedAt": "2026-02-27T23:09:43.651Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T23:04:38.853Z",
+    "staticExportedAt": "2026-02-27T23:09:43.675Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1451623587,
-    "inputTokens": 1451023471,
-    "outputTokens": 2829268,
+    "totalTokens": 1451624206,
+    "inputTokens": 1451113282,
+    "outputTokens": 2829233,
     "sessions": 171
   },
   "trend": [
@@ -83,18 +83,18 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 77161389
+      "tokens": 77162035
     },
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 16487324
+      "tokens": 16487297
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 721775472
+      "tokens": 721776091
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 919172
+          "lastSeenTokens": 779129
         }
       },
       {
@@ -890,10 +890,10 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772233087190,
-      "totalTokens": 17066,
-      "inputTokens": 945,
-      "outputTokens": 110,
+      "updatedAt": 1772233681551,
+      "totalTokens": 17039,
+      "inputTokens": 918,
+      "outputTokens": 75,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2741,9 +2741,9 @@
       "sessionId": "96f6f667-d5be-4456-89f5-89df88d75cf5",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772147038843,
-      "totalTokens": 140016,
-      "inputTokens": 50178,
+      "updatedAt": 1772147210865.5974,
+      "totalTokens": 140662,
+      "inputTokens": 140016,
       "outputTokens": 646,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。"
     },
@@ -2917,10 +2917,10 @@
       "sessionId": "ec9ac7c3-38ab-422e-845e-e6e84af20297",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772233087190,
-      "totalTokens": 17066,
-      "inputTokens": 945,
-      "outputTokens": 110,
+      "updatedAt": 1772233681551,
+      "totalTokens": 17039,
+      "inputTokens": 918,
+      "outputTokens": 75,
       "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
