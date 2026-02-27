@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T05:42:59.835Z",
+    "generatedAt": "2026-02-27T05:48:05.943Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T05:42:59.864Z",
+    "staticExportedAt": "2026-02-27T05:48:05.968Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1429977299,
-    "inputTokens": 1430221353,
-    "outputTokens": 2733971,
+    "totalTokens": 1430027812,
+    "inputTokens": 1430270527,
+    "outputTokens": 2735310,
     "sessions": 164
   },
   "trend": [
@@ -88,7 +88,7 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 532021
+      "tokens": 582534
     }
   ],
   "modelDistribution": [
@@ -106,7 +106,7 @@
     },
     {
       "model": "gpt-5.2-codex",
-      "tokens": 177980
+      "tokens": 228493
     }
   ],
   "agents": [
@@ -885,6 +885,19 @@
   },
   "recentSessions": [
     {
+      "source": "codex",
+      "sessionId": "019c7f2b-86ab-7142-855a-e053e013f1ee",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.2-codex",
+      "updatedAt": 1772171266451.1804,
+      "totalTokens": 228493,
+      "inputTokens": 220124,
+      "outputTokens": 8369,
+      "inputQuery": "你看看 openclaw 的日志帮我定位一下吧",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/21/rollout-2026-02-21T15-48-04-019c7f2b-86ab-7142-855a-e053e013f1ee.jsonl"
+    },
+    {
       "source": "openclaw",
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
@@ -909,19 +922,6 @@
       "outputTokens": 646,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "codex",
-      "sessionId": "019c7f2b-86ab-7142-855a-e053e013f1ee",
-      "agentId": "codex",
-      "label": "Codex local session",
-      "model": "gpt-5.2-codex",
-      "updatedAt": 1772158074285.9956,
-      "totalTokens": 177980,
-      "inputTokens": 170950,
-      "outputTokens": 7030,
-      "inputQuery": "又有 subagent coder failed 的报错了",
-      "sourcePath": "/Users/ella/.codex/sessions/2026/02/21/rollout-2026-02-21T15-48-04-019c7f2b-86ab-7142-855a-e053e013f1ee.jsonl"
     },
     {
       "source": "openclaw",
@@ -2814,17 +2814,6 @@
       "inputQuery": "日报-早间总结\" just completed successfully. Result: 新日报已添加到文档末尾。现在需要将新添加的块移到最上方。让我先读取文档查看当前状态。 Stats: runtime 5m0s • tokens 858.6k (in 855.1k / out 3.5k) A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
     },
     {
-      "source": "codex",
-      "sessionId": "019c7f2b-86ab-7142-855a-e053e013f1ee",
-      "agentId": "codex",
-      "model": "gpt-5.2-codex",
-      "updatedAt": 1772158074285.9956,
-      "totalTokens": 177980,
-      "inputTokens": 170950,
-      "outputTokens": 7030,
-      "inputQuery": "又有 subagent coder failed 的报错了"
-    },
-    {
       "source": "openclaw",
       "sessionId": "355c9304-e017-4e5d-b10e-a7d771c9fd17",
       "agentId": "main",
@@ -2845,6 +2834,17 @@
       "inputTokens": 36,
       "outputTokens": 53,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c7f2b-86ab-7142-855a-e053e013f1ee",
+      "agentId": "codex",
+      "model": "gpt-5.2-codex",
+      "updatedAt": 1772171266451.1804,
+      "totalTokens": 228493,
+      "inputTokens": 220124,
+      "outputTokens": 8369,
+      "inputQuery": "你看看 openclaw 的日志帮我定位一下吧"
     }
   ],
   "staticFiles": {
