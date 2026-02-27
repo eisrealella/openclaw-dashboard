@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T02:30:47.471Z",
+    "generatedAt": "2026-02-27T03:02:51.617Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T02:30:47.615Z",
+    "staticExportedAt": "2026-02-27T03:02:51.643Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1429468664,
+    "totalTokens": 1429487271,
     "inputTokens": 1429917217,
-    "outputTokens": 2733336,
+    "outputTokens": 2733461,
     "sessions": 163
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 373189
+      "tokens": 391796
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 715395509
+      "tokens": 715414116
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 847241
+          "lastSeenTokens": 865948
         }
       },
       {
@@ -890,10 +890,10 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772158126366,
-      "totalTokens": 100,
+      "updatedAt": 1772160762853,
+      "totalTokens": 18707,
       "inputTokens": 36,
-      "outputTokens": 64,
+      "outputTokens": 189,
       "inputQuery": "检查BlueBubbles消息重复问题前先确认gateway状态 Run: openclaw doctor --non-interactive System: [2026-02-27 09:57:40 GMT+8] Node: Ella的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2829,10 +2829,10 @@
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772158126366,
-      "totalTokens": 100,
+      "updatedAt": 1772160762853,
+      "totalTokens": 18707,
       "inputTokens": 36,
-      "outputTokens": 64,
+      "outputTokens": 189,
       "inputQuery": "检查BlueBubbles消息重复问题前先确认gateway状态 Run: openclaw doctor --non-interactive System: [2026-02-27 09:57:40 GMT+8] Node: Ella的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
