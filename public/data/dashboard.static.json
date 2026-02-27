@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T15:47:32.364Z",
+    "generatedAt": "2026-02-27T15:52:37.863Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T15:47:32.402Z",
+    "staticExportedAt": "2026-02-27T15:52:37.892Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1446001834,
-    "inputTokens": 1446143967,
-    "outputTokens": 2812810,
+    "totalTokens": 1446752038,
+    "inputTokens": 1446891258,
+    "outputTokens": 2815789,
     "sessions": 169
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 14301984
+      "tokens": 15052188
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 718303654
+      "tokens": 718303632
     },
     {
       "model": "gpt-5.3-codex",
@@ -106,7 +106,7 @@
     },
     {
       "model": "gpt-5.2-codex",
-      "tokens": 13803005
+      "tokens": 14553231
     }
   ],
   "agents": [
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 958998
+          "lastSeenTokens": 958976
         }
       },
       {
@@ -226,7 +226,7 @@
         "id": "skill:apple-reminders:6",
         "kind": "skill",
         "title": "apple-reminders",
-        "subtitle": "Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
+        "subtitle": "Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-reminders/SKILL.md",
@@ -312,7 +312,7 @@
         }
       },
       {
-        "id": "skill:dashboard-data-hygiene:16",
+        "id": "skill:dashboard-data-hygiene:17",
         "kind": "skill",
         "title": "dashboard-data-hygiene",
         "subtitle": "Maintain OpenClaw dashboard data quality and presentation consistency. Use when updating session ingestion/display, token aggregation, query sanitization, or agent overview card rendering (style, insight, and emoji defaults).",
@@ -342,7 +342,7 @@
         }
       },
       {
-        "id": "skill:dual-agent-handshake:17",
+        "id": "skill:dual-agent-handshake:18",
         "kind": "skill",
         "title": "dual-agent-handshake",
         "subtitle": "Enforce deterministic collaboration between main and coder agents for every task. Main must classify tasks and delegate coding/automation/complex execution to coder via sessions_spawn with a task envelope; coder must execute and return structured results only.",
@@ -430,7 +430,7 @@
         }
       },
       {
-        "id": "skill:feishu-interactive-cards:18",
+        "id": "skill:feishu-interactive-cards:19",
         "kind": "skill",
         "title": "feishu-interactive-cards",
         "subtitle": "Create and send interactive cards to Feishu (Lark) with buttons, forms, polls, and rich UI elements. Use when replying to Feishu messages and there is ANY uncertainty - send an interactive card instead of plain text to let users choose via buttons. Automatically handles callbacks via long-polling connection. Use for confirmations, choices, forms, todos, polls, or any scenario requiring user interaction in Feishu.",
@@ -490,7 +490,7 @@
         }
       },
       {
-        "id": "skill:find-skills:19",
+        "id": "skill:find-skills:20",
         "kind": "skill",
         "title": "find-skills",
         "subtitle": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
@@ -505,7 +505,7 @@
         }
       },
       {
-        "id": "skill:gh-issues:24",
+        "id": "skill:gh-issues:9",
         "kind": "skill",
         "title": "gh-issues",
         "subtitle": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
@@ -520,7 +520,7 @@
         }
       },
       {
-        "id": "skill:github:9",
+        "id": "skill:github:10",
         "kind": "skill",
         "title": "github",
         "subtitle": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
@@ -564,7 +564,7 @@
         }
       },
       {
-        "id": "skill:healthcheck:10",
+        "id": "skill:healthcheck:11",
         "kind": "skill",
         "title": "healthcheck",
         "subtitle": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
@@ -594,10 +594,10 @@
         }
       },
       {
-        "id": "skill:imsg:11",
+        "id": "skill:imsg:12",
         "kind": "skill",
         "title": "imsg",
-        "subtitle": "iMessage/SMS CLI for listing chats, history, watch, and sending.",
+        "subtitle": "iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/imsg/SKILL.md",
@@ -609,7 +609,7 @@
         }
       },
       {
-        "id": "skill:mac-notes-agent:20",
+        "id": "skill:mac-notes-agent:21",
         "kind": "skill",
         "title": "mac-notes-agent",
         "subtitle": "Integrate with the macOS Notes app (Apple Notes).\nSupports creating, listing, reading, updating, deleting, and searching notes\nvia a simple Node.js CLI that bridges to AppleScript.\n",
@@ -624,7 +624,7 @@
         }
       },
       {
-        "id": "skill:moltbook-auth:25",
+        "id": "skill:moltbook-auth:22",
         "kind": "skill",
         "title": "moltbook-auth",
         "subtitle": "Persist and safely reuse Moltbook auth context for browsing and API actions. Use when tasks involve Moltbook login, session checks, or authenticated post/comment/search calls.",
@@ -654,7 +654,7 @@
         }
       },
       {
-        "id": "skill:peekaboo:12",
+        "id": "skill:peekaboo:13",
         "kind": "skill",
         "title": "peekaboo",
         "subtitle": "Capture and automate macOS UI with the Peekaboo CLI.",
@@ -683,7 +683,7 @@
         }
       },
       {
-        "id": "skill:proactive-agent:21",
+        "id": "skill:proactive-agent:23",
         "kind": "skill",
         "title": "proactive-agent",
         "subtitle": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞",
@@ -698,7 +698,7 @@
         }
       },
       {
-        "id": "skill:skill-creator:13",
+        "id": "skill:skill-creator:14",
         "kind": "skill",
         "title": "skill-creator",
         "subtitle": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
@@ -713,7 +713,7 @@
         }
       },
       {
-        "id": "skill:sonoscli:14",
+        "id": "skill:sonoscli:15",
         "kind": "skill",
         "title": "sonoscli",
         "subtitle": "Control Sonos speakers (discover/status/play/volume/group).",
@@ -743,7 +743,7 @@
         }
       },
       {
-        "id": "skill:tavily:22",
+        "id": "skill:tavily:24",
         "kind": "skill",
         "title": "tavily",
         "subtitle": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
@@ -772,7 +772,7 @@
         }
       },
       {
-        "id": "skill:walle-presence:23",
+        "id": "skill:walle-presence:25",
         "kind": "skill",
         "title": "walle-presence",
         "subtitle": "Add compact robot-like emotional expression to replies without hurting task clarity.",
@@ -787,10 +787,10 @@
         }
       },
       {
-        "id": "skill:weather:15",
+        "id": "skill:weather:16",
         "kind": "skill",
         "title": "weather",
-        "subtitle": "Get current weather and forecasts (no API key required).",
+        "subtitle": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/weather/SKILL.md",
@@ -885,6 +885,32 @@
   },
   "recentSessions": [
     {
+      "source": "codex",
+      "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
+      "agentId": "codex",
+      "label": "Codex local session",
+      "model": "gpt-5.2-codex",
+      "updatedAt": 1772207552175.7217,
+      "totalTokens": 14324738,
+      "inputTokens": 14256124,
+      "outputTokens": 68614,
+      "inputQuery": "bluebubbles 还是没有反应，为什么总是没有反应呢",
+      "sourcePath": "/Users/ella/.codex/sessions/2026/02/27/rollout-2026-02-27T13-48-48-019c9da4-7af0-7e12-8fef-fa4255784c44.jsonl"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
+      "agentId": "main",
+      "label": "toolUse",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772207416333,
+      "totalTokens": 19656,
+      "inputTokens": 3605,
+      "outputTokens": 82,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
       "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
@@ -895,32 +921,6 @@
       "inputTokens": 144,
       "outputTokens": 0,
       "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"这个总结很好，记住以后就这样汇报\" }, { \"sender\": \"Unknown\", \"body\": \"terminated\" }, { \"sender\": \"Unknown\", \"body\": \"这个总结很好，记住以后就这样汇报\" } ] ``` 这个总结很好，记住以后就这样汇报",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "codex",
-      "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
-      "agentId": "codex",
-      "label": "Codex local session",
-      "model": "gpt-5.2-codex",
-      "updatedAt": 1772207169566.6743,
-      "totalTokens": 13574512,
-      "inputTokens": 13508879,
-      "outputTokens": 65633,
-      "inputQuery": "bluebubbles 还是没有反应，为什么总是没有反应呢",
-      "sourcePath": "/Users/ella/.codex/sessions/2026/02/27/rollout-2026-02-27T13-48-48-019c9da4-7af0-7e12-8fef-fa4255784c44.jsonl"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
-      "agentId": "main",
-      "label": "toolUse",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772206659994,
-      "totalTokens": 19678,
-      "inputTokens": 3559,
-      "outputTokens": 84,
-      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -2870,28 +2870,6 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772206659994,
-      "totalTokens": 19678,
-      "inputTokens": 3559,
-      "outputTokens": 84,
-      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
-    },
-    {
-      "source": "codex",
-      "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
-      "agentId": "codex",
-      "model": "gpt-5.2-codex",
-      "updatedAt": 1772207169566.6743,
-      "totalTokens": 13574512,
-      "inputTokens": 13508879,
-      "outputTokens": 65633,
-      "inputQuery": "bluebubbles 还是没有反应，为什么总是没有反应呢"
-    },
-    {
-      "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "model": "MiniMax-M2.5",
@@ -2900,11 +2878,33 @@
       "inputTokens": 144,
       "outputTokens": 0,
       "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): ```json [ { \"sender\": \"Unknown\", \"body\": \"这个总结很好，记住以后就这样汇报\" }, { \"sender\": \"Unknown\", \"body\": \"terminated\" }, { \"sender\": \"Unknown\", \"body\": \"这个总结很好，记住以后就这样汇报\" } ] ``` 这个总结很好，记住以后就这样汇报"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772207416333,
+      "totalTokens": 19656,
+      "inputTokens": 3605,
+      "outputTokens": 82,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
+    },
+    {
+      "source": "codex",
+      "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
+      "agentId": "codex",
+      "model": "gpt-5.2-codex",
+      "updatedAt": 1772207552175.7217,
+      "totalTokens": 14324738,
+      "inputTokens": 14256124,
+      "outputTokens": 68614,
+      "inputQuery": "bluebubbles 还是没有反应，为什么总是没有反应呢"
     }
   ],
   "staticFiles": {
     "/Users/ella/.openclaw/openclaw.json": {
-      "content": "{\n  \"meta\": {\n    \"lastTouchedVersion\": \"2026.2.24\",\n    \"lastTouchedAt\": \"2026-02-25T13:52:16.147Z\"\n  },\n  \"env\": {\n    \"vars\": {\n      \"TAVILY_API_KEY\": \"tvl***bSx\"\n    }\n  },\n  \"wizard\": {\n    \"lastRunAt\": \"2026-02-25T07:37:18.980Z\",\n    \"lastRunVersion\": \"2026.2.24\",\n    \"lastRunCommand\": \"doctor\",\n    \"lastRunMode\": \"local\"\n  },\n  \"browser\": {\n    \"enabled\": true,\n    \"remoteCdpTimeoutMs\": 1500,\n    \"remoteCdpHandshakeTimeoutMs\": 3000,\n    \"color\": \"#FF4500\",\n    \"executablePath\": \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\",\n    \"headless\": false,\n    \"noSandbox\": false,\n    \"attachOnly\": false,\n    \"defaultProfile\": \"openclaw\",\n    \"profiles\": {\n      \"openclaw\": {\n        \"cdpPort\": 18800,\n        \"color\": \"#FF4500\"\n      },\n      \"remote\": {\n        \"cdpUrl\": \"http://10.0.0.42:9222\",\n        \"color\": \"#00AA00\"\n      },\n      \"work\": {\n        \"cdpPort\": 18801,\n        \"color\": \"#0066CC\"\n      }\n    }\n  },\n  \"auth\": \"[ob***ct]\",\n  \"models\": {\n    \"mode\": \"merge\",\n    \"providers\": {\n      \"minimax-custom\": {\n        \"baseUrl\": \"https://api.minimaxi.com/anthropic\",\n        \"apiKey\": \"sk-***06I\",\n        \"api\": \"anthropic-messages\",\n        \"authHeader\": \"[REDACTED]\",\n        \"models\": [\n          {\n            \"id\": \"MiniMax-M2.5\",\n            \"name\": \"MiniMax M2.5\",\n            \"reasoning\": false,\n            \"input\": [\n              \"text\"\n            ],\n            \"cost\": {\n              \"input\": 15,\n              \"output\": 60,\n              \"cacheRead\": 2,\n              \"cacheWrite\": 10\n            },\n            \"contextWindow\": 200000,\n            \"maxTokens\": \"[REDACTED]\"\n          }\n        ]\n      }\n    }\n  },\n  \"agents\": {\n    \"defaults\": {\n      \"model\": {\n        \"primary\": \"minimax-custom/MiniMax-M2.5\",\n        \"fallbacks\": []\n      },\n      \"models\": {\n        \"openai-codex/gpt-5.3-codex\": {\n          \"alias\": \"Codex 5.3\"\n        },\n        \"codex-cli/gpt-5.3-codex\": {\n          \"alias\": \"Codex CLI 5.3\"\n        },\n        \"minimax-custom/MiniMax-M2.5\": {\n          \"alias\": \"Minimax M2.5\"\n        }\n      },\n      \"workspace\": \"/Users/ella/.openclaw/workspace\",\n      \"bootstrapMaxChars\": 8000,\n      \"bootstrapTotalMaxChars\": 12000,\n      \"contextTokens\": \"[REDACTED]\",\n      \"cliBackends\": {\n        \"codex-cli\": {\n          \"command\": \"/Users/ella/.openclaw/scripts/codex-wrapper.sh\"\n        }\n      },\n      \"contextPruning\": {\n        \"mode\": \"cache-ttl\",\n        \"ttl\": \"20m\",\n        \"keepLastAssistants\": 1,\n        \"softTrimRatio\": 0.2,\n        \"hardClearRatio\": 0.35,\n        \"minPrunableToolChars\": 10000\n      },\n      \"compaction\": {\n        \"mode\": \"safeguard\",\n        \"reserveTokensFloor\": \"[REDACTED]\",\n        \"memoryFlush\": {\n          \"enabled\": true,\n          \"softThresholdTokens\": \"[REDACTED]\",\n          \"prompt\": \"Persist durable memory only. If none, reply NO_REPLY.\",\n          \"systemPrompt\": \"Session near compaction. Save only durable facts to memory/YYYY-MM-DD.md.\"\n        }\n      },\n      \"blockStreamingDefault\": \"on\",\n      \"timeoutSeconds\": 600,\n      \"typingMode\": \"never\",\n      \"heartbeat\": {\n        \"every\": \"10m\"\n      },\n      \"maxConcurrent\": 4,\n      \"subagents\": {\n        \"maxConcurrent\": 8\n      }\n    },\n    \"list\": [\n      {\n        \"id\": \"main\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace\",\n        \"model\": \"minimax-custom/MiniMax-M2.5\",\n        \"identity\": {\n          \"name\": \"海粼酱\",\n          \"emoji\": \"🐱\"\n        },\n        \"subagents\": {\n          \"allowAgents\": [\n            \"coder\"\n          ],\n          \"model\": {\n            \"primary\": \"minimax-custom/MiniMax-M2.5\",\n            \"fallbacks\": []\n          }\n        },\n        \"tools\": {\n          \"exec\": {\n            \"host\": \"gateway\",\n            \"security\": \"full\",\n            \"ask\": \"off\",\n            \"backgroundMs\": 90000\n          }\n        }\n      },\n      {\n        \"id\": \"coder\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace-coder\",\n        \"model\": {\n          \"primary\": \"openai-codex/gpt-5.3-codex\",\n          \"fallbacks\": [\n            \"codex-cli/gpt-5.3-codex\"\n          ]\n        },\n        \"identity\": {\n          \"name\": \"玟池欧巴\",\n          \"emoji\": \"🐻\"\n        },\n        \"tools\": {\n          \"exec\": {\n            \"host\": \"gateway\",\n            \"security\": \"full\",\n            \"ask\": \"off\",\n            \"backgroundMs\": 90000\n          }\n        },\n        \"subagents\": {\n          \"allowAgents\": []\n        }\n      }\n    ]\n  },\n  \"tools\": {\n    \"web\": {\n      \"search\": {\n        \"enabled\": false\n      },\n      \"fetch\": {\n        \"enabled\": true\n      }\n    },\n    \"media\": {\n      \"image\": {\n        \"enabled\": true,\n        \"maxBytes\": 10485760,\n        \"maxChars\": 1200,\n        \"prompt\": \"请只描述图片中能确定看到的实体对象与场景，不要臆测，不要补充不存在的文字。\",\n        \"timeoutSeconds\": 120,\n        \"models\": [\n          {\n            \"capabilities\": [\n              \"image\"\n            ],\n            \"type\": \"cli\",\n            \"command\": \"/Users/ella/.openclaw/workspace/vision.py\",\n            \"args\": [\n              \"{{Prompt}}\",\n              \"{{MediaPath}}\"\n            ],\n            \"maxChars\": 1200,\n            \"timeoutSeconds\": 120\n          }\n        ]\n      }\n    }\n  },\n  \"messages\": {\n    \"groupChat\": {\n      \"historyLimit\": 20\n    },\n    \"ackReaction\": \"\",\n    \"ackReactionScope\": \"all\"\n  },\n  \"commands\": {\n    \"native\": \"auto\",\n    \"nativeSkills\": \"auto\",\n    \"restart\": true\n  },\n  \"session\": {\n    \"dmScope\": \"per-channel-peer\"\n  },\n  \"channels\": {\n    \"imessage\": {\n      \"enabled\": false,\n      \"cliPath\": \"/opt/homebrew/bin/imsg\",\n      \"dbPath\": \"/Users/ella/Library/Messages/chat.db\",\n      \"dmPolicy\": \"pairing\",\n      \"groupPolicy\": \"allowlist\"\n    },\n    \"bluebubbles\": {\n      \"enabled\": true,\n      \"serverUrl\": \"http://127.0.0.1:1234\",\n      \"password\": \"Fu3***tc!\",\n      \"dmPolicy\": \"open\",\n      \"allowFrom\": [\n        \"*\"\n      ],\n      \"groupPolicy\": \"open\",\n      \"historyLimit\": 3,\n      \"dmHistoryLimit\": 3,\n      \"mediaLocalRoots\": [\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Attachments\",\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Convert\"\n      ],\n      \"sendReadReceipts\": false,\n      \"blockStreaming\": false,\n      \"responsePrefix\": \"\"\n    },\n    \"feishu\": {\n      \"appId\": \"cli_a9028a14f6f89bd8\",\n      \"appSecret\": \"buW***7o8\",\n      \"dmPolicy\": \"open\",\n      \"enabled\": true,\n      \"dms\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\",\n      \"accounts\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"blockStreaming\": true,\n      \"allowFrom\": [\n        \"*\"\n      ]\n    }\n  },\n  \"canvasHost\": {\n    \"enabled\": true,\n    \"root\": \"/Users/ella/.openclaw/canvas\",\n    \"port\": 18793,\n    \"liveReload\": true\n  },\n  \"gateway\": {\n    \"port\": 18789,\n    \"mode\": \"local\",\n    \"bind\": \"loopback\",\n    \"auth\": \"[ob***ct]\",\n    \"tailscale\": {\n      \"mode\": \"off\",\n      \"resetOnExit\": false\n    }\n  },\n  \"skills\": {\n    \"install\": {\n      \"nodeManager\": \"npm\"\n    }\n  },\n  \"plugins\": {\n    \"entries\": {\n      \"bluebubbles\": {\n        \"enabled\": true\n      },\n      \"copilot-proxy\": {\n        \"enabled\": true\n      },\n      \"feishu\": {\n        \"enabled\": true\n      },\n      \"imessage\": {\n        \"enabled\": false\n      }\n    }\n  }\n}",
+      "content": "{\n  \"meta\": {\n    \"lastTouchedVersion\": \"2026.2.24\",\n    \"lastTouchedAt\": \"2026-02-25T13:52:16.147Z\"\n  },\n  \"env\": {\n    \"vars\": {\n      \"TAVILY_API_KEY\": \"tvl***bSx\"\n    }\n  },\n  \"wizard\": {\n    \"lastRunAt\": \"2026-02-25T07:37:18.980Z\",\n    \"lastRunVersion\": \"2026.2.24\",\n    \"lastRunCommand\": \"doctor\",\n    \"lastRunMode\": \"local\"\n  },\n  \"browser\": {\n    \"enabled\": true,\n    \"remoteCdpTimeoutMs\": 1500,\n    \"remoteCdpHandshakeTimeoutMs\": 3000,\n    \"color\": \"#FF4500\",\n    \"executablePath\": \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\",\n    \"headless\": false,\n    \"noSandbox\": false,\n    \"attachOnly\": false,\n    \"defaultProfile\": \"openclaw\",\n    \"profiles\": {\n      \"openclaw\": {\n        \"cdpPort\": 18800,\n        \"color\": \"#FF4500\"\n      },\n      \"remote\": {\n        \"cdpUrl\": \"http://10.0.0.42:9222\",\n        \"color\": \"#00AA00\"\n      },\n      \"work\": {\n        \"cdpPort\": 18801,\n        \"color\": \"#0066CC\"\n      }\n    }\n  },\n  \"auth\": \"[ob***ct]\",\n  \"models\": {\n    \"mode\": \"merge\",\n    \"providers\": {\n      \"minimax-custom\": {\n        \"baseUrl\": \"https://api.minimaxi.com/anthropic\",\n        \"apiKey\": \"sk-***06I\",\n        \"api\": \"anthropic-messages\",\n        \"authHeader\": \"[REDACTED]\",\n        \"models\": [\n          {\n            \"id\": \"MiniMax-M2.5\",\n            \"name\": \"MiniMax M2.5\",\n            \"reasoning\": false,\n            \"input\": [\n              \"text\"\n            ],\n            \"cost\": {\n              \"input\": 15,\n              \"output\": 60,\n              \"cacheRead\": 2,\n              \"cacheWrite\": 10\n            },\n            \"contextWindow\": 200000,\n            \"maxTokens\": \"[REDACTED]\"\n          }\n        ]\n      }\n    }\n  },\n  \"agents\": {\n    \"defaults\": {\n      \"model\": {\n        \"primary\": \"minimax-custom/MiniMax-M2.5\",\n        \"fallbacks\": []\n      },\n      \"models\": {\n        \"openai-codex/gpt-5.3-codex\": {\n          \"alias\": \"Codex 5.3\"\n        },\n        \"codex-cli/gpt-5.3-codex\": {\n          \"alias\": \"Codex CLI 5.3\"\n        },\n        \"minimax-custom/MiniMax-M2.5\": {\n          \"alias\": \"Minimax M2.5\"\n        }\n      },\n      \"workspace\": \"/Users/ella/.openclaw/workspace\",\n      \"bootstrapMaxChars\": 8000,\n      \"bootstrapTotalMaxChars\": 12000,\n      \"contextTokens\": \"[REDACTED]\",\n      \"cliBackends\": {\n        \"codex-cli\": {\n          \"command\": \"/Users/ella/.openclaw/scripts/codex-wrapper.sh\"\n        }\n      },\n      \"contextPruning\": {\n        \"mode\": \"cache-ttl\",\n        \"ttl\": \"20m\",\n        \"keepLastAssistants\": 1,\n        \"softTrimRatio\": 0.2,\n        \"hardClearRatio\": 0.35,\n        \"minPrunableToolChars\": 10000\n      },\n      \"compaction\": {\n        \"mode\": \"safeguard\",\n        \"reserveTokensFloor\": \"[REDACTED]\",\n        \"memoryFlush\": {\n          \"enabled\": true,\n          \"softThresholdTokens\": \"[REDACTED]\",\n          \"prompt\": \"Persist durable memory only. If none, reply NO_REPLY.\",\n          \"systemPrompt\": \"Session near compaction. Save only durable facts to memory/YYYY-MM-DD.md.\"\n        }\n      },\n      \"blockStreamingDefault\": \"on\",\n      \"timeoutSeconds\": 900,\n      \"typingMode\": \"never\",\n      \"heartbeat\": {\n        \"every\": \"10m\"\n      },\n      \"maxConcurrent\": 4,\n      \"subagents\": {\n        \"maxConcurrent\": 8\n      }\n    },\n    \"list\": [\n      {\n        \"id\": \"main\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace\",\n        \"model\": \"minimax-custom/MiniMax-M2.5\",\n        \"identity\": {\n          \"name\": \"海粼酱\",\n          \"emoji\": \"🐱\"\n        },\n        \"subagents\": {\n          \"allowAgents\": [\n            \"coder\"\n          ],\n          \"model\": {\n            \"primary\": \"minimax-custom/MiniMax-M2.5\",\n            \"fallbacks\": []\n          }\n        },\n        \"tools\": {\n          \"exec\": {\n            \"host\": \"gateway\",\n            \"security\": \"full\",\n            \"ask\": \"off\",\n            \"backgroundMs\": 90000\n          }\n        }\n      },\n      {\n        \"id\": \"coder\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace-coder\",\n        \"model\": {\n          \"primary\": \"openai-codex/gpt-5.3-codex\",\n          \"fallbacks\": [\n            \"codex-cli/gpt-5.3-codex\"\n          ]\n        },\n        \"identity\": {\n          \"name\": \"玟池欧巴\",\n          \"emoji\": \"🐻\"\n        },\n        \"tools\": {\n          \"exec\": {\n            \"host\": \"gateway\",\n            \"security\": \"full\",\n            \"ask\": \"off\",\n            \"backgroundMs\": 90000\n          }\n        },\n        \"subagents\": {\n          \"allowAgents\": []\n        }\n      }\n    ]\n  },\n  \"tools\": {\n    \"web\": {\n      \"search\": {\n        \"enabled\": false\n      },\n      \"fetch\": {\n        \"enabled\": true\n      }\n    },\n    \"media\": {\n      \"image\": {\n        \"enabled\": true,\n        \"maxBytes\": 10485760,\n        \"maxChars\": 1200,\n        \"prompt\": \"请只描述图片中能确定看到的实体对象与场景，不要臆测，不要补充不存在的文字。\",\n        \"timeoutSeconds\": 120,\n        \"models\": [\n          {\n            \"capabilities\": [\n              \"image\"\n            ],\n            \"type\": \"cli\",\n            \"command\": \"/Users/ella/.openclaw/workspace/vision.py\",\n            \"args\": [\n              \"{{Prompt}}\",\n              \"{{MediaPath}}\"\n            ],\n            \"maxChars\": 1200,\n            \"timeoutSeconds\": 120\n          }\n        ]\n      }\n    }\n  },\n  \"messages\": {\n    \"groupChat\": {\n      \"historyLimit\": 20\n    },\n    \"ackReaction\": \"\",\n    \"ackReactionScope\": \"all\"\n  },\n  \"commands\": {\n    \"native\": \"auto\",\n    \"nativeSkills\": \"auto\",\n    \"restart\": true\n  },\n  \"session\": {\n    \"dmScope\": \"per-channel-peer\"\n  },\n  \"channels\": {\n    \"imessage\": {\n      \"enabled\": false,\n      \"cliPath\": \"/opt/homebrew/bin/imsg\",\n      \"dbPath\": \"/Users/ella/Library/Messages/chat.db\",\n      \"dmPolicy\": \"pairing\",\n      \"groupPolicy\": \"allowlist\"\n    },\n    \"bluebubbles\": {\n      \"enabled\": true,\n      \"serverUrl\": \"http://127.0.0.1:1234\",\n      \"password\": \"Fu3***tc!\",\n      \"dmPolicy\": \"open\",\n      \"allowFrom\": [\n        \"*\"\n      ],\n      \"groupPolicy\": \"open\",\n      \"historyLimit\": 3,\n      \"dmHistoryLimit\": 3,\n      \"mediaLocalRoots\": [\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Attachments\",\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Convert\"\n      ],\n      \"sendReadReceipts\": false,\n      \"blockStreaming\": false,\n      \"responsePrefix\": \"\"\n    },\n    \"feishu\": {\n      \"appId\": \"cli_a9028a14f6f89bd8\",\n      \"appSecret\": \"buW***7o8\",\n      \"dmPolicy\": \"open\",\n      \"enabled\": true,\n      \"dms\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\",\n      \"accounts\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"blockStreaming\": true,\n      \"allowFrom\": [\n        \"*\"\n      ]\n    }\n  },\n  \"canvasHost\": {\n    \"enabled\": true,\n    \"root\": \"/Users/ella/.openclaw/canvas\",\n    \"port\": 18793,\n    \"liveReload\": true\n  },\n  \"gateway\": {\n    \"port\": 18789,\n    \"mode\": \"local\",\n    \"bind\": \"loopback\",\n    \"auth\": \"[ob***ct]\",\n    \"tailscale\": {\n      \"mode\": \"off\",\n      \"resetOnExit\": false\n    }\n  },\n  \"skills\": {\n    \"install\": {\n      \"nodeManager\": \"npm\"\n    }\n  },\n  \"plugins\": {\n    \"entries\": {\n      \"bluebubbles\": {\n        \"enabled\": true\n      },\n      \"copilot-proxy\": {\n        \"enabled\": true\n      },\n      \"feishu\": {\n        \"enabled\": true\n      },\n      \"imessage\": {\n        \"enabled\": false\n      }\n    }\n  }\n}",
       "truncated": false,
       "size": 8624,
       "filePath": "/Users/ella/.openclaw/openclaw.json"
