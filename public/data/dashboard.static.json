@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T06:13:32.246Z",
+    "generatedAt": "2026-02-27T06:18:37.279Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T06:13:32.275Z",
+    "staticExportedAt": "2026-02-27T06:18:37.303Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1436173225,
-    "inputTokens": 1436362929,
-    "outputTokens": 2768689,
+    "totalTokens": 1438278062,
+    "inputTokens": 1438462314,
+    "outputTokens": 2774141,
     "sessions": 166
   },
   "trend": [
@@ -88,7 +88,7 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 6727947
+      "tokens": 8832784
     }
   ],
   "modelDistribution": [
@@ -106,7 +106,7 @@
     },
     {
       "model": "gpt-5.2-codex",
-      "tokens": 6357111
+      "tokens": 8461948
     }
   ],
   "agents": [
@@ -890,10 +890,10 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.2-codex",
-      "updatedAt": 1772172812192.7402,
-      "totalTokens": 6128618,
-      "inputTokens": 6095386,
-      "outputTokens": 33232,
+      "updatedAt": 1772173114086.8828,
+      "totalTokens": 8233455,
+      "inputTokens": 8194771,
+      "outputTokens": 38684,
       "inputQuery": "Nodes: with command openclaw, cron, list, node Ella的MacBook Pro failed",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/27/rollout-2026-02-27T13-48-48-019c9da4-7af0-7e12-8fef-fa4255784c44.jsonl"
     },
@@ -2862,10 +2862,10 @@
       "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
       "agentId": "codex",
       "model": "gpt-5.2-codex",
-      "updatedAt": 1772172812192.7402,
-      "totalTokens": 6128618,
-      "inputTokens": 6095386,
-      "outputTokens": 33232,
+      "updatedAt": 1772173114086.8828,
+      "totalTokens": 8233455,
+      "inputTokens": 8194771,
+      "outputTokens": 38684,
       "inputQuery": "Nodes: with command openclaw, cron, list, node Ella的MacBook Pro failed"
     }
   ],
