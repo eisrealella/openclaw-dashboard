@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T13:10:18.195Z",
+    "generatedAt": "2026-02-27T13:15:23.046Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,7 +10,7 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T13:10:18.219Z",
+    "staticExportedAt": "2026-02-27T13:15:23.069Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
