@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T18:50:34.336Z",
+    "generatedAt": "2026-02-27T18:55:39.335Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,7 +10,7 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T18:50:34.360Z",
+    "staticExportedAt": "2026-02-27T18:55:39.361Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
@@ -890,7 +890,7 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772217786976,
+      "updatedAt": 1772218409184,
       "totalTokens": 19670,
       "inputTokens": 3551,
       "outputTokens": 70,
@@ -2895,7 +2895,7 @@
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772217786976,
+      "updatedAt": 1772218409184,
       "totalTokens": 19670,
       "inputTokens": 3551,
       "outputTokens": 70,
