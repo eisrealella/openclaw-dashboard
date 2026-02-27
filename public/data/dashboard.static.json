@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T05:06:47.545Z",
+    "generatedAt": "2026-02-27T05:11:53.097Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T05:06:47.574Z",
+    "staticExportedAt": "2026-02-27T05:11:53.124Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
     "totalTokens": 1429987337,
     "inputTokens": 1430221353,
-    "outputTokens": 2733962,
+    "outputTokens": 2733935,
     "sessions": 164
   },
   "trend": [
@@ -890,10 +890,10 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772168803737,
+      "updatedAt": 1772168808176,
       "totalTokens": 28954,
       "inputTokens": 36,
-      "outputTokens": 44,
+      "outputTokens": 17,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2840,10 +2840,10 @@
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772168803737,
+      "updatedAt": 1772168808176,
       "totalTokens": 28954,
       "inputTokens": 36,
-      "outputTokens": 44,
+      "outputTokens": 17,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
