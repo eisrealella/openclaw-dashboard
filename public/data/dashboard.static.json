@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T13:15:23.046Z",
+    "generatedAt": "2026-02-27T13:20:27.850Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T13:15:23.069Z",
+    "staticExportedAt": "2026-02-27T13:20:27.874Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1444374256,
-    "inputTokens": 1444362037,
-    "outputTokens": 2805598,
+    "totalTokens": 1444374261,
+    "inputTokens": 1444362042,
+    "outputTokens": 2805600,
     "sessions": 168
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 12674406
+      "tokens": 12674411
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 718272576
+      "tokens": 718272581
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 927920
+          "lastSeenTokens": 927925
         }
       },
       {
@@ -890,10 +890,10 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772197667185,
-      "totalTokens": 19671,
-      "inputTokens": 3552,
-      "outputTokens": 82,
+      "updatedAt": 1772198260156,
+      "totalTokens": 19676,
+      "inputTokens": 3557,
+      "outputTokens": 84,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2884,10 +2884,10 @@
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772197667185,
-      "totalTokens": 19671,
-      "inputTokens": 3552,
-      "outputTokens": 82,
+      "updatedAt": 1772198260156,
+      "totalTokens": 19676,
+      "inputTokens": 3557,
+      "outputTokens": 84,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
     }
   ],
