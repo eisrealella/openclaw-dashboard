@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T00:03:35.972Z",
+    "generatedAt": "2026-02-27T00:08:41.426Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,12 +10,12 @@
       "latestDay": "2026-02-27",
       "bucketCount": 29
     },
-    "staticExportedAt": "2026-02-27T00:03:36.005Z",
+    "staticExportedAt": "2026-02-27T00:08:41.459Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1429369808,
-    "inputTokens": 1428994187,
+    "totalTokens": 1429398412,
+    "inputTokens": 1429047749,
     "outputTokens": 2730890,
     "sessions": 162
   },
@@ -83,7 +83,7 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 71110089
+      "tokens": 71138693
     },
     {
       "date": "2026-02-27",
@@ -94,7 +94,7 @@
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 715296653
+      "tokens": 715325257
     },
     {
       "model": "gpt-5.3-codex",
@@ -154,7 +154,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 823485
+          "lastSeenTokens": 792192
         }
       },
       {
@@ -886,7 +886,7 @@
       "agentId": "coder",
       "label": "stop",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772150591790.1782,
+      "updatedAt": 1772150714212,
       "totalTokens": 36228,
       "inputTokens": 35687,
       "outputTokens": 541,
@@ -2605,9 +2605,9 @@
       "sessionId": "bd3a89b8-4ed3-4053-94d1-daaf6fee55e2",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772064000034,
-      "totalTokens": 15023,
-      "inputTokens": 36,
+      "updatedAt": 1772064019206.3562,
+      "totalTokens": 15141,
+      "inputTokens": 15023,
       "outputTokens": 118,
       "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。"
     },
@@ -2616,9 +2616,9 @@
       "sessionId": "cfd2214e-4bbc-45d3-9bf7-601eca14e12a",
       "agentId": "coder",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772064060035,
-      "totalTokens": 16270,
-      "inputTokens": 5196,
+      "updatedAt": 1772064120218.5984,
+      "totalTokens": 44756,
+      "inputTokens": 43771,
       "outputTokens": 985,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 联网检索优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \"OpenClaw release notes\" --topic news -n 5 - Tavily 失败或证据不足时，使用 browser 兜底 【早间OpenClaw升级简报任务】 你将发送今天的第二条 iMessage（第一条早安问候由其他 cron 发送）。 你需要尽力获取： - 当前版本（优先本机查询） - 可升级版本（优先本机查询） - 官方 release 关键修复（2条） - 官方社群讨论（issues/discussions）中的升级反馈（1条） - 与本机已见问题的关联：Connection error、API rate limit、cron 投递稳定性 社群讨论兜底（若实时搜索失败，必须至少尝试这些官方线程）： - https://github.com/openclaw/openclaw/issues/10812 - https://github.com/openclaw/openclaw/issues/10849 输出要求（必须遵守）： - 不要写“动作：执行：openclaw update”这一行 - 允许 6-8 行，不做严格行数限制 - 每一行内容之间留一个空行（提高可读性） - 不要表情、不要代码块、不要“状态”字样 - 不要额外前言、解释、致歉 推荐模板（可微调）： 1) OpenClaw 早间升级简报 2) 当前版本：<x>；可升级版本：<y> 3) 关键修复1：<一句话> 4) 关键修复2：<一句话> 5) 社群讨论：<一句话，必须带可验证证据：URL 或 issue/discussion 编号> 6) 结论：<建议升级 或 暂缓升级>（<一句理由>） 真实性要求（重点）： - 社群讨论必须来自真实可验证来源（能给出 URL 或明确 issue/discussion 编号） - 如果没拿到可验证来源，必须写：社群讨论：信息不足（未获取到可验证 issue/discussion 页面） - 禁止猜测、禁止编造"
     },
@@ -2814,7 +2814,7 @@
       "sessionId": "91790386-d331-4f83-845c-bd9872fd4be2",
       "agentId": "coder",
       "model": "gpt-5.3-codex",
-      "updatedAt": 1772150591790.1782,
+      "updatedAt": 1772150714212,
       "totalTokens": 36228,
       "inputTokens": 35687,
       "outputTokens": 541,
