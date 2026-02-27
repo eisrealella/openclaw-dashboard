@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T05:11:53.097Z",
+    "generatedAt": "2026-02-27T05:42:59.835Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T05:11:53.124Z",
+    "staticExportedAt": "2026-02-27T05:42:59.864Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1429987337,
+    "totalTokens": 1429977299,
     "inputTokens": 1430221353,
-    "outputTokens": 2733935,
+    "outputTokens": 2733971,
     "sessions": 164
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 542059
+      "tokens": 532021
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 715914182
+      "tokens": 715904144
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 990875
+          "lastSeenTokens": 980837
         }
       },
       {
@@ -890,10 +890,10 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772168808176,
-      "totalTokens": 28954,
+      "updatedAt": 1772170686524,
+      "totalTokens": 18916,
       "inputTokens": 36,
-      "outputTokens": 17,
+      "outputTokens": 53,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2840,10 +2840,10 @@
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772168808176,
-      "totalTokens": 28954,
+      "updatedAt": 1772170686524,
+      "totalTokens": 18916,
       "inputTokens": 36,
-      "outputTokens": 17,
+      "outputTokens": 53,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     }
   ],
