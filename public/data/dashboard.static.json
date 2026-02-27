@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T19:05:49.101Z",
+    "generatedAt": "2026-02-27T19:10:54.047Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T19:05:49.126Z",
+    "staticExportedAt": "2026-02-27T19:10:54.073Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1451614167,
-    "inputTokens": 1451167612,
-    "outputTokens": 2831130,
+    "totalTokens": 1451606525,
+    "inputTokens": 1451022529,
+    "outputTokens": 2829162,
     "sessions": 170
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 16477904
+      "tokens": 16470262
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 721766052
+      "tokens": 721758410
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 929423
+          "lastSeenTokens": 921781
         }
       },
       {
@@ -226,7 +226,7 @@
         "id": "skill:apple-reminders:6",
         "kind": "skill",
         "title": "apple-reminders",
-        "subtitle": "Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
+        "subtitle": "Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-reminders/SKILL.md",
@@ -312,7 +312,7 @@
         }
       },
       {
-        "id": "skill:dashboard-data-hygiene:16",
+        "id": "skill:dashboard-data-hygiene:17",
         "kind": "skill",
         "title": "dashboard-data-hygiene",
         "subtitle": "Maintain OpenClaw dashboard data quality and presentation consistency. Use when updating session ingestion/display, token aggregation, query sanitization, or agent overview card rendering (style, insight, and emoji defaults).",
@@ -342,7 +342,7 @@
         }
       },
       {
-        "id": "skill:dual-agent-handshake:17",
+        "id": "skill:dual-agent-handshake:18",
         "kind": "skill",
         "title": "dual-agent-handshake",
         "subtitle": "Enforce deterministic collaboration between main and coder agents for every task. Main must classify tasks and delegate coding/automation/complex execution to coder via sessions_spawn with a task envelope; coder must execute and return structured results only.",
@@ -430,7 +430,7 @@
         }
       },
       {
-        "id": "skill:feishu-interactive-cards:18",
+        "id": "skill:feishu-interactive-cards:19",
         "kind": "skill",
         "title": "feishu-interactive-cards",
         "subtitle": "Create and send interactive cards to Feishu (Lark) with buttons, forms, polls, and rich UI elements. Use when replying to Feishu messages and there is ANY uncertainty - send an interactive card instead of plain text to let users choose via buttons. Automatically handles callbacks via long-polling connection. Use for confirmations, choices, forms, todos, polls, or any scenario requiring user interaction in Feishu.",
@@ -490,7 +490,7 @@
         }
       },
       {
-        "id": "skill:find-skills:19",
+        "id": "skill:find-skills:20",
         "kind": "skill",
         "title": "find-skills",
         "subtitle": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
@@ -505,7 +505,7 @@
         }
       },
       {
-        "id": "skill:gh-issues:24",
+        "id": "skill:gh-issues:9",
         "kind": "skill",
         "title": "gh-issues",
         "subtitle": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
@@ -520,7 +520,7 @@
         }
       },
       {
-        "id": "skill:github:9",
+        "id": "skill:github:10",
         "kind": "skill",
         "title": "github",
         "subtitle": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
@@ -564,7 +564,7 @@
         }
       },
       {
-        "id": "skill:healthcheck:10",
+        "id": "skill:healthcheck:11",
         "kind": "skill",
         "title": "healthcheck",
         "subtitle": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
@@ -594,10 +594,10 @@
         }
       },
       {
-        "id": "skill:imsg:11",
+        "id": "skill:imsg:12",
         "kind": "skill",
         "title": "imsg",
-        "subtitle": "iMessage/SMS CLI for listing chats, history, watch, and sending.",
+        "subtitle": "iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/imsg/SKILL.md",
@@ -609,7 +609,7 @@
         }
       },
       {
-        "id": "skill:mac-notes-agent:20",
+        "id": "skill:mac-notes-agent:21",
         "kind": "skill",
         "title": "mac-notes-agent",
         "subtitle": "Integrate with the macOS Notes app (Apple Notes).\nSupports creating, listing, reading, updating, deleting, and searching notes\nvia a simple Node.js CLI that bridges to AppleScript.\n",
@@ -624,7 +624,7 @@
         }
       },
       {
-        "id": "skill:moltbook-auth:25",
+        "id": "skill:moltbook-auth:22",
         "kind": "skill",
         "title": "moltbook-auth",
         "subtitle": "Persist and safely reuse Moltbook auth context for browsing and API actions. Use when tasks involve Moltbook login, session checks, or authenticated post/comment/search calls.",
@@ -654,7 +654,7 @@
         }
       },
       {
-        "id": "skill:peekaboo:12",
+        "id": "skill:peekaboo:13",
         "kind": "skill",
         "title": "peekaboo",
         "subtitle": "Capture and automate macOS UI with the Peekaboo CLI.",
@@ -683,7 +683,7 @@
         }
       },
       {
-        "id": "skill:proactive-agent:21",
+        "id": "skill:proactive-agent:23",
         "kind": "skill",
         "title": "proactive-agent",
         "subtitle": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞",
@@ -698,7 +698,7 @@
         }
       },
       {
-        "id": "skill:skill-creator:13",
+        "id": "skill:skill-creator:14",
         "kind": "skill",
         "title": "skill-creator",
         "subtitle": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
@@ -713,7 +713,7 @@
         }
       },
       {
-        "id": "skill:sonoscli:14",
+        "id": "skill:sonoscli:15",
         "kind": "skill",
         "title": "sonoscli",
         "subtitle": "Control Sonos speakers (discover/status/play/volume/group).",
@@ -743,7 +743,7 @@
         }
       },
       {
-        "id": "skill:tavily:22",
+        "id": "skill:tavily:24",
         "kind": "skill",
         "title": "tavily",
         "subtitle": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
@@ -772,7 +772,7 @@
         }
       },
       {
-        "id": "skill:walle-presence:23",
+        "id": "skill:walle-presence:25",
         "kind": "skill",
         "title": "walle-presence",
         "subtitle": "Add compact robot-like emotional expression to replies without hurting task clarity.",
@@ -787,10 +787,10 @@
         }
       },
       {
-        "id": "skill:weather:15",
+        "id": "skill:weather:16",
         "kind": "skill",
         "title": "weather",
-        "subtitle": "Get current weather and forecasts (no API key required).",
+        "subtitle": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
         "badge": "SKILL",
         "source": "openclaw-bundled",
         "filePath": "/opt/homebrew/lib/node_modules/openclaw/skills/weather/SKILL.md",
@@ -886,28 +886,28 @@
   "recentSessions": [
     {
       "source": "openclaw",
+      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
+      "agentId": "main",
+      "label": "toolUse",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772219284577,
+      "totalTokens": 19675,
+      "inputTokens": 3555,
+      "outputTokens": 90,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "041b38f5-2fb6-471f-b8bd-ff7fcbc81573",
       "agentId": "main",
       "label": "Cron: 自由探索互联网",
       "model": "MiniMax-M2.5",
       "updatedAt": 1772219038765,
-      "totalTokens": 31756,
-      "inputTokens": 230607,
-      "outputTokens": 5467,
+      "totalTokens": 24107,
+      "inputTokens": 85518,
+      "outputTokens": 3492,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \"<query>\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后不要直接回复给用户，把最终总结原样作为 stdin 传给去重发送脚本： python3 /Users/ella/.openclaw/workspace/scripts/cron_dedupe_send.py --job-id 8bb55698-fa24-4131-bfeb-8fb3635c8004 --ttl-sec 7200 --channel bluebubbles --target +8613312973989 若脚本输出 \"SKIP\"，直接结束，不要再发送或输出任何内容。",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
-      "agentId": "main",
-      "label": "toolUse",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772218997199,
-      "totalTokens": 19668,
-      "inputTokens": 3549,
-      "outputTokens": 83,
-      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -2892,25 +2892,25 @@
     },
     {
       "source": "openclaw",
-      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
-      "agentId": "main",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772218997199,
-      "totalTokens": 19668,
-      "inputTokens": 3549,
-      "outputTokens": 83,
-      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
-    },
-    {
-      "source": "openclaw",
       "sessionId": "041b38f5-2fb6-471f-b8bd-ff7fcbc81573",
       "agentId": "main",
       "model": "MiniMax-M2.5",
       "updatedAt": 1772219038765,
-      "totalTokens": 31756,
-      "inputTokens": 230607,
-      "outputTokens": 5467,
+      "totalTokens": 24107,
+      "inputTokens": 85518,
+      "outputTokens": 3492,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \"<query>\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后不要直接回复给用户，把最终总结原样作为 stdin 传给去重发送脚本： python3 /Users/ella/.openclaw/workspace/scripts/cron_dedupe_send.py --job-id 8bb55698-fa24-4131-bfeb-8fb3635c8004 --ttl-sec 7200 --channel bluebubbles --target +8613312973989 若脚本输出 \"SKIP\"，直接结束，不要再发送或输出任何内容。"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772219284577,
+      "totalTokens": 19675,
+      "inputTokens": 3555,
+      "outputTokens": 90,
+      "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
     }
   ],
   "staticFiles": {
