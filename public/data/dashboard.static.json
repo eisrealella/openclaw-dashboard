@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T07:55:12.470Z",
+    "generatedAt": "2026-02-27T08:00:17.805Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T07:55:12.503Z",
+    "staticExportedAt": "2026-02-27T08:00:17.838Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
     "totalTokens": 1442023317,
     "inputTokens": 1442183217,
-    "outputTokens": 2798440,
+    "outputTokens": 2798430,
     "sessions": 166
   },
   "trend": [
@@ -890,10 +890,10 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772178463307,
+      "updatedAt": 1772179065067,
       "totalTokens": 19672,
       "inputTokens": 3553,
-      "outputTokens": 86,
+      "outputTokens": 76,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -2862,10 +2862,10 @@
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772178463307,
+      "updatedAt": 1772179065067,
       "totalTokens": 19672,
       "inputTokens": 3553,
-      "outputTokens": 86,
+      "outputTokens": 76,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local System: [2026-02-27 14:19:43 GMT+8] Exec started (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896): uname -a System: [2026-02-27 14:19:43 GMT+8] Exec finished (node=1ea4c2ade2f2a9b176030073c4e2bc66feb15ff46047a2396cefb8b4fb4146a8 id=69EACF1F-5A47-426F-9AB4-8D0C7F85A896, code 0) Darwin ElladeMacBook-Pro.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030 arm64 An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested."
     }
   ],
