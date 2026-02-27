@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T06:08:27.014Z",
+    "generatedAt": "2026-02-27T06:13:32.246Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,14 +10,14 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T06:08:27.044Z",
+    "staticExportedAt": "2026-02-27T06:13:32.275Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1434053433,
-    "inputTokens": 1434270359,
-    "outputTokens": 2758048,
-    "sessions": 165
+    "totalTokens": 1436173225,
+    "inputTokens": 1436362929,
+    "outputTokens": 2768689,
+    "sessions": 166
   },
   "trend": [
     {
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 4608155
+      "tokens": 6727947
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 715903954
+      "tokens": 715920939
     },
     {
       "model": "gpt-5.3-codex",
@@ -106,7 +106,7 @@
     },
     {
       "model": "gpt-5.2-codex",
-      "tokens": 4254304
+      "tokens": 6357111
     }
   ],
   "agents": [
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 980647
+          "lastSeenTokens": 997632
         }
       },
       {
@@ -890,10 +890,10 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.2-codex",
-      "updatedAt": 1772172482417.4385,
-      "totalTokens": 4025811,
-      "inputTokens": 4002780,
-      "outputTokens": 23031,
+      "updatedAt": 1772172812192.7402,
+      "totalTokens": 6128618,
+      "inputTokens": 6095386,
+      "outputTokens": 33232,
       "inputQuery": "Nodes: with command openclaw, cron, list, node Ella的MacBook Pro failed",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/27/rollout-2026-02-27T13-48-48-019c9da4-7af0-7e12-8fef-fa4255784c44.jsonl"
     },
@@ -903,10 +903,10 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772172400001,
-      "totalTokens": 19114,
-      "inputTokens": 2995,
-      "outputTokens": 95,
+      "updatedAt": 1772172751168,
+      "totalTokens": 18974,
+      "inputTokens": 2923,
+      "outputTokens": 71,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
@@ -916,11 +916,24 @@
       "agentId": "main",
       "label": "stop",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772172377317,
-      "totalTokens": 18618,
+      "updatedAt": 1772172742796,
+      "totalTokens": 20788,
       "inputTokens": 36,
-      "outputTokens": 88,
-      "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 我需要你帮我解决…",
+      "outputTokens": 413,
+      "inputQuery": "早间问候\" just completed successfully. Result: 早安喵～新的一天也要闪闪发光呀 ✨ 今天也要好好吃饭、认真干活哦 💪 Stats: runtime 21s • tokens 175 (in 36 / out 139) • prompt/cache 15.0k A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn.",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "03bd8b13-cff9-41c5-9edf-5b0064e5ba5b",
+      "agentId": "main",
+      "label": "Cron: iMessage早间问候",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772172695627,
+      "totalTokens": 14955,
+      "inputTokens": 36,
+      "outputTokens": 139,
+      "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -1025,19 +1038,6 @@
       "inputTokens": 50178,
       "outputTokens": 646,
       "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \\\"<query>\\\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后汇报你看到了什么、想了什么。",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "721b603f-edfc-4856-8939-615f48f4fd0a",
-      "agentId": "main",
-      "label": "stop",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772135513873,
-      "totalTokens": 16746,
-      "inputTokens": 36,
-      "outputTokens": 38,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     }
   ],
@@ -2826,24 +2826,35 @@
     },
     {
       "source": "openclaw",
+      "sessionId": "03bd8b13-cff9-41c5-9edf-5b0064e5ba5b",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772172695627,
+      "totalTokens": 14955,
+      "inputTokens": 36,
+      "outputTokens": 139,
+      "inputQuery": "【早间问候任务】 请仅输出两行中文短句，不要调用任何工具，不要执行命令，不要包含状态说明。 第1行：海粼酱风格早安问候（可爱、松弛、猫系）。 第2行：今天的鼓励一句话（简短）。"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "ab49497a-8eec-4180-a9f7-36c511951cd3",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772172377317,
-      "totalTokens": 18618,
+      "updatedAt": 1772172742796,
+      "totalTokens": 20788,
       "inputTokens": 36,
-      "outputTokens": 88,
-      "inputQuery": "```json { \"was_mentioned\": true, \"history_count\": 3 } ``` Chat history since last reply (untrusted, for context): 我需要你帮我解决…"
+      "outputTokens": 413,
+      "inputQuery": "早间问候\" just completed successfully. Result: 早安喵～新的一天也要闪闪发光呀 ✨ 今天也要好好吃饭、认真干活哦 💪 Stats: runtime 21s • tokens 175 (in 36 / out 139) • prompt/cache 15.0k A completed cron job is ready for user delivery. Convert the result above into your normal assistant voice and send that user-facing update now. Keep this internal context private (don't mention system/log/stats/session details or announce type), and do not copy the system message verbatim. Reply ONLY: NO_REPLY if this exact result was already delivered to the user in this same turn."
     },
     {
       "source": "openclaw",
       "sessionId": "9e93da7c-5e52-4efc-97cb-0310a497222a",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772172400001,
-      "totalTokens": 19114,
-      "inputTokens": 2995,
-      "outputTokens": 95,
+      "updatedAt": 1772172751168,
+      "totalTokens": 18974,
+      "inputTokens": 2923,
+      "outputTokens": 71,
       "inputQuery": "的MacBook Pro (192.168.10.44) · app 2026.2.14 (202602140) · mode local Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
     },
     {
@@ -2851,10 +2862,10 @@
       "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
       "agentId": "codex",
       "model": "gpt-5.2-codex",
-      "updatedAt": 1772172482417.4385,
-      "totalTokens": 4025811,
-      "inputTokens": 4002780,
-      "outputTokens": 23031,
+      "updatedAt": 1772172812192.7402,
+      "totalTokens": 6128618,
+      "inputTokens": 6095386,
+      "outputTokens": 33232,
       "inputQuery": "Nodes: with command openclaw, cron, list, node Ella的MacBook Pro failed"
     }
   ],
