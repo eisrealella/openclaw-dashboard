@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T06:23:42.238Z",
+    "generatedAt": "2026-02-27T06:28:47.297Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T06:23:42.275Z",
+    "staticExportedAt": "2026-02-27T06:28:47.330Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1439155568,
-    "inputTokens": 1439337939,
-    "outputTokens": 2779285,
+    "totalTokens": 1439640664,
+    "inputTokens": 1439817910,
+    "outputTokens": 2784410,
     "sessions": 166
   },
   "trend": [
@@ -88,7 +88,7 @@
     {
       "date": "2026-02-27",
       "label": "Feb 27",
-      "tokens": 9710290
+      "tokens": 10195386
     }
   ],
   "modelDistribution": [
@@ -106,7 +106,7 @@
     },
     {
       "model": "gpt-5.2-codex",
-      "tokens": 9339060
+      "tokens": 9824156
     }
   ],
   "agents": [
@@ -890,10 +890,10 @@
       "agentId": "codex",
       "label": "Codex local session",
       "model": "gpt-5.2-codex",
-      "updatedAt": 1772173399363.9353,
-      "totalTokens": 9110567,
-      "inputTokens": 9066813,
-      "outputTokens": 43754,
+      "updatedAt": 1772173505179.814,
+      "totalTokens": 9595663,
+      "inputTokens": 9546784,
+      "outputTokens": 48879,
       "inputQuery": "是不是- iMessage早间问候 (8:00) - iMessage早间升级简报 (8:01)两个cronjob有重复返回的问题",
       "sourcePath": "/Users/ella/.codex/sessions/2026/02/27/rollout-2026-02-27T13-48-48-019c9da4-7af0-7e12-8fef-fa4255784c44.jsonl"
     },
@@ -2862,10 +2862,10 @@
       "sessionId": "019c9da4-7af0-7e12-8fef-fa4255784c44",
       "agentId": "codex",
       "model": "gpt-5.2-codex",
-      "updatedAt": 1772173399363.9353,
-      "totalTokens": 9110567,
-      "inputTokens": 9066813,
-      "outputTokens": 43754,
+      "updatedAt": 1772173505179.814,
+      "totalTokens": 9595663,
+      "inputTokens": 9546784,
+      "outputTokens": 48879,
       "inputQuery": "是不是- iMessage早间问候 (8:00) - iMessage早间升级简报 (8:01)两个cronjob有重复返回的问题"
     }
   ],
