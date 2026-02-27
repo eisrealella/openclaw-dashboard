@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-27T10:02:15.937Z",
+    "generatedAt": "2026-02-27T10:07:20.929Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,12 +10,12 @@
       "latestDay": "2026-02-27",
       "bucketCount": 30
     },
-    "staticExportedAt": "2026-02-27T10:02:15.961Z",
+    "staticExportedAt": "2026-02-27T10:07:20.954Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1442119677,
-    "inputTokens": 1443317478,
+    "totalTokens": 1442539575,
+    "inputTokens": 1443507452,
     "outputTokens": 2804637,
     "sessions": 168
   },
@@ -83,7 +83,7 @@
     {
       "date": "2026-02-26",
       "label": "Feb 26",
-      "tokens": 71470404
+      "tokens": 71890302
     },
     {
       "date": "2026-02-27",
@@ -94,7 +94,7 @@
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 716017997
+      "tokens": 716437895
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 1069354
+          "lastSeenTokens": 990446
         }
       },
       {
@@ -2653,9 +2653,9 @@
       "sessionId": "13786942-3ae7-4eb1-826e-452f42140b5d",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772100000043,
-      "totalTokens": 78908,
-      "inputTokens": 304771,
+      "updatedAt": 1772100196095.3647,
+      "totalTokens": 498806,
+      "inputTokens": 494745,
       "outputTokens": 4061,
       "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新"
     },
