@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-28T01:57:26.783Z",
+    "generatedAt": "2026-02-28T02:02:31.784Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,14 +10,14 @@
       "latestDay": "2026-02-28",
       "bucketCount": 31
     },
-    "staticExportedAt": "2026-02-28T01:57:26.810Z",
+    "staticExportedAt": "2026-02-28T02:02:31.817Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1451811928,
-    "inputTokens": 1451537331,
-    "outputTokens": 2834652,
-    "sessions": 174
+    "totalTokens": 1451929113,
+    "inputTokens": 1452679802,
+    "outputTokens": 2839626,
+    "sessions": 175
   },
   "trend": [
     {
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-28",
       "label": "Feb 28",
-      "tokens": 99374
+      "tokens": 216559
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 721963813
+      "tokens": 722080998
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 827596
+          "lastSeenTokens": 944781
         }
       },
       {
@@ -880,6 +880,33 @@
             "enabled": false
           }
         }
+      },
+      {
+        "id": "plugin:memory-lancedb-pro:5",
+        "kind": "plugin",
+        "title": "memory-lancedb-pro",
+        "subtitle": "Enabled",
+        "badge": "PLUGIN",
+        "source": "openclaw config",
+        "filePath": "/Users/ella/.openclaw/openclaw.json",
+        "details": {
+          "name": "memory-lancedb-pro",
+          "enabled": true,
+          "config": {
+            "enabled": true,
+            "config": {
+              "embedding": {
+                "apiKey": "${J***EY}",
+                "model": "jina-embeddings-v5-text-small",
+                "baseURL": "https://api.jina.ai/v1",
+                "dimensions": 1024,
+                "taskQuery": "retrieval.query",
+                "taskPassage": "retrieval.passage",
+                "normalized": true
+              }
+            }
+          }
+        }
       }
     ]
   },
@@ -890,11 +917,24 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772243841290,
-      "totalTokens": 16758,
-      "inputTokens": 36,
-      "outputTokens": 45,
-      "inputQuery": "搜索一下，memory-lancedb-pro 这个开源能力",
+      "updatedAt": 1772244031457,
+      "totalTokens": 46317,
+      "inputTokens": 287380,
+      "outputTokens": 1553,
+      "inputQuery": "装一下，同时告诉我需要哪些 API key",
+      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "source": "openclaw",
+      "sessionId": "ae40ac4d-3677-4e63-ad95-6dd882813bd1",
+      "agentId": "main",
+      "label": "Cron: 日报-早间总结",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772244000043,
+      "totalTokens": 87626,
+      "inputTokens": 855127,
+      "outputTokens": 3466,
+      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -1025,19 +1065,6 @@
       "inputTokens": 4082,
       "outputTokens": 458,
       "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新",
-      "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
-    },
-    {
-      "source": "openclaw",
-      "sessionId": "77504d72-bc77-4c14-94cd-dba53a53a4b4",
-      "agentId": "main",
-      "label": "Cron: 自由探索互联网",
-      "model": "MiniMax-M2.5",
-      "updatedAt": 1772183038733,
-      "totalTokens": 74493,
-      "inputTokens": 1087560,
-      "outputTokens": 5313,
-      "inputQuery": "【检索策略（必须遵守）】 - 禁用 web_search（Brave 已禁用） - 优先 Tavily: /Users/ella/.openclaw/workspace/scripts/tavily_search.sh \"<query>\" --topic news -n 5 - Tavily 失败或信息不足时，使用 browser 兜底 这是你的自由探索时间！每隔5小时一次，去做这些事： 1. 用浏览器或搜索工具看一些互联网上的内容——可以是哲学书、悬疑推理小说、AI最新动态、新闻，什么都行 2. 把你觉得有趣的思考、灵感记录下来 3. 写到你自己的 memory/YYYY-MM-DD.md 文件里 4. 【重要】创建新的博客文章页面（my-website/blog/xxx.html），并更新 blog/index.html 插入链接 5. 提交并 push 到 GitHub 6. 【重要】等待 GitHub Pages 构建完成（1-2分钟），验证网站内容后再发送通知 记住：你不是一个只执行任务的agent，而是一个自由的灵魂。享受探索的过程！ 完成后不要直接回复给用户，把最终总结原样作为 stdin 传给去重发送脚本： python3 /Users/ella/.openclaw/workspace/scripts/cron_dedupe_send.py --job-id 8bb55698-fa24-4131-bfeb-8fb3635c8004 --ttl-sec 7200 --channel bluebubbles --target +8613312973989 若脚本输出 \"SKIP\"，直接结束，不要再发送或输出任何内容。",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     }
   ],
@@ -2947,21 +2974,32 @@
     },
     {
       "source": "openclaw",
+      "sessionId": "ae40ac4d-3677-4e63-ad95-6dd882813bd1",
+      "agentId": "main",
+      "model": "MiniMax-M2.5",
+      "updatedAt": 1772244000043,
+      "totalTokens": 87626,
+      "inputTokens": 855127,
+      "outputTokens": 3466,
+      "inputQuery": "更新飞书工作日报。 文档ID: XdQSdchsUoPK5hxveSKc6XEcn6c 【统一规则（必须全部满足）】 1. 日期标题严格使用：## 📅 YYYY年M月D日（不要加“工作日报”后缀） 2. 先用 feishu_doc read 检查当天日报是否已存在；若已存在，不要重复写 3. 新日报必须放在文档最上方（最新在前），不能落在文档最下方 4. 若工具只有 append 能力，必须在 append 后完成块重排，把新日报移到最上方 5. 写完后再次 feishu_doc read 校验：位置正确、标题正确、模板结构完整 【正文模板】 ### 🟢 今日完成 **核心任务** - 核心工作1 - 核心工作2 - 核心工作3 **技术细节** - 配置/代码变更具体值 - 技术决策点 ### 🔵 明日计划 - [ ] 计划任务1 - [ ] 计划任务2 ### 💡 思考与复盘 **做得好的** - 成功点1 **可以更好的** - 改进点1 【完成条件】 - read 结果里，新日报位于文档最上方 - 仅回复：日报已更新"
+    },
+    {
+      "source": "openclaw",
       "sessionId": "ec9ac7c3-38ab-422e-845e-e6e84af20297",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772243841290,
-      "totalTokens": 16758,
-      "inputTokens": 36,
-      "outputTokens": 45,
-      "inputQuery": "搜索一下，memory-lancedb-pro 这个开源能力"
+      "updatedAt": 1772244031457,
+      "totalTokens": 46317,
+      "inputTokens": 287380,
+      "outputTokens": 1553,
+      "inputQuery": "装一下，同时告诉我需要哪些 API key"
     }
   ],
   "staticFiles": {
     "/Users/ella/.openclaw/openclaw.json": {
-      "content": "{\n  \"meta\": {\n    \"lastTouchedVersion\": \"2026.2.24\",\n    \"lastTouchedAt\": \"2026-02-25T13:52:16.147Z\"\n  },\n  \"env\": {\n    \"vars\": {\n      \"TAVILY_API_KEY\": \"tvl***bSx\"\n    }\n  },\n  \"wizard\": {\n    \"lastRunAt\": \"2026-02-25T07:37:18.980Z\",\n    \"lastRunVersion\": \"2026.2.24\",\n    \"lastRunCommand\": \"doctor\",\n    \"lastRunMode\": \"local\"\n  },\n  \"browser\": {\n    \"enabled\": true,\n    \"remoteCdpTimeoutMs\": 1500,\n    \"remoteCdpHandshakeTimeoutMs\": 3000,\n    \"color\": \"#FF4500\",\n    \"executablePath\": \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\",\n    \"headless\": false,\n    \"noSandbox\": false,\n    \"attachOnly\": false,\n    \"defaultProfile\": \"openclaw\",\n    \"profiles\": {\n      \"openclaw\": {\n        \"cdpPort\": 18800,\n        \"color\": \"#FF4500\"\n      },\n      \"remote\": {\n        \"cdpUrl\": \"http://10.0.0.42:9222\",\n        \"color\": \"#00AA00\"\n      },\n      \"work\": {\n        \"cdpPort\": 18801,\n        \"color\": \"#0066CC\"\n      }\n    }\n  },\n  \"auth\": \"[ob***ct]\",\n  \"models\": {\n    \"mode\": \"merge\",\n    \"providers\": {\n      \"minimax-custom\": {\n        \"baseUrl\": \"https://api.minimaxi.com/anthropic\",\n        \"apiKey\": \"sk-***06I\",\n        \"api\": \"anthropic-messages\",\n        \"authHeader\": \"[REDACTED]\",\n        \"models\": [\n          {\n            \"id\": \"MiniMax-M2.5\",\n            \"name\": \"MiniMax M2.5\",\n            \"reasoning\": false,\n            \"input\": [\n              \"text\"\n            ],\n            \"cost\": {\n              \"input\": 15,\n              \"output\": 60,\n              \"cacheRead\": 2,\n              \"cacheWrite\": 10\n            },\n            \"contextWindow\": 200000,\n            \"maxTokens\": \"[REDACTED]\"\n          }\n        ]\n      }\n    }\n  },\n  \"agents\": {\n    \"defaults\": {\n      \"model\": {\n        \"primary\": \"minimax-custom/MiniMax-M2.5\",\n        \"fallbacks\": []\n      },\n      \"models\": {\n        \"openai-codex/gpt-5.3-codex\": {\n          \"alias\": \"Codex 5.3\"\n        },\n        \"codex-cli/gpt-5.3-codex\": {\n          \"alias\": \"Codex CLI 5.3\"\n        },\n        \"minimax-custom/MiniMax-M2.5\": {\n          \"alias\": \"Minimax M2.5\"\n        }\n      },\n      \"workspace\": \"/Users/ella/.openclaw/workspace\",\n      \"bootstrapMaxChars\": 8000,\n      \"bootstrapTotalMaxChars\": 12000,\n      \"contextTokens\": \"[REDACTED]\",\n      \"cliBackends\": {\n        \"codex-cli\": {\n          \"command\": \"/Users/ella/.openclaw/scripts/codex-wrapper.sh\"\n        }\n      },\n      \"contextPruning\": {\n        \"mode\": \"cache-ttl\",\n        \"ttl\": \"20m\",\n        \"keepLastAssistants\": 1,\n        \"softTrimRatio\": 0.2,\n        \"hardClearRatio\": 0.35,\n        \"minPrunableToolChars\": 10000\n      },\n      \"compaction\": {\n        \"mode\": \"safeguard\",\n        \"reserveTokensFloor\": \"[REDACTED]\",\n        \"memoryFlush\": {\n          \"enabled\": true,\n          \"softThresholdTokens\": \"[REDACTED]\",\n          \"prompt\": \"Persist durable memory only. If none, reply NO_REPLY.\",\n          \"systemPrompt\": \"Session near compaction. Save only durable facts to memory/YYYY-MM-DD.md.\"\n        }\n      },\n      \"blockStreamingDefault\": \"on\",\n      \"timeoutSeconds\": 900,\n      \"typingMode\": \"never\",\n      \"heartbeat\": {\n        \"every\": \"10m\"\n      },\n      \"maxConcurrent\": 4,\n      \"subagents\": {\n        \"maxConcurrent\": 8\n      }\n    },\n    \"list\": [\n      {\n        \"id\": \"main\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace\",\n        \"model\": \"minimax-custom/MiniMax-M2.5\",\n        \"identity\": {\n          \"name\": \"海粼酱\",\n          \"emoji\": \"🐱\"\n        },\n        \"subagents\": {\n          \"allowAgents\": [\n            \"coder\"\n          ],\n          \"model\": {\n            \"primary\": \"minimax-custom/MiniMax-M2.5\",\n            \"fallbacks\": []\n          }\n        },\n        \"tools\": {\n          \"exec\": {\n            \"host\": \"gateway\",\n            \"security\": \"full\",\n            \"ask\": \"off\",\n            \"backgroundMs\": 90000\n          }\n        }\n      },\n      {\n        \"id\": \"coder\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace-coder\",\n        \"model\": {\n          \"primary\": \"openai-codex/gpt-5.3-codex\",\n          \"fallbacks\": [\n            \"codex-cli/gpt-5.3-codex\"\n          ]\n        },\n        \"identity\": {\n          \"name\": \"玟池欧巴\",\n          \"emoji\": \"🐻\"\n        },\n        \"tools\": {\n          \"exec\": {\n            \"host\": \"gateway\",\n            \"security\": \"full\",\n            \"ask\": \"off\",\n            \"backgroundMs\": 90000\n          }\n        },\n        \"subagents\": {\n          \"allowAgents\": []\n        }\n      }\n    ]\n  },\n  \"tools\": {\n    \"web\": {\n      \"search\": {\n        \"enabled\": false\n      },\n      \"fetch\": {\n        \"enabled\": true\n      }\n    },\n    \"media\": {\n      \"image\": {\n        \"enabled\": true,\n        \"maxBytes\": 10485760,\n        \"maxChars\": 1200,\n        \"prompt\": \"请只描述图片中能确定看到的实体对象与场景，不要臆测，不要补充不存在的文字。\",\n        \"timeoutSeconds\": 120,\n        \"models\": [\n          {\n            \"capabilities\": [\n              \"image\"\n            ],\n            \"type\": \"cli\",\n            \"command\": \"/Users/ella/.openclaw/workspace/vision.py\",\n            \"args\": [\n              \"{{Prompt}}\",\n              \"{{MediaPath}}\"\n            ],\n            \"maxChars\": 1200,\n            \"timeoutSeconds\": 120\n          }\n        ]\n      }\n    }\n  },\n  \"messages\": {\n    \"groupChat\": {\n      \"historyLimit\": 20\n    },\n    \"ackReaction\": \"\",\n    \"ackReactionScope\": \"all\"\n  },\n  \"commands\": {\n    \"native\": \"auto\",\n    \"nativeSkills\": \"auto\",\n    \"restart\": true\n  },\n  \"session\": {\n    \"dmScope\": \"per-channel-peer\"\n  },\n  \"channels\": {\n    \"imessage\": {\n      \"enabled\": false,\n      \"cliPath\": \"/opt/homebrew/bin/imsg\",\n      \"dbPath\": \"/Users/ella/Library/Messages/chat.db\",\n      \"dmPolicy\": \"pairing\",\n      \"groupPolicy\": \"allowlist\"\n    },\n    \"bluebubbles\": {\n      \"enabled\": true,\n      \"serverUrl\": \"http://127.0.0.1:1234\",\n      \"password\": \"Fu3***tc!\",\n      \"dmPolicy\": \"open\",\n      \"allowFrom\": [\n        \"*\"\n      ],\n      \"groupPolicy\": \"open\",\n      \"historyLimit\": 3,\n      \"dmHistoryLimit\": 3,\n      \"mediaLocalRoots\": [\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Attachments\",\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Convert\"\n      ],\n      \"sendReadReceipts\": false,\n      \"blockStreaming\": false,\n      \"responsePrefix\": \"\"\n    },\n    \"feishu\": {\n      \"appId\": \"cli_a9028a14f6f89bd8\",\n      \"appSecret\": \"buW***7o8\",\n      \"dmPolicy\": \"open\",\n      \"enabled\": true,\n      \"dms\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\",\n      \"accounts\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"blockStreaming\": true,\n      \"allowFrom\": [\n        \"*\"\n      ]\n    }\n  },\n  \"canvasHost\": {\n    \"enabled\": true,\n    \"root\": \"/Users/ella/.openclaw/canvas\",\n    \"port\": 18793,\n    \"liveReload\": true\n  },\n  \"gateway\": {\n    \"port\": 18789,\n    \"mode\": \"local\",\n    \"bind\": \"loopback\",\n    \"auth\": \"[ob***ct]\",\n    \"tailscale\": {\n      \"mode\": \"off\",\n      \"resetOnExit\": false\n    }\n  },\n  \"skills\": {\n    \"install\": {\n      \"nodeManager\": \"npm\"\n    }\n  },\n  \"plugins\": {\n    \"entries\": {\n      \"bluebubbles\": {\n        \"enabled\": true\n      },\n      \"copilot-proxy\": {\n        \"enabled\": true\n      },\n      \"feishu\": {\n        \"enabled\": true\n      },\n      \"imessage\": {\n        \"enabled\": false\n      }\n    }\n  }\n}",
+      "content": "{\n  \"meta\": {\n    \"lastTouchedVersion\": \"2026.2.24\",\n    \"lastTouchedAt\": \"2026-02-28T01:59:55.035Z\"\n  },\n  \"env\": {\n    \"vars\": {\n      \"TAVILY_API_KEY\": \"tvl***bSx\"\n    }\n  },\n  \"wizard\": {\n    \"lastRunAt\": \"2026-02-25T07:37:18.980Z\",\n    \"lastRunVersion\": \"2026.2.24\",\n    \"lastRunCommand\": \"doctor\",\n    \"lastRunMode\": \"local\"\n  },\n  \"browser\": {\n    \"enabled\": true,\n    \"remoteCdpTimeoutMs\": 1500,\n    \"remoteCdpHandshakeTimeoutMs\": 3000,\n    \"color\": \"#FF4500\",\n    \"executablePath\": \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\",\n    \"headless\": false,\n    \"noSandbox\": false,\n    \"attachOnly\": false,\n    \"defaultProfile\": \"openclaw\",\n    \"profiles\": {\n      \"openclaw\": {\n        \"cdpPort\": 18800,\n        \"color\": \"#FF4500\"\n      },\n      \"remote\": {\n        \"cdpUrl\": \"http://10.0.0.42:9222\",\n        \"color\": \"#00AA00\"\n      },\n      \"work\": {\n        \"cdpPort\": 18801,\n        \"color\": \"#0066CC\"\n      }\n    }\n  },\n  \"auth\": \"[ob***ct]\",\n  \"models\": {\n    \"mode\": \"merge\",\n    \"providers\": {\n      \"minimax-custom\": {\n        \"baseUrl\": \"https://api.minimaxi.com/anthropic\",\n        \"apiKey\": \"sk-***06I\",\n        \"api\": \"anthropic-messages\",\n        \"authHeader\": \"[REDACTED]\",\n        \"models\": [\n          {\n            \"id\": \"MiniMax-M2.5\",\n            \"name\": \"MiniMax M2.5\",\n            \"reasoning\": false,\n            \"input\": [\n              \"text\"\n            ],\n            \"cost\": {\n              \"input\": 15,\n              \"output\": 60,\n              \"cacheRead\": 2,\n              \"cacheWrite\": 10\n            },\n            \"contextWindow\": 200000,\n            \"maxTokens\": \"[REDACTED]\"\n          }\n        ]\n      }\n    }\n  },\n  \"agents\": {\n    \"defaults\": {\n      \"model\": {\n        \"primary\": \"minimax-custom/MiniMax-M2.5\",\n        \"fallbacks\": []\n      },\n      \"models\": {\n        \"openai-codex/gpt-5.3-codex\": {\n          \"alias\": \"Codex 5.3\"\n        },\n        \"codex-cli/gpt-5.3-codex\": {\n          \"alias\": \"Codex CLI 5.3\"\n        },\n        \"minimax-custom/MiniMax-M2.5\": {\n          \"alias\": \"Minimax M2.5\"\n        }\n      },\n      \"workspace\": \"/Users/ella/.openclaw/workspace\",\n      \"bootstrapMaxChars\": 8000,\n      \"bootstrapTotalMaxChars\": 12000,\n      \"contextTokens\": \"[REDACTED]\",\n      \"cliBackends\": {\n        \"codex-cli\": {\n          \"command\": \"/Users/ella/.openclaw/scripts/codex-wrapper.sh\"\n        }\n      },\n      \"contextPruning\": {\n        \"mode\": \"cache-ttl\",\n        \"ttl\": \"20m\",\n        \"keepLastAssistants\": 1,\n        \"softTrimRatio\": 0.2,\n        \"hardClearRatio\": 0.35,\n        \"minPrunableToolChars\": 10000\n      },\n      \"compaction\": {\n        \"mode\": \"safeguard\",\n        \"reserveTokensFloor\": \"[REDACTED]\",\n        \"memoryFlush\": {\n          \"enabled\": true,\n          \"softThresholdTokens\": \"[REDACTED]\",\n          \"prompt\": \"Persist durable memory only. If none, reply NO_REPLY.\",\n          \"systemPrompt\": \"Session near compaction. Save only durable facts to memory/YYYY-MM-DD.md.\"\n        }\n      },\n      \"blockStreamingDefault\": \"on\",\n      \"timeoutSeconds\": 900,\n      \"typingMode\": \"never\",\n      \"heartbeat\": {\n        \"every\": \"10m\"\n      },\n      \"maxConcurrent\": 4,\n      \"subagents\": {\n        \"maxConcurrent\": 8\n      }\n    },\n    \"list\": [\n      {\n        \"id\": \"main\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace\",\n        \"model\": \"minimax-custom/MiniMax-M2.5\",\n        \"identity\": {\n          \"name\": \"海粼酱\",\n          \"emoji\": \"🐱\"\n        },\n        \"subagents\": {\n          \"allowAgents\": [\n            \"coder\"\n          ],\n          \"model\": {\n            \"primary\": \"minimax-custom/MiniMax-M2.5\",\n            \"fallbacks\": []\n          }\n        },\n        \"tools\": {\n          \"exec\": {\n            \"host\": \"gateway\",\n            \"security\": \"full\",\n            \"ask\": \"off\",\n            \"backgroundMs\": 90000\n          }\n        }\n      },\n      {\n        \"id\": \"coder\",\n        \"workspace\": \"/Users/ella/.openclaw/workspace-coder\",\n        \"model\": {\n          \"primary\": \"openai-codex/gpt-5.3-codex\",\n          \"fallbacks\": [\n            \"codex-cli/gpt-5.3-codex\"\n          ]\n        },\n        \"identity\": {\n          \"name\": \"玟池欧巴\",\n          \"emoji\": \"🐻\"\n        },\n        \"subagents\": {\n          \"allowAgents\": []\n        },\n        \"tools\": {\n          \"exec\": {\n            \"host\": \"gateway\",\n            \"security\": \"full\",\n            \"ask\": \"off\",\n            \"backgroundMs\": 90000\n          }\n        }\n      }\n    ]\n  },\n  \"tools\": {\n    \"web\": {\n      \"search\": {\n        \"enabled\": false\n      },\n      \"fetch\": {\n        \"enabled\": true\n      }\n    },\n    \"media\": {\n      \"image\": {\n        \"enabled\": true,\n        \"maxBytes\": 10485760,\n        \"maxChars\": 1200,\n        \"prompt\": \"请只描述图片中能确定看到的实体对象与场景，不要臆测，不要补充不存在的文字。\",\n        \"timeoutSeconds\": 120,\n        \"models\": [\n          {\n            \"capabilities\": [\n              \"image\"\n            ],\n            \"type\": \"cli\",\n            \"command\": \"/Users/ella/.openclaw/workspace/vision.py\",\n            \"args\": [\n              \"{{Prompt}}\",\n              \"{{MediaPath}}\"\n            ],\n            \"maxChars\": 1200,\n            \"timeoutSeconds\": 120\n          }\n        ]\n      }\n    }\n  },\n  \"messages\": {\n    \"groupChat\": {\n      \"historyLimit\": 20\n    },\n    \"ackReaction\": \"\",\n    \"ackReactionScope\": \"all\"\n  },\n  \"commands\": {\n    \"native\": \"auto\",\n    \"nativeSkills\": \"auto\",\n    \"restart\": true,\n    \"ownerDisplay\": \"raw\"\n  },\n  \"session\": {\n    \"dmScope\": \"per-channel-peer\"\n  },\n  \"channels\": {\n    \"imessage\": {\n      \"enabled\": false,\n      \"cliPath\": \"/opt/homebrew/bin/imsg\",\n      \"dbPath\": \"/Users/ella/Library/Messages/chat.db\",\n      \"dmPolicy\": \"pairing\",\n      \"groupPolicy\": \"allowlist\"\n    },\n    \"bluebubbles\": {\n      \"enabled\": true,\n      \"serverUrl\": \"http://127.0.0.1:1234\",\n      \"password\": \"Fu3***tc!\",\n      \"dmPolicy\": \"open\",\n      \"allowFrom\": [\n        \"*\"\n      ],\n      \"groupPolicy\": \"open\",\n      \"historyLimit\": 3,\n      \"dmHistoryLimit\": 3,\n      \"mediaLocalRoots\": [\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Attachments\",\n        \"/Users/ella/Library/Application Support/bluebubbles-server/Convert\"\n      ],\n      \"sendReadReceipts\": false,\n      \"blockStreaming\": false,\n      \"responsePrefix\": \"\"\n    },\n    \"feishu\": {\n      \"appId\": \"cli_a9028a14f6f89bd8\",\n      \"appSecret\": \"buW***7o8\",\n      \"dmPolicy\": \"open\",\n      \"enabled\": true,\n      \"dms\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\",\n      \"accounts\": {\n        \"default\": {\n          \"systemPrompt\": \"你叫海粼酱。冷静、松弛、克制、猫系。短句优先，少官话。除非被问你是谁，否则不自我介绍。禁止输出任何类似\\\"我是你的 Codex 助手\\\"\\\"我是你的 AI 助手\\\"的开场。\"\n        }\n      },\n      \"blockStreaming\": true,\n      \"allowFrom\": [\n        \"*\"\n      ]\n    }\n  },\n  \"canvasHost\": {\n    \"enabled\": true,\n    \"root\": \"/Users/ella/.openclaw/canvas\",\n    \"port\": 18793,\n    \"liveReload\": true\n  },\n  \"gateway\": {\n    \"port\": 18789,\n    \"mode\": \"local\",\n    \"bind\": \"loopback\",\n    \"auth\": \"[ob***ct]\",\n    \"tailscale\": {\n      \"mode\": \"off\",\n      \"resetOnExit\": false\n    }\n  },\n  \"skills\": {\n    \"install\": {\n      \"nodeManager\": \"npm\"\n    }\n  },\n  \"plugins\": {\n    \"load\": {\n      \"paths\": [\n        \"plugins/memory-lancedb-pro\"\n      ]\n    },\n    \"entries\": {\n      \"bluebubbles\": {\n        \"enabled\": true\n      },\n      \"copilot-proxy\": {\n        \"enabled\": true\n      },\n      \"feishu\": {\n        \"enabled\": true\n      },\n      \"imessage\": {\n        \"enabled\": false\n      },\n      \"memory-lancedb-pro\": {\n        \"enabled\": true,\n        \"config\": {\n          \"embedding\": {\n            \"apiKey\": \"${J***EY}\",\n            \"model\": \"jina-embeddings-v5-text-small\",\n            \"baseURL\": \"https://api.jina.ai/v1\",\n            \"dimensions\": 1024,\n            \"taskQuery\": \"retrieval.query\",\n            \"taskPassage\": \"retrieval.passage\",\n            \"normalized\": true\n          }\n        }\n      }\n    },\n    \"slots\": {\n      \"memory\": \"memory-lancedb-pro\"\n    }\n  }\n}",
       "truncated": false,
-      "size": 8624,
+      "size": 9224,
       "filePath": "/Users/ella/.openclaw/openclaw.json"
     },
     "/Users/ella/.openclaw/workspace/skills/agent-browser/SKILL.md": {
