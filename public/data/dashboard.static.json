@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-28T01:52:21.802Z",
+    "generatedAt": "2026-02-28T01:57:26.783Z",
     "openclawHome": "/Users/ella/.openclaw",
     "configPath": "/Users/ella/.openclaw/openclaw.json",
     "dbPath": "/Users/ella/Documents/Codex/openclaw-dashboard/data/dashboard.db",
@@ -10,13 +10,13 @@
       "latestDay": "2026-02-28",
       "bucketCount": 31
     },
-    "staticExportedAt": "2026-02-28T01:52:21.829Z",
+    "staticExportedAt": "2026-02-28T01:57:26.810Z",
     "staticSource": "http://127.0.0.1:8080"
   },
   "overview": {
-    "totalTokens": 1451812237,
-    "inputTokens": 1451538241,
-    "outputTokens": 2834716,
+    "totalTokens": 1451811928,
+    "inputTokens": 1451537331,
+    "outputTokens": 2834652,
     "sessions": 174
   },
   "trend": [
@@ -88,13 +88,13 @@
     {
       "date": "2026-02-28",
       "label": "Feb 28",
-      "tokens": 99683
+      "tokens": 99374
     }
   ],
   "modelDistribution": [
     {
       "model": "MiniMax-M2.5",
-      "tokens": 721964122
+      "tokens": 721963813
     },
     {
       "model": "gpt-5.3-codex",
@@ -158,7 +158,7 @@
           "id": "minimax-custom/MiniMax-M2.5",
           "alias": "Minimax M2.5",
           "role": "Primary",
-          "lastSeenTokens": 827905
+          "lastSeenTokens": 827596
         }
       },
       {
@@ -890,11 +890,11 @@
       "agentId": "main",
       "label": "toolUse",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772243283297,
-      "totalTokens": 17067,
-      "inputTokens": 946,
-      "outputTokens": 109,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+      "updatedAt": 1772243841290,
+      "totalTokens": 16758,
+      "inputTokens": 36,
+      "outputTokens": 45,
+      "inputQuery": "搜索一下，memory-lancedb-pro 这个开源能力",
       "sourcePath": "/Users/ella/.openclaw/agents/main/sessions/sessions.json"
     },
     {
@@ -2950,11 +2950,11 @@
       "sessionId": "ec9ac7c3-38ab-422e-845e-e6e84af20297",
       "agentId": "main",
       "model": "MiniMax-M2.5",
-      "updatedAt": 1772243283297,
-      "totalTokens": 17067,
-      "inputTokens": 946,
-      "outputTokens": 109,
-      "inputQuery": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+      "updatedAt": 1772243841290,
+      "totalTokens": 16758,
+      "inputTokens": 36,
+      "outputTokens": 45,
+      "inputQuery": "搜索一下，memory-lancedb-pro 这个开源能力"
     }
   ],
   "staticFiles": {
