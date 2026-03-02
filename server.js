@@ -32,10 +32,14 @@ const MIME_TYPES = {
   ".jpeg": "image/jpeg",
 };
 
-const SENSITIVE_KEY_RE = /(api[-_]?key|token|secret|password|authorization|auth|cookie)/i;
+const SENSITIVE_KEY_RE =
+  /(api[-_]?key|token|secret|password|authorization|auth|cookie|client[_-]?id|client[_-]?secret)/i;
 const SENSITIVE_INLINE_RE = [
   /(sk-[A-Za-z0-9_-]{10,})/g,
   /([A-Za-z0-9_]{20,}\.[A-Za-z0-9_]{10,}\.[A-Za-z0-9_-]{10,})/g,
+  /\bGOCSPX-[A-Za-z0-9_-]{10,}\b/g,
+  /\bAIza[0-9A-Za-z_-]{10,}\b/g,
+  /\b\d{12,}-[a-z0-9]{10,}\.apps\.googleusercontent\.com\b/gi,
 ];
 
 let dashboardCache = null;
@@ -90,6 +94,10 @@ function redactObject(input) {
 
 function redactInline(text) {
   let output = String(text || "");
+  output = output.replace(
+    /\b(client[_-]?id|client[_-]?secret|oauth[_-]?client[_-]?(?:id|secret))\b\s*[:=]\s*["']?([^\s,"';]+)["']?/gi,
+    (_match, key) => `${key}: [REDACTED]`
+  );
   for (const pattern of SENSITIVE_INLINE_RE) {
     output = output.replace(pattern, "[REDACTED]");
   }
